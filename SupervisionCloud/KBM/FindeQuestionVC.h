@@ -9,5 +9,5 @@
 #import "BaseTableVC.h"
 
 @interface FindeQuestionVC : BaseTableVC
-
+@property (nonatomic, assign) NSUInteger pageNum;
 @end

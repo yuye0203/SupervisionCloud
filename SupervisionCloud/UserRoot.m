@@ -1,5 +1,5 @@
 //
-//	UserInfoUserRoot.m
+//	UserRoot.m
 //
 //	Create by 叶婷 葛 on 8/5/2017
 //	Copyright © 2017. All rights reserved.
@@ -7,16 +7,16 @@
 
 
 
-#import "UserInfoUserRoot.h"
+#import "UserRoot.h"
 
 NSString *const kUserInfoUserRootBody = @"body";
 NSString *const kUserInfoUserRootCmd = @"cmd";
 NSString *const kUserInfoUserRootResultCode = @"resultCode";
 NSString *const kUserInfoUserRootResultMessage = @"resultMessage";
 
-@interface UserInfoUserRoot ()
+@interface UserRoot ()
 @end
-@implementation UserInfoUserRoot
+@implementation UserRoot
 
 
 
@@ -105,7 +105,7 @@ NSString *const kUserInfoUserRootResultMessage = @"resultMessage";
  */
 - (instancetype)copyWithZone:(NSZone *)zone
 {
-	UserInfoUserRoot *copy = [UserInfoUserRoot new];
+	UserRoot *copy = [UserRoot new];
 
 	copy.body = [self.body copy];
 	copy.cmd = [self.cmd copy];

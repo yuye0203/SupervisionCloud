@@ -8,16 +8,16 @@
 //	Model file Generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
 
 #import <UIKit/UIKit.h>
-#import "list.h"
+#import "KnowledgeModel.h"
+#
+@interface QuestionModel : KnowledgeModel
 
-@interface List : list
-
-@property (nonatomic, strong) NSString * createTime;
-@property (nonatomic, strong) NSString * idField;
-@property (nonatomic, strong) NSString * image;
-@property (nonatomic, strong) NSString * title;
+//@property (nonatomic, strong) NSString * createTime;
+//@property (nonatomic, strong) NSString * idField;
+//@property (nonatomic, strong) NSString * image;
+//@property (nonatomic, strong) NSString * title;
 @property (nonatomic, strong) NSString * type;
-
+//
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 -(NSDictionary *)toDictionary;

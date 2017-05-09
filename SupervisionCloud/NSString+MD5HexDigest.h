@@ -7,6 +7,7 @@
 //
 
 #import <CommonCrypto/CommonDigest.h>
+#import <Foundation/Foundation.h>
 
 @interface NSString (md5)
 -(NSString *) md5HexDigest;

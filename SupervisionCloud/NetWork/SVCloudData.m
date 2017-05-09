@@ -10,4 +10,26 @@
 
 @implementation SVCloudData
 
+- (instancetype)initWithFileData:(NSData *)data
+                            name:(NSString *)name
+                        fileName:(NSString *)fileName
+                        mimeType:(NSString *)mimeType
+{
+    if (self = [super init]) {
+        self.data = data;
+        self.name = name;
+        self.fileName = fileName;
+        self.mimeType = mimeType;
+    }
+    return self;
+}
+
++ (instancetype)formDataWithFileData:(NSData *)data
+                                name:(NSString *)name
+                            fileName:(NSString *)fileName
+                            mimeType:(NSString *)mimeType
+{
+    return [[self alloc]initWithFileData:data name:name fileName:fileName mimeType:mimeType];
+}
+
 @end

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeActivityView : UIView
+- (id)initWithFrame:(CGRect)frame data:(id)data;
 
 @end

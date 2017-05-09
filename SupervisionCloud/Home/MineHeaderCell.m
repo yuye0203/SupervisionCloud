@@ -7,18 +7,31 @@
 //
 
 #import "MineHeaderCell.h"
+#import "UserInfoBody.h"
+#import "UITableViewCell+SMKConfigure.h"
+
+@interface MineHeaderCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *headerImg;
+
+@end
 
 @implementation MineHeaderCell
+- (void) drawRect:(CGRect)rect{
+    _headerImg.layer.cornerRadius = _headerImg.frame.size.height/2;
+    _headerImg.layer.masksToBounds = YES;
+    
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
 }
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)smk_configure:(UITableViewCell *)cell model:(id)model indexPath:(NSIndexPath *)indexPath {
+    UserInfoBody *user = (UserInfoBody *)model;
+    self.nameLabel.text = user.nickname ;
+    //TODO:icon
+    self.headerImg.image = [UIImage imageNamed:@"xxx"];
+    
+    
 }
 
 @end
+

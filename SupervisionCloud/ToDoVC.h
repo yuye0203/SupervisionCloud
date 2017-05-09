@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTableVC.h"
 
-@interface SecondViewController : UIViewController
-
+@interface ToDoVC : BaseTableVC
 
 @end
 

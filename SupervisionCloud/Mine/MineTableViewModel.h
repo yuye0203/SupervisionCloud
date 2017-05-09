@@ -1,5 +1,5 @@
 //
-//  MineTableModel.h
+//  MineTableViewModel.h
 //  SupervisionCloud
 //
 //  Created by YetingGe on 2017/5/2.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SUIMVVMKit.h"
 
-@interface MineTableModel : NSObject<UITableViewDelegate, UITableViewDataSource>
+@interface MineTableViewModel : NSObject<UITableViewDelegate, UITableViewDataSource>
 
 - (void)handleWithTable:(UITableView *)table;
 

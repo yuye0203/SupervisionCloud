@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseViewModel.h"
 
-@interface LoginVM : NSObject
+
+@interface LoginVM : BaseViewModel
+- (void)loginAction:(NSDictionary *)paramaters CompletionHandle:(void(^)(BOOL success, NSError *error,id result))completionHandle;
 
 @end

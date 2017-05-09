@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SVCloudNetwork.h"
 
 @interface BaseModel : NSObject
 

@@ -18,6 +18,14 @@
 @property (nonatomic, strong) NSString * nickname;
 @property (nonatomic, assign) NSInteger openNotice;
 @property (nonatomic, strong) NSString * role;
+@property (nonatomic, strong) NSString * jobNumber;
+@property (nonatomic, strong) NSString * sex;
+@property (nonatomic, strong) NSString *status;
+@property (nonatomic, strong) NSString * dynamic;
+@property (nonatomic, strong) NSString * authToken;
+@property (nonatomic, assign) NSInteger type;
+
+
 
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
 

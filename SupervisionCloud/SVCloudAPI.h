@@ -9,5 +9,6 @@
 #ifndef SVCloudAPI_h
 #define SVCloudAPI_h
 
+#define HOST_URL @"http://jlyapi.xun-ao.com/index.php?rand="
 
 #endif /* SVCloudAPI_h */

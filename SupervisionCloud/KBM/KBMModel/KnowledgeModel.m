@@ -5,9 +5,7 @@
 //	Copyright © 2017. All rights reserved.
 //	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
 
-
-
-#import "List.h"
+#import "KnowledgeModel.h"
 
 NSString *const kListAnswerNum = @"answer_num";
 NSString *const kListAuthor = @"author";
@@ -17,9 +15,9 @@ NSString *const kListImgUrl = @"img_url";
 NSString *const kListSubtitle = @"subtitle";
 NSString *const kListTitle = @"title";
 
-@interface List ()
+@interface KnowledgeModel ()
 @end
-@implementation List
+@implementation KnowledgeModel
 
 
 
@@ -42,7 +40,7 @@ NSString *const kListTitle = @"title";
 		self.createTime = dictionary[kListCreateTime];
 	}	
 	if(![dictionary[kListIdField] isKindOfClass:[NSNull class]]){
-		self.idField = dictionary[kListIdField];
+        self.idField = dictionary[kListIdField] ;
 	}	
 	if(![dictionary[kListImgUrl] isKindOfClass:[NSNull class]]){
 		self.imgUrl = dictionary[kListImgUrl];
@@ -64,6 +62,7 @@ NSString *const kListTitle = @"title";
 {
 	NSMutableDictionary * dictionary = [NSMutableDictionary dictionary];
 	dictionary[kListAnswerNum] = @(self.answerNum);
+
 	if(self.author != nil){
 		dictionary[kListAuthor] = self.author;
 	}
@@ -94,7 +93,9 @@ NSString *const kListTitle = @"title";
  */
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
-	[aCoder encodeObject:@(self.answerNum) forKey:kListAnswerNum];	if(self.author != nil){
+	[aCoder encodeObject:@(self.answerNum) forKey:kListAnswerNum];
+
+    if(self.author != nil){
 		[aCoder encodeObject:self.author forKey:kListAuthor];
 	}
 	if(self.createTime != nil){
@@ -137,7 +138,7 @@ NSString *const kListTitle = @"title";
  */
 - (instancetype)copyWithZone:(NSZone *)zone
 {
-	List *copy = [List new];
+	KnowledgeModel *copy = [KnowledgeModel new];
 
 	copy.answerNum = self.answerNum;
 	copy.author = [self.author copy];
@@ -148,5 +149,16 @@ NSString *const kListTitle = @"title";
 	copy.title = [self.title copy];
 
 	return copy;
+}
+
++(NSDictionary *)replacedKeyFromPropertyName{
+    return @{@"answerNum":kListAnswerNum,
+             @"author":kListAuthor,
+             @"createTime":kListCreateTime,
+             @"idField":kListIdField,
+             @"imgUrl":kListImgUrl,
+             @"subtitle":kListSubtitle,
+             @"title":kListTitle};
+    
 }
 @end

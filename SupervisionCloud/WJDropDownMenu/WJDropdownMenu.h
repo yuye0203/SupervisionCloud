@@ -51,6 +51,15 @@ typedef enum:NSInteger{
 
 
 #pragma mark -- 属性设置
+/** 底部颜色 */
+@property (nonatomic,strong)UIColor *backGroudColor;
+
+/** 顶部线条颜色 */
+@property (nonatomic,strong)UIColor *TopGroudColor;
+
+/** 底部线条颜色 */
+@property (nonatomic,strong)UIColor *BottomGroudColor;
+
 /** 遮盖层颜色 */
 @property (nonatomic,strong)UIColor *CarverViewColor;
 

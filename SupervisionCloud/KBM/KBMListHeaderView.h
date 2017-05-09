@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef void(^MoreBtnBlock)(void);
 
 @interface KBMListHeaderView : UITableViewHeaderFooterView
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy  ) MoreBtnBlock moreBtnPress;
+
 
 @end

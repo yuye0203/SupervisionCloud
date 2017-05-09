@@ -7,7 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UserInfoBody.h"
+
 
 @interface UserInfoManager : NSObject
+
+// 是否登录
++ (BOOL)isLogin;
+
+// 保存信息
++ (void)saveInfo:(UserInfoBody *)info;
+
+// 获取信息
++ (UserInfoBody *)getInfo;
+
+// 删除信息
++ (void)deleteInfo;
+
+
 
 @end

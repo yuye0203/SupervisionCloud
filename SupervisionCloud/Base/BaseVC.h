@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#define sWeakSelf typeof(self) __weak weakSelf = self;
+
 @interface BaseVC : UIViewController
+
+-(NSDictionary *)parametersWithDic:(NSMutableDictionary *)mdic;
 
 @end

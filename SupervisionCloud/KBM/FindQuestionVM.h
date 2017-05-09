@@ -6,8 +6,10 @@
 //  Copyright © 2017年 YetingGe. All rights reserved.
 //
 
-#import "BaseViewModel.h"
+#import "BaseTableViewModel.h"
 
-@interface FindQuestionVM : BaseViewModel
+@interface FindQuestionVM : BaseTableViewModel
+
+- (void)getListData:(NSDictionary *)paramaters CompletionHandle:(void(^)(BOOL success, NSError *error,id result))completionHandle;
 
 @end

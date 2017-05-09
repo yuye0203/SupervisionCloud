@@ -1,5 +1,5 @@
 //
-//	UserInfoUserRoot.h
+//	UserRoot.h
 //
 //	Create by 叶婷 葛 on 8/5/2017
 //	Copyright © 2017. All rights reserved.
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "UserInfoBody.h"
 
-@interface UserInfoUserRoot : NSObject
+@interface UserRoot : NSObject
 
 @property (nonatomic, strong) UserInfoBody * body;
 @property (nonatomic, strong) NSString * cmd;

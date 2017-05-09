@@ -8,11 +8,11 @@
 //	Model file Generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
 
 #import <UIKit/UIKit.h>
-#import "Body.h"
+#import "ListBody.h"
 
 @interface RootClass : NSObject
 
-@property (nonatomic, strong) Body * body;
+@property (nonatomic, strong) ListBody * body;
 @property (nonatomic, strong) NSString * cmd;
 @property (nonatomic, assign) NSInteger resultCode;
 @property (nonatomic, strong) NSString * resultMessage;

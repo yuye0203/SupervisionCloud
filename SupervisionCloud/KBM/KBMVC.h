@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseVC.h"
 
-@interface KBMVC : UITableViewController
+@interface KBMVC :BaseVC
 
 @end

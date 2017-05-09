@@ -10,4 +10,7 @@
 
 @interface SVCloudTextViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *typeName;//
+@property (weak, nonatomic) IBOutlet UITextView *textView;//描述
+
 @end

@@ -1,5 +1,5 @@
 //
-//	Body.h
+//	ListBody
 //
 //	Create by 叶婷 葛 on 3/5/2017
 //	Copyright © 2017. All rights reserved.
@@ -10,8 +10,10 @@
 #import <UIKit/UIKit.h>
 #import "KnowledgeModel.h"
 
-@interface Body : NSObject
+@interface ListBody : NSObject
 
+@property (nonatomic, strong) NSArray * hot;
+@property (nonatomic, strong) NSArray * question;
 @property (nonatomic, strong) NSArray * list;
 @property (nonatomic, assign) NSInteger page;
 @property (nonatomic, assign) NSInteger pages;

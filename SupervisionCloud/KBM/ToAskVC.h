@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ToAskVC : UITableViewController
+@interface ToAskVC : UIViewController
 
 @end

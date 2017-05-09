@@ -10,4 +10,7 @@
 
 @interface MangerHomeView : UIView
 
+@property (nonatomic, retain) IBOutlet UILabel *infoLabel;
+
+
 @end

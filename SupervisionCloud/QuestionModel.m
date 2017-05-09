@@ -7,17 +7,14 @@
 
 
 
-#import "List.h"
+#import "QuestionModel.h"
 
-NSString *const kListCreateTime = @"create_time";
-NSString *const kListIdField = @"id";
 NSString *const kListImage = @"image";
-NSString *const kListTitle = @"title";
 NSString *const kListType = @"type";
 
-@interface List ()
+@interface QuestionModel ()
 @end
-@implementation List
+@implementation QuestionModel
 
 
 
@@ -29,18 +26,12 @@ NSString *const kListType = @"type";
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
 	self = [super init];
-	if(![dictionary[kListCreateTime] isKindOfClass:[NSNull class]]){
-		self.createTime = dictionary[kListCreateTime];
-	}	
-	if(![dictionary[kListIdField] isKindOfClass:[NSNull class]]){
-		self.idField = dictionary[kListIdField];
-	}	
 	if(![dictionary[kListImage] isKindOfClass:[NSNull class]]){
-		self.image = dictionary[kListImage];
+		self.imgUrl = dictionary[kListImage];
 	}	
-	if(![dictionary[kListTitle] isKindOfClass:[NSNull class]]){
-		self.title = dictionary[kListTitle];
-	}	
+//	if(![dictionary[kListTitle] isKindOfClass:[NSNull class]]){
+//		self.title = dictionary[kListTitle];
+//	}	
 	if(![dictionary[kListType] isKindOfClass:[NSNull class]]){
 		self.type = dictionary[kListType];
 	}	
@@ -53,19 +44,19 @@ NSString *const kListType = @"type";
  */
 -(NSDictionary *)toDictionary
 {
-	NSMutableDictionary * dictionary = [NSMutableDictionary dictionary];
-	if(self.createTime != nil){
-		dictionary[kListCreateTime] = self.createTime;
+	NSMutableDictionary * dictionary = [[super toDictionary] mutableCopy];
+//	if(self.createTime != nil){
+//		dictionary[kListCreateTime] = self.createTime;
+//	}
+//	if(self.idField != nil){
+//		dictionary[kListIdField] = self.idField;
+//	}
+	if(self.imgUrl != nil){
+		dictionary[kListImage] = self.imgUrl;
 	}
-	if(self.idField != nil){
-		dictionary[kListIdField] = self.idField;
-	}
-	if(self.image != nil){
-		dictionary[kListImage] = self.image;
-	}
-	if(self.title != nil){
-		dictionary[kListTitle] = self.title;
-	}
+//	if(self.title != nil){
+//		dictionary[kListTitle] = self.title;
+//	}
 	if(self.type != nil){
 		dictionary[kListType] = self.type;
 	}
@@ -81,18 +72,19 @@ NSString *const kListType = @"type";
  */
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
-	if(self.createTime != nil){
-		[aCoder encodeObject:self.createTime forKey:kListCreateTime];
+    [super encodeWithCoder:aCoder];
+//	if(self.createTime != nil){
+//		[aCoder encodeObject:self.createTime forKey:kListCreateTime];
+//	}
+//	if(self.idField != nil){
+//		[aCoder encodeObject:self.idField forKey:kListIdField];
+//	}
+	if(self.imgUrl != nil){
+		[aCoder encodeObject:self.imgUrl forKey:kListImage];
 	}
-	if(self.idField != nil){
-		[aCoder encodeObject:self.idField forKey:kListIdField];
-	}
-	if(self.image != nil){
-		[aCoder encodeObject:self.image forKey:kListImage];
-	}
-	if(self.title != nil){
-		[aCoder encodeObject:self.title forKey:kListTitle];
-	}
+//	if(self.title != nil){
+//		[aCoder encodeObject:self.title forKey:kListTitle];
+//	}
 	if(self.type != nil){
 		[aCoder encodeObject:self.type forKey:kListType];
 	}
@@ -105,10 +97,10 @@ NSString *const kListType = @"type";
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
 	self = [super init];
-	self.createTime = [aDecoder decodeObjectForKey:kListCreateTime];
-	self.idField = [aDecoder decodeObjectForKey:kListIdField];
-	self.image = [aDecoder decodeObjectForKey:kListImage];
-	self.title = [aDecoder decodeObjectForKey:kListTitle];
+//	self.createTime = [aDecoder decodeObjectForKey:kListCreateTime];
+//	self.idField = [aDecoder decodeObjectForKey:kListIdField];
+	self.imgUrl = [aDecoder decodeObjectForKey:kListImage];
+//	self.title = [aDecoder decodeObjectForKey:kListTitle];
 	self.type = [aDecoder decodeObjectForKey:kListType];
 	return self;
 
@@ -119,11 +111,11 @@ NSString *const kListType = @"type";
  */
 - (instancetype)copyWithZone:(NSZone *)zone
 {
-	List *copy = [List new];
+	QuestionModel *copy = [QuestionModel new];
 
 	copy.createTime = [self.createTime copy];
-	copy.idField = [self.idField copy];
-	copy.image = [self.image copy];
+	copy.idField = self.idField;
+	copy.imgUrl = [self.imgUrl copy];
 	copy.title = [self.title copy];
 	copy.type = [self.type copy];
 

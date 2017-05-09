@@ -29,7 +29,7 @@ NSString *const kRootClassResultMessage = @"resultMessage";
 {
 	self = [super init];
 	if(![dictionary[kRootClassBody] isKindOfClass:[NSNull class]]){
-		self.body = [[Body alloc] initWithDictionary:dictionary[kRootClassBody]];
+		self.body = [[ListBody alloc] initWithDictionary:dictionary[kRootClassBody]];
 	}
 
 	if(![dictionary[kRootClassCmd] isKindOfClass:[NSNull class]]){

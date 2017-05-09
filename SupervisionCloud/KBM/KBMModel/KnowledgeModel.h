@@ -22,4 +22,7 @@
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 -(NSDictionary *)toDictionary;
+
+- (void)encodeWithCoder:(NSCoder *)aCoder;
+
 @end

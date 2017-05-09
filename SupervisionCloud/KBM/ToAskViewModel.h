@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SUIMVVMKit.h"
+#import "KnowledgeModel.h"
+typedef void(^DoneBlock)(NSDictionary *request);
 
-@interface ToAskViewModel : NSObject
+@interface ToAskViewModel : NSObject<UITableViewDelegate, UITableViewDataSource>
+
+
+- (void)handleWithTable:(UITableView *)table;
+
+
+@property (nonatomic, copy) DoneBlock  goToMore;
 
 @end

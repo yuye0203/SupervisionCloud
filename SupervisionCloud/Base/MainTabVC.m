@@ -7,6 +7,8 @@
 //
 
 #import "MainTabVC.h"
+#import "LoginVC.h"
+#import "UserInfoManger.h"
 
 @interface MainTabVC ()
 
@@ -18,10 +20,36 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    if (![UserInfoManger isLogin]) {
+        [self performSegueWithIdentifier:@"ShowLogin" sender:nil];
+    }
+    
+
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"ShowLogin"])
+    {
+        NSLog(@"11111");
+//        DetailViewController *detailViewController = [segue destinationViewController];
+//        detailViewController.sighting = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+    }
+    
 }
 
 /*

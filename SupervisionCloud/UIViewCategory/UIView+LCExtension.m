@@ -7,6 +7,7 @@
 //
 
 #import "UIView+LCExtension.h"
+#define KeyWindow ([UIApplication sharedApplication].keyWindow)
 
 @implementation UIView (LCExtension)
 

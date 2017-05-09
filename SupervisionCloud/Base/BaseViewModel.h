@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SUIMVVMKit.h"
+#import "SVCloudNetwork.h"
 
 @interface BaseViewModel : NSObject
 
+- (void)postWithUrl:(NSString *)url body:(NSData *)body showLoading:(BOOL)show success:(void(^)(NSDictionary *response))success failure:(void(^)(NSError *error))failure;
 @end

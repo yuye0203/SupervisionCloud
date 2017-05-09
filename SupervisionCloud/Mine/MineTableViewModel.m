@@ -1,28 +1,29 @@
 //
-//  MineTableModel.m
+//  MineTableViewModel.m
 //  SupervisionCloud
 //
 //  Created by YetingGe on 2017/5/2.
 //  Copyright © 2017年 YetingGe. All rights reserved.
 //
 
-#import "MineTableModel.h"
+#import "MineTableViewModel.h"
 #import "UserInfoManger.h"
 
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "MineHeaderCell.h"
-#import "UserInfoModel.h"
+#import "UserInfoBody.h"
 
 
 static NSString *const MyCellIdentifier = @"MineHeaderCell" ;  // `cellIdentifier` AND `NibName` HAS TO BE SAME !
+static NSString *const CellIdentifier = @"Cell" ;  // `cellIdentifier` AND `NibName` HAS TO BE SAME !
 
-@interface MineTableModel()
-@property (nonatomic, strong) UserInfoModel *userInfo;
+@interface MineTableViewModel()
+@property (nonatomic, strong) UserInfoBody *userInfo;
 @end
 
-@implementation MineTableModel
+@implementation MineTableViewModel
 
-- (UserInfoModel *)userInfo {
+- (UserInfoBody *)userInfo {
     if (_userInfo == nil) {
         _userInfo = [UserInfoManger getInfo];
     }
@@ -33,6 +34,8 @@ static NSString *const MyCellIdentifier = @"MineHeaderCell" ;  // `cellIdentifie
     table.delegate = self;
     table.dataSource = self;
     [UITableViewCell smk_registerTable:table nibIdentifier:MyCellIdentifier];
+    [UITableViewCell smk_registerTable:table classIdentifier:CellIdentifier];
+
 }
 //- (void)getDataWithModelArray:(NSArray *(^)())modelArrayBlock completion:(void (^)())completion {
 //    if (modelArrayBlock) {
@@ -49,7 +52,9 @@ static NSString *const MyCellIdentifier = @"MineHeaderCell" ;  // `cellIdentifie
 //}
 
 #pragma mark - UITableViewDataSource
-
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     switch (section) {
@@ -65,12 +70,19 @@ static NSString *const MyCellIdentifier = @"MineHeaderCell" ;  // `cellIdentifie
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    id item = [self itemAtIndexPath:indexPath] ;
+    if (indexPath.section ==0&&indexPath.row==0) {
+        MineHeaderCell *cell = [tableView dequeueReusableCellWithIdentifier:MyCellIdentifier forIndexPath:indexPath] ;
+        [cell smk_configure:cell model:self.userInfo indexPath:indexPath];
+        return cell ;
+
+    }else{
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath] ;
+        [cell smk_configure:cell model:self.userInfo indexPath:indexPath];
+        cell.textLabel.text = @"1111";
+        return cell ;
+
+    }
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyCellIdentifier forIndexPath:indexPath] ;
-    [cell smk_configure:cell model:self.userInfo indexPath:indexPath];
-    
-    return cell ;
     
 }
 

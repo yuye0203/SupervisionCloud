@@ -214,14 +214,15 @@
     self.backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width
                                                             , self.menuBaseHeight)];
     self.backView.userInteractionEnabled = YES;
-    self.backView.backgroundColor = [UIColor whiteColor];
+    self.backView.backgroundColor = self.backGroudColor? self.backGroudColor:[UIColor whiteColor];
+
     [self addSubview:self.backView];
     NSInteger num = data.count;
     CGFloat btnW = (self.frame.size.width
                     -num+1)/num;
     for (int i = 0; i < num; i++) {
         UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake((btnW+1)*i, 0, btnW, self.menuBaseHeight)];
-        btn.backgroundColor = [UIColor whiteColor];
+        btn.backgroundColor = [UIColor clearColor];
         NSInteger tempTag = self.menuButtonTag ? self.menuButtonTag :menuButtonDefalutTag;
         btn.tag = tempTag+i;
         btn.titleLabel.font = self.menuTitleFont ? [UIFont systemFontOfSize:self.menuTitleFont] : menuTitleDefalutFont;
@@ -261,10 +262,10 @@
     
     
     UILabel *VlineLbTop = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.backView.frame.size.width, 1)];
-    VlineLbTop.backgroundColor = [UIColor colorWithRed:219/255.0 green:219/255.0 blue:219/255.0 alpha:1];// 顶部线的颜色
+    VlineLbTop.backgroundColor = self.TopGroudColor?self.TopGroudColor:[UIColor colorWithRed:219/255.0 green:219/255.0 blue:219/255.0 alpha:1];// 顶部线的颜色
     
     UILabel *VlineLbBom = [[UILabel alloc]initWithFrame:CGRectMake(0, self.menuBaseHeight, self.backView.frame.size.width, 1)];
-    VlineLbBom.backgroundColor = [UIColor colorWithRed:195/255.0 green:195/255.0 blue:195/255.0 alpha:1];// 底部线颜色
+    VlineLbBom.backgroundColor = self.BottomGroudColor?self.BottomGroudColor:[UIColor colorWithRed:195/255.0 green:195/255.0 blue:195/255.0 alpha:1];// 底部线颜色
     
     [self.backView addSubview:VlineLbTop];
     [self.backView addSubview:VlineLbBom];

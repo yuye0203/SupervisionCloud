@@ -8,6 +8,8 @@
 
 #import "BaseTableViewModel.h"
 
-@interface FindeQuestionVM : BaseTableViewModel
+@interface FindResourVM : BaseTableViewModel
+
+- (void)getListData:(NSDictionary *)paramaters CompletionHandle:(void(^)(BOOL success, NSError *error,id result))completionHandle;
 
 @end

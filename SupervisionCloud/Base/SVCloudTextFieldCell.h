@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SVCloudTextFieldCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *typeName;//
+@property (weak, nonatomic) IBOutlet UITextField *textField;//描述
 
 @end
