@@ -29,6 +29,7 @@
 
 
 - (void)smk_configure:(UITableViewCell *)cell model:(id)model indexPath:(NSIndexPath *)indexPath {
+   
     QuestionModel *itemModle;
     if ([model isKindOfClass:[QuestionModel class]])
         itemModle = (QuestionModel *)model;

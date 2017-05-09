@@ -9,6 +9,7 @@
 #import "FindResourVC.h"
 #import "FindResourVM.h"
 #import "UserInfoManger.h"
+#import "ScreenVC.h"
 
 @interface FindResourVC ()
 @property (nonatomic, strong) FindResourVM *sviewModel;
@@ -56,7 +57,7 @@
                         CompletionHandle:^(BOOL success, NSError *error,id result){
                             if (success) {
                                 _pageIndex++;
-                                [weakSelf.viewModel setDataWithModelArray:^NSArray *{
+                                [weakSelf.sviewModel setDataWithModelArray:^NSArray *{
                                     return (NSArray *)result;
                                 } completion:^{
                                     [weakSelf.table reloadData];
@@ -78,7 +79,7 @@
                             if (success) {
                                 _pageIndex++;
                                 
-                                [weakSelf.viewModel setMoreDataWithModelArray:^NSArray *{
+                                [weakSelf.sviewModel setMoreDataWithModelArray:^NSArray *{
                                     
                                     return (NSArray *)result;
                                 } completion:^{
@@ -86,12 +87,15 @@
                                 }];
                             }
                         }] ;
-        
-        
     }];
-    
-    
-
 }
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UIViewController *destination = segue.destinationViewController;
+    
+    if ([destination isKindOfClass:[ScreenVC class]]) {
+        ScreenVC *vc = (ScreenVC *)destination;
+        vc.fromType = 1;
+    }
+    
+}
 @end

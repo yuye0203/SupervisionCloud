@@ -12,6 +12,8 @@
 
 @interface ToAskVC ()
 @property (nonatomic, weak) IBOutlet TPKeyboardAvoidingTableView *table;
+@property (nonatomic, weak) IBOutlet UICollectionView *collection;
+
 @property (nonatomic, strong) ToAskViewModel *viewModel;
 
 @end
@@ -21,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupTableView] ;
-
+    [self setupCollectionView];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -44,12 +46,11 @@
 - (void)setupTableView
 {
     [self.viewModel handleWithTable:self.table];
-//    self.viewModel.goToMore = ^(NSInteger section){
-////        [weakSelf gotoMoreList:section];
-//    };
-//    
 }
+-(void)setupCollectionView{
+    [self.viewModel handWithCollectionView:self.collection];
 
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

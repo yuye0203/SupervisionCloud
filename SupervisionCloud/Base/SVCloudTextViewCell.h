@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BRPlaceholderTextView.h"
+
 
 @interface SVCloudTextViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *typeName;//
-@property (weak, nonatomic) IBOutlet UITextView *textView;//描述
+@property (strong, nonatomic) BRPlaceholderTextView *textView;//描述
 
 @end

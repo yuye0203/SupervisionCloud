@@ -22,15 +22,12 @@
     _headerImg.layer.cornerRadius = _headerImg.frame.size.height/2;
     _headerImg.layer.masksToBounds = YES;
     
-
 }
 - (void)smk_configure:(UITableViewCell *)cell model:(id)model indexPath:(NSIndexPath *)indexPath {
     UserInfoBody *user = (UserInfoBody *)model;
     self.nameLabel.text = user.nickname ;
     //TODO:icon
     self.headerImg.image = [UIImage imageNamed:@"xxx"];
-    
-    
 }
 
 @end

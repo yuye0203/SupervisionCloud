@@ -47,10 +47,12 @@ static NSString *const MyCellIdentifier = @"KBMVCell" ;
         
         RootClass *root = [RootClass mj_objectWithKeyValues:response];
         if (root.resultCode ==1) {
-            
-            [self.dataArrayList addObjectsFromArray:root.body.list];
-            
-            completionHandle(YES, nil, root.body.list);
+            if (root.body.list.count>0) {
+                [self.dataArrayList addObjectsFromArray:root.body.list];
+                
+                completionHandle(YES, nil, root.body.list);
+            }else
+                completionHandle(NO, nil, nil);
             
         }else
             completionHandle(NO, nil, root.resultMessage);

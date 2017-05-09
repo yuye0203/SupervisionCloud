@@ -11,6 +11,7 @@
 #import "FindQuestionVM.h"
 #import "UserInfoBody.h"
 #import "UserInfoManger.h"
+#import "ScreenVC.h"
 
 
 @interface FindeQuestionVC ()
@@ -64,10 +65,9 @@
         
         [self.sviewModel getListData: [self parametersWithDic:newsParmaes]
                     CompletionHandle:^(BOOL success, NSError *error,id result){
-                        weakSelf.hudView.hidden = YES;
                         if (success) {
                             
-                            [weakSelf.viewModel setDataWithModelArray:^NSArray *{
+                            [weakSelf.sviewModel setDataWithModelArray:^NSArray *{
                                 return (NSArray *)result;
                             } completion:^{
                                 [weakSelf.table reloadData];
@@ -91,7 +91,7 @@
                         weakSelf.hudView.hidden = YES;
                         if (success) {
                             _pageNum++;
-                            [weakSelf.viewModel setMoreDataWithModelArray:^NSArray *{
+                            [weakSelf.sviewModel setMoreDataWithModelArray:^NSArray *{
                                 return (NSArray *)result;
                             } completion:^{
                                 [weakSelf.table reloadData];
@@ -101,7 +101,16 @@
 
     }];
     
-    self.hudView.hidden = NO;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UIViewController *destination = segue.destinationViewController;
+    
+    if ([destination isKindOfClass:[ScreenVC class]]) {
+        ScreenVC *vc = (ScreenVC *)destination;
+        vc.fromType = 1;
+    }
     
 }
+
 @end

@@ -7,9 +7,30 @@
 //
 
 #import "SVCloudTextViewCell.h"
+#import "Masonry.h"
 
 @implementation SVCloudTextViewCell
+-(BRPlaceholderTextView *)textView{
+    if (_textView==nil) {
+        _textView = [[BRPlaceholderTextView alloc]init];
+        //文字样式
+        [_textView setFont:[UIFont systemFontOfSize:14.f]];
+    }
+    return _textView;
+}
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    
+    [self.contentView addSubview:self.textView];
+    
+    [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.typeName);
+        make.left.equalTo(self.typeName.mas_right).with.offset(8);
+        make.right.equalTo(self.contentView).with.offset(-8);
 
+        make.bottom.equalTo(self.contentView).with.offset(-8);
+    }];
+}
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -19,6 +40,12 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+- (void)smk_configure:(UITableViewCell *)cell model:(id)model indexPath:(NSIndexPath *)indexPath {
+    NSDictionary *dic = (NSDictionary *)model;
+    self.typeName.text = dic[@"name"] ;
+    self.textView.text = dic[@"result"];
+    
 }
 
 @end

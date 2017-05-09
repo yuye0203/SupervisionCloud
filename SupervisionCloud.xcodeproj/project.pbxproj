@@ -109,6 +109,19 @@
 		ADCCAC301EC0A01600EF8A48 /* UserInfoBody.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC2D1EC0A01600EF8A48 /* UserInfoBody.m */; };
 		ADCCAC311EC0A01600EF8A48 /* UserRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC2F1EC0A01600EF8A48 /* UserRoot.m */; };
 		ADCCAC341EC0A2AD00EF8A48 /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC331EC0A2AD00EF8A48 /* UserInfoManager.m */; };
+		ADCCAC371EC1B8EF00EF8A48 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC361EC1B8EF00EF8A48 /* BaseCell.m */; };
+		ADCCAC391EC1B9ED00EF8A48 /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCCAC381EC1B9ED00EF8A48 /* BaseCell.xib */; };
+		ADCCAC3C1EC1BD9500EF8A48 /* ScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC3B1EC1BD9500EF8A48 /* ScreenVC.m */; };
+		ADCCAC401EC1F2E800EF8A48 /* SVCloudSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC3E1EC1F2E800EF8A48 /* SVCloudSelectorCell.m */; };
+		ADCCAC411EC1F2E800EF8A48 /* SVCloudSelectorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCCAC3F1EC1F2E800EF8A48 /* SVCloudSelectorCell.xib */; };
+		ADCCAC451EC1F50900EF8A48 /* SVCloudDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC431EC1F50900EF8A48 /* SVCloudDateCell.m */; };
+		ADCCAC461EC1F50900EF8A48 /* SVCloudDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCCAC441EC1F50900EF8A48 /* SVCloudDateCell.xib */; };
+		ADCCAC491EC203C300EF8A48 /* ScreenVM.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC481EC203C300EF8A48 /* ScreenVM.m */; };
+		ADCCAC4D1EC20BB400EF8A48 /* BRPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC4C1EC20BB400EF8A48 /* BRPlaceholderTextView.m */; };
+		ADCCAC571EC211F200EF8A48 /* SVCloudImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC551EC211F200EF8A48 /* SVCloudImageCell.m */; };
+		ADCCAC581EC211F200EF8A48 /* SVCloudImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCCAC561EC211F200EF8A48 /* SVCloudImageCell.xib */; };
+		ADCCAC611EC2137C00EF8A48 /* SVCloudImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC5F1EC2137C00EF8A48 /* SVCloudImageCollectionCell.m */; };
+		ADCCAC621EC2137C00EF8A48 /* SVCloudImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCCAC601EC2137C00EF8A48 /* SVCloudImageCollectionCell.xib */; };
 		ADDAF84F1EB9F83A00A5BE62 /* ListBody.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF84A1EB9F83A00A5BE62 /* ListBody.m */; };
 		ADDAF8501EB9F83A00A5BE62 /* KnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF84C1EB9F83A00A5BE62 /* KnowledgeModel.m */; };
 		ADDAF8511EB9F83A00A5BE62 /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF84E1EB9F83A00A5BE62 /* RootClass.m */; };
@@ -290,6 +303,27 @@
 		ADCCAC2F1EC0A01600EF8A48 /* UserRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRoot.m; sourceTree = "<group>"; };
 		ADCCAC321EC0A2AD00EF8A48 /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfoManager.h; path = Mine/UserInfoManager.h; sourceTree = "<group>"; };
 		ADCCAC331EC0A2AD00EF8A48 /* UserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfoManager.m; path = Mine/UserInfoManager.m; sourceTree = "<group>"; };
+		ADCCAC351EC1B8EF00EF8A48 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseCell.h; path = Base/BaseCell.h; sourceTree = "<group>"; };
+		ADCCAC361EC1B8EF00EF8A48 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseCell.m; path = Base/BaseCell.m; sourceTree = "<group>"; };
+		ADCCAC381EC1B9ED00EF8A48 /* BaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BaseCell.xib; path = Base/BaseCell.xib; sourceTree = "<group>"; };
+		ADCCAC3A1EC1BD9500EF8A48 /* ScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScreenVC.h; path = KBM/ScreenVC.h; sourceTree = "<group>"; };
+		ADCCAC3B1EC1BD9500EF8A48 /* ScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScreenVC.m; path = KBM/ScreenVC.m; sourceTree = "<group>"; };
+		ADCCAC3D1EC1F2E800EF8A48 /* SVCloudSelectorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVCloudSelectorCell.h; path = Base/SVCloudSelectorCell.h; sourceTree = "<group>"; };
+		ADCCAC3E1EC1F2E800EF8A48 /* SVCloudSelectorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVCloudSelectorCell.m; path = Base/SVCloudSelectorCell.m; sourceTree = "<group>"; };
+		ADCCAC3F1EC1F2E800EF8A48 /* SVCloudSelectorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SVCloudSelectorCell.xib; path = Base/SVCloudSelectorCell.xib; sourceTree = "<group>"; };
+		ADCCAC421EC1F50900EF8A48 /* SVCloudDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVCloudDateCell.h; path = Base/SVCloudDateCell.h; sourceTree = "<group>"; };
+		ADCCAC431EC1F50900EF8A48 /* SVCloudDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVCloudDateCell.m; path = Base/SVCloudDateCell.m; sourceTree = "<group>"; };
+		ADCCAC441EC1F50900EF8A48 /* SVCloudDateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SVCloudDateCell.xib; path = Base/SVCloudDateCell.xib; sourceTree = "<group>"; };
+		ADCCAC471EC203C300EF8A48 /* ScreenVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScreenVM.h; path = KBM/ScreenVM.h; sourceTree = "<group>"; };
+		ADCCAC481EC203C300EF8A48 /* ScreenVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScreenVM.m; path = KBM/ScreenVM.m; sourceTree = "<group>"; };
+		ADCCAC4B1EC20BB400EF8A48 /* BRPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPlaceholderTextView.h; sourceTree = "<group>"; };
+		ADCCAC4C1EC20BB400EF8A48 /* BRPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPlaceholderTextView.m; sourceTree = "<group>"; };
+		ADCCAC541EC211F200EF8A48 /* SVCloudImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVCloudImageCell.h; path = Base/SVCloudImageCell.h; sourceTree = "<group>"; };
+		ADCCAC551EC211F200EF8A48 /* SVCloudImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVCloudImageCell.m; path = Base/SVCloudImageCell.m; sourceTree = "<group>"; };
+		ADCCAC561EC211F200EF8A48 /* SVCloudImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SVCloudImageCell.xib; path = Base/SVCloudImageCell.xib; sourceTree = "<group>"; };
+		ADCCAC5E1EC2137C00EF8A48 /* SVCloudImageCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVCloudImageCollectionCell.h; sourceTree = "<group>"; };
+		ADCCAC5F1EC2137C00EF8A48 /* SVCloudImageCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVCloudImageCollectionCell.m; sourceTree = "<group>"; };
+		ADCCAC601EC2137C00EF8A48 /* SVCloudImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SVCloudImageCollectionCell.xib; sourceTree = "<group>"; };
 		ADDAF8491EB9F83A00A5BE62 /* ListBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListBody.h; path = KBM/KBMModel/ListBody.h; sourceTree = "<group>"; };
 		ADDAF84A1EB9F83A00A5BE62 /* ListBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListBody.m; path = KBM/KBMModel/ListBody.m; sourceTree = "<group>"; };
 		ADDAF84B1EB9F83A00A5BE62 /* KnowledgeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnowledgeModel.h; path = KBM/KBMModel/KnowledgeModel.h; sourceTree = "<group>"; };
@@ -389,6 +423,8 @@
 				ADCCAC1C1EBF4E2B00EF8A48 /* FindQuestionVM.m */,
 				ADCCAC261EBF578400EF8A48 /* FindResourVM.h */,
 				ADCCAC271EBF578400EF8A48 /* FindResourVM.m */,
+				ADCCAC471EC203C300EF8A48 /* ScreenVM.h */,
+				ADCCAC481EC203C300EF8A48 /* ScreenVM.m */,
 			);
 			name = VModels;
 			sourceTree = "<group>";
@@ -407,6 +443,7 @@
 		AD1CAD231EB8C465007C6A88 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				ADCCAC4A1EC20BB400EF8A48 /* PlaceholderTextView */,
 				ADCCAC121EBF422100EF8A48 /* WJDropDownMenu */,
 				ADCCABE01EBD6AEF00EF8A48 /* TPKeyboardAvoiding */,
 				ADCCABC51EBA18DB00EF8A48 /* UIViewCategory */,
@@ -636,6 +673,8 @@
 				ADCCAC181EBF4C8900EF8A48 /* FindeQuestionVC.m */,
 				ADCCAC231EBF573900EF8A48 /* FindResourVC.h */,
 				ADCCAC241EBF573A00EF8A48 /* FindResourVC.m */,
+				ADCCAC3A1EC1BD9500EF8A48 /* ScreenVC.h */,
+				ADCCAC3B1EC1BD9500EF8A48 /* ScreenVC.m */,
 			);
 			name = KBM;
 			sourceTree = "<group>";
@@ -744,6 +783,21 @@
 				ADCCABF31EBD6C5300EF8A48 /* SVCloudTextViewCell.h */,
 				ADCCABF41EBD6C5300EF8A48 /* SVCloudTextViewCell.m */,
 				ADCCABF51EBD6C5300EF8A48 /* SVCloudTextViewCell.xib */,
+				ADCCAC351EC1B8EF00EF8A48 /* BaseCell.h */,
+				ADCCAC361EC1B8EF00EF8A48 /* BaseCell.m */,
+				ADCCAC381EC1B9ED00EF8A48 /* BaseCell.xib */,
+				ADCCAC3D1EC1F2E800EF8A48 /* SVCloudSelectorCell.h */,
+				ADCCAC3E1EC1F2E800EF8A48 /* SVCloudSelectorCell.m */,
+				ADCCAC3F1EC1F2E800EF8A48 /* SVCloudSelectorCell.xib */,
+				ADCCAC421EC1F50900EF8A48 /* SVCloudDateCell.h */,
+				ADCCAC431EC1F50900EF8A48 /* SVCloudDateCell.m */,
+				ADCCAC441EC1F50900EF8A48 /* SVCloudDateCell.xib */,
+				ADCCAC541EC211F200EF8A48 /* SVCloudImageCell.h */,
+				ADCCAC551EC211F200EF8A48 /* SVCloudImageCell.m */,
+				ADCCAC561EC211F200EF8A48 /* SVCloudImageCell.xib */,
+				ADCCAC5E1EC2137C00EF8A48 /* SVCloudImageCollectionCell.h */,
+				ADCCAC5F1EC2137C00EF8A48 /* SVCloudImageCollectionCell.m */,
+				ADCCAC601EC2137C00EF8A48 /* SVCloudImageCollectionCell.xib */,
 			);
 			name = BaseView;
 			sourceTree = "<group>";
@@ -755,6 +809,15 @@
 				ADCCAC141EBF422100EF8A48 /* WJDropdownMenu.m */,
 			);
 			path = WJDropDownMenu;
+			sourceTree = "<group>";
+		};
+		ADCCAC4A1EC20BB400EF8A48 /* PlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCAC4B1EC20BB400EF8A48 /* BRPlaceholderTextView.h */,
+				ADCCAC4C1EC20BB400EF8A48 /* BRPlaceholderTextView.m */,
+			);
+			path = PlaceholderTextView;
 			sourceTree = "<group>";
 		};
 		BFA69494DCC10D55C677046B /* Pods */ = {
@@ -880,13 +943,18 @@
 				ADCCAC221EBF4F8C00EF8A48 /* KBMVResoureCell.xib in Resources */,
 				AD3BED991E8B3E6C0001D789 /* LaunchScreen.storyboard in Resources */,
 				AD1CFF791EB853DD00B43290 /* MangerHomeView.xib in Resources */,
+				ADCCAC391EC1B9ED00EF8A48 /* BaseCell.xib in Resources */,
 				AD3BED961E8B3E6C0001D789 /* Assets.xcassets in Resources */,
 				ADCCABF71EBD6C5300EF8A48 /* SVCloudTextViewCell.xib in Resources */,
 				ADCCABF11EBD6C0500EF8A48 /* SVCloudTextFieldCell.xib in Resources */,
 				AD1CAD151EB8B050007C6A88 /* KBMVCell.xib in Resources */,
 				AD3BED941E8B3E6C0001D789 /* Main.storyboard in Resources */,
+				ADCCAC461EC1F50900EF8A48 /* SVCloudDateCell.xib in Resources */,
 				ADCCABFD1EBD7A9B00EF8A48 /* KBM.storyboard in Resources */,
+				ADCCAC411EC1F2E800EF8A48 /* SVCloudSelectorCell.xib in Resources */,
 				ADCCAC0E1EBE9A1F00EF8A48 /* TodoListCell.xib in Resources */,
+				ADCCAC621EC2137C00EF8A48 /* SVCloudImageCollectionCell.xib in Resources */,
+				ADCCAC581EC211F200EF8A48 /* SVCloudImageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,18 +1053,23 @@
 				AD1CACF81EB85CB7007C6A88 /* MineInfoTC.m in Sources */,
 				ADCCAC001EBD9A3000EF8A48 /* MainTabVC.m in Sources */,
 				AD1CFF5C1EB81A8100B43290 /* BaseModel.m in Sources */,
+				ADCCAC611EC2137C00EF8A48 /* SVCloudImageCollectionCell.m in Sources */,
 				AD1CAD181EB8B355007C6A88 /* KnowledgeBaseModel.m in Sources */,
 				ADCCAC091EBE945700EF8A48 /* ToDoViewModel.m in Sources */,
 				AD3BED8B1E8B3E6C0001D789 /* AppDelegate.m in Sources */,
 				ADCCABC21EBA0F5800EF8A48 /* KBMListHeaderView.m in Sources */,
 				ADCCAC301EC0A01600EF8A48 /* UserInfoBody.m in Sources */,
 				ADCCAC0D1EBE9A1F00EF8A48 /* TodoListCell.m in Sources */,
+				ADCCAC371EC1B8EF00EF8A48 /* BaseCell.m in Sources */,
+				ADCCAC4D1EC20BB400EF8A48 /* BRPlaceholderTextView.m in Sources */,
 				AD345F191E8B46FC00F29803 /* UIView+SMKEvents.m in Sources */,
 				ADCCABF01EBD6C0500EF8A48 /* SVCloudTextFieldCell.m in Sources */,
 				AD345F011E8B46FC00F29803 /* NSObject+SMKProperties.m in Sources */,
 				ADCCABD41EBABF8A00EF8A48 /* QuestionModel.m in Sources */,
 				AD5BE4C11E8C948C00A695E0 /* KBMVC.m in Sources */,
+				ADCCAC451EC1F50900EF8A48 /* SVCloudDateCell.m in Sources */,
 				AD345EFE1E8B46FC00F29803 /* NSObject+SMKCoding.m in Sources */,
+				ADCCAC491EC203C300EF8A48 /* ScreenVM.m in Sources */,
 				AD1CAD061EB86212007C6A88 /* UserInfoManger.m in Sources */,
 				ADCCABCE1EBA18DB00EF8A48 /* UIView+Bounds.m in Sources */,
 				ADCCAC061EBE91F100EF8A48 /* BaseTableViewModel.m in Sources */,
@@ -1005,6 +1078,7 @@
 				ADDAF8501EB9F83A00A5BE62 /* KnowledgeModel.m in Sources */,
 				AD1CAD101EB8ADA0007C6A88 /* KBMVCViewModel.m in Sources */,
 				ADCCAC191EBF4C8900EF8A48 /* FindeQuestionVC.m in Sources */,
+				ADCCAC571EC211F200EF8A48 /* SVCloudImageCell.m in Sources */,
 				ADCCABF61EBD6C5300EF8A48 /* SVCloudTextViewCell.m in Sources */,
 				ADCCABDA1EBD675B00EF8A48 /* KBMView.m in Sources */,
 				ADCCABEC1EBD6AEF00EF8A48 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
@@ -1023,9 +1097,11 @@
 				AD345F0D1E8B46FC00F29803 /* SMKStore.m in Sources */,
 				ADCCAC251EBF573A00EF8A48 /* FindResourVC.m in Sources */,
 				ADDAF8511EB9F83A00A5BE62 /* RootClass.m in Sources */,
+				ADCCAC3C1EC1BD9500EF8A48 /* ScreenVC.m in Sources */,
 				AD345F041E8B46FC00F29803 /* NSObject+SMKRequest.m in Sources */,
 				AD1CFF771EB853CE00B43290 /* MangerHomeView.m in Sources */,
 				AD345F071E8B46FC00F29803 /* SMKAction.m in Sources */,
+				ADCCAC401EC1F2E800EF8A48 /* SVCloudSelectorCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

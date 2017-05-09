@@ -12,4 +12,5 @@
 
 - (void)getListData:(NSDictionary *)paramaters CompletionHandle:(void(^)(BOOL success, NSError *error,id result))completionHandle;
 
+@property(nonatomic,strong) NSDictionary *screenDic;
 @end

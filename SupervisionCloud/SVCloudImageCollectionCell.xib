@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SVCloudImageCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="74" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="74" height="69"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ymU-zz-NVb">
+                        <rect key="frame" x="5" y="5" width="64" height="59"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS3-Dx-pzE">
+                        <rect key="frame" x="54" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="GMx-1r-peP"/>
+                            <constraint firstAttribute="height" constant="20" id="ojn-oG-onk"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="close.png"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.99211805039429035" blue="0.58936698305777924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ymU-zz-NVb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="4eb-IU-hiw"/>
+                <constraint firstItem="ymU-zz-NVb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="HXx-Ug-Gj8"/>
+                <constraint firstAttribute="bottom" secondItem="ymU-zz-NVb" secondAttribute="bottom" constant="5" id="J0A-Ua-QF0"/>
+                <constraint firstAttribute="trailing" secondItem="ymU-zz-NVb" secondAttribute="trailing" constant="5" id="JOx-MO-iOT"/>
+                <constraint firstAttribute="trailing" secondItem="jS3-Dx-pzE" secondAttribute="trailing" id="lwm-3t-6Ci"/>
+                <constraint firstItem="jS3-Dx-pzE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="s6z-Av-Eog"/>
+            </constraints>
+            <size key="customSize" width="74" height="69"/>
+            <connections>
+                <outlet property="closeButton" destination="jS3-Dx-pzE" id="nWn-8I-XCR"/>
+                <outlet property="profilePhoto" destination="ymU-zz-NVb" id="1Sr-77-INE"/>
+            </connections>
+            <point key="canvasLocation" x="46" y="63.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="close.png" width="16" height="16"/>
+    </resources>
+</document>

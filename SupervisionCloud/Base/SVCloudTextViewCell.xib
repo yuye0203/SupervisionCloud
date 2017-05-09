@@ -16,34 +16,26 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="183.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tig-LJ-2kP">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tig-LJ-2kP">
                         <rect key="frame" x="16" y="8" width="31" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="31" id="iYm-CZ-tiw"/>
+                            <constraint firstAttribute="height" constant="18" id="wwa-h5-Sp4"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AKK-bf-XhW">
-                        <rect key="frame" x="55" y="8" width="257" height="159.5"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="AKK-bf-XhW" firstAttribute="top" secondItem="tig-LJ-2kP" secondAttribute="top" id="CY4-z9-pBh"/>
                     <constraint firstItem="tig-LJ-2kP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="XMk-ai-tGS"/>
-                    <constraint firstAttribute="trailing" secondItem="AKK-bf-XhW" secondAttribute="trailing" constant="8" id="a5j-8y-yrk"/>
                     <constraint firstItem="tig-LJ-2kP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="bEX-Wh-7FW"/>
-                    <constraint firstItem="AKK-bf-XhW" firstAttribute="leading" secondItem="tig-LJ-2kP" secondAttribute="trailing" constant="8" id="mJM-Wc-MXz"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="AKK-bf-XhW" secondAttribute="bottom" constant="8" id="xsv-sW-yco"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="textView" destination="AKK-bf-XhW" id="eUd-Z8-BqK"/>
                 <outlet property="typeName" destination="tig-LJ-2kP" id="FZe-Qs-sZh"/>
             </connections>
             <point key="canvasLocation" x="34" y="124"/>

@@ -1,14 +1,14 @@
 //
-//  SVCloudTextFieldCell.m
+//  SVCloudDateCell.m
 //  SupervisionCloud
 //
-//  Created by YetingGe on 2017/5/6.
+//  Created by YetingGe on 2017/5/9.
 //  Copyright © 2017年 YetingGe. All rights reserved.
 //
 
-#import "SVCloudTextFieldCell.h"
+#import "SVCloudDateCell.h"
 
-@implementation SVCloudTextFieldCell
+@implementation SVCloudDateCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -22,11 +22,13 @@
 }
 - (void)smk_configure:(UITableViewCell *)cell model:(id)model indexPath:(NSIndexPath *)indexPath {
     NSDictionary *dic = (NSDictionary *)model;
-    self.typeName.text = dic[@"name"] ;
-    self.textField.placeholder = dic[@"placeholder"];
-    self.textField.text = dic[@"result"];
+    self.titleLabel.text = dic[@"name"] ;
+    self.summaryLabel.placeholder = dic[@"placeholder"];
+    self.summaryLabel.text = dic[@"result"];
 
+    
 }
+
 
 
 @end

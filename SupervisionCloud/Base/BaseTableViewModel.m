@@ -8,12 +8,10 @@
 
 #import "BaseTableViewModel.h"
 #import "MJRefresh.h"
+#import "BaseCell.h"
 
-
-static NSString *const MyCellIdentifier = @"FirstCell" ;  // `cellIdentifier` AND `NibName` HAS TO BE SAME !
-
+static NSString *const MyCellIdentifier = @"BaseCell" ;
 @interface BaseTableViewModel ()
-
 
 @end
 
@@ -31,6 +29,7 @@ static NSString *const MyCellIdentifier = @"FirstCell" ;  // `cellIdentifier` AN
     table.delegate = self;
     table.dataSource = self;
     self.dataArrayList = [[NSMutableArray alloc] init];
+  
     [UITableViewCell smk_registerTable:table nibIdentifier:MyCellIdentifier];
     
     if (head) {
@@ -53,7 +52,7 @@ static NSString *const MyCellIdentifier = @"FirstCell" ;  // `cellIdentifier` AN
 
     if (modelArrayBlock) {
         [self.dataArrayList removeAllObjects];
-        NSArray *list = (NSArray *)modelArrayBlock();
+        NSArray *list = [NSArray arrayWithArray:(NSArray *)modelArrayBlock()];
         [self.dataArrayList addObjectsFromArray:list];
         self.table.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
             self.getMoreData();

@@ -15,29 +15,18 @@
 
 static NSString *const MyCellIdentifier = @"KBMVResoureCell" ;
 
+
+@interface FindResourVM ()
+
+@end
+
 @implementation FindResourVM
 
 - (void)handleWithTable:(UITableView *)table head:(void (^)())head foot:(void (^)())foot {
-    
     [super handleWithTable:table head:head foot:foot];
-
     [UITableViewCell smk_registerTable:table nibIdentifier:MyCellIdentifier];
-
-}
-- (void)setDataWithModelArray:(NSArray *(^)())modelArrayBlock completion:(void (^)())completion {
     
-    if (modelArrayBlock) {
-        [self.dataArrayList removeAllObjects];
-        NSArray *list = (NSArray *)modelArrayBlock();
-        [self.dataArrayList addObjectsFromArray:list];
-        self.table.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-            self.getMoreData();
-        }];
-        
-        if (completion) {
-            completion();
-        }
-    }
+    
 }
 
 
@@ -46,42 +35,30 @@ static NSString *const MyCellIdentifier = @"KBMVResoureCell" ;
     NSDate *datenow = [NSDate date];
     
     NSString *timeSp = [NSString stringWithFormat:@"%ld", (long)((double)[datenow timeIntervalSince1970]*1000)];
+    NSLog(@"timeSp:%@",timeSp); //时间戳的值
     
     NSData *data =    [NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil];
     
     [self postWithUrl:timeSp body:data showLoading:NO success:^(NSDictionary *response) {
         [self.table.mj_header endRefreshing];
-        [self.table.mj_footer endRefreshing];
-
+        
         RootClass *root = [RootClass mj_objectWithKeyValues:response];
-        if (root.resultCode ==1) {
+        
+        if(root.resultCode==1){
             if (root.body.list.count==0) {
                 completionHandle(NO, nil, nil);
             }else{
                 completionHandle(YES, nil, root.body.list);
             }
-        }else
-            completionHandle(NO, nil, root.resultMessage);
 
+        }else
+            completionHandle(NO, nil, @"11111");
+        
+        
     } failure:^(NSError *error) {
         
         completionHandle(NO, error, nil);
     }];
-}
-
-- (void)getDataWithModelArray:(NSArray *(^)())modelArrayBlock completion:(void (^)())completion {
-    if (modelArrayBlock) {
-        [self.dataArrayList removeAllObjects];
-        ListBody *body = (ListBody *)modelArrayBlock();
-        
-        [self.dataArrayList addObject:body.question];
-        [self.dataArrayList addObject:body.hot];
-        
-        if (completion) {
-            
-            completion();
-        }
-    }
 }
 
 
@@ -110,11 +87,6 @@ static NSString *const MyCellIdentifier = @"KBMVResoureCell" ;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return self.dataArrayList.count;
 }
 
 
