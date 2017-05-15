@@ -7,7 +7,7 @@
 //
 
 #import "MineTableViewModel.h"
-#import "UserInfoManger.h"
+#import "UserInfoManager.h"
 
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "MineHeaderCell.h"
@@ -25,7 +25,7 @@ static NSString *const CellIdentifier = @"Cell" ;  // `cellIdentifier` AND `NibN
 
 - (UserInfoBody *)userInfo {
     if (_userInfo == nil) {
-        _userInfo = [UserInfoManger getInfo];
+        _userInfo = [UserInfoManager getInfo];
     }
     return _userInfo;
 }

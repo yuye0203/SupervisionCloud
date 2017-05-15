@@ -9,6 +9,7 @@
 #import "KBMVCell.h"
 #import "KnowledgeModel.h"
 #import "MJExtension.h"
+#import "UIImageView+WebCache.h"
 
 @interface KBMVCell ()
 
@@ -53,8 +54,8 @@
     self.numberLabel.text = [NSString stringWithFormat:@"%ld",(long)itemModle.answerNum];
     self.dataLable.text = itemModle.createTime;
     
+    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:itemModle.imgUrl] placeholderImage:[UIImage imageNamed:@"img_default"]];
+
     
-    
-    self.iconImageView.image = [UIImage imageNamed:@"img_default"] ;
 }
 @end

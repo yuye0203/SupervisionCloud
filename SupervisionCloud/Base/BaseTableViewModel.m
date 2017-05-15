@@ -13,6 +13,7 @@
 static NSString *const MyCellIdentifier = @"BaseCell" ;
 @interface BaseTableViewModel ()
 
+
 @end
 
 @implementation BaseTableViewModel
@@ -28,7 +29,7 @@ static NSString *const MyCellIdentifier = @"BaseCell" ;
   
     table.delegate = self;
     table.dataSource = self;
-    self.dataArrayList = [[NSMutableArray alloc] init];
+//    self.dataArrayList = [[NSMutableArray alloc] init];
   
     [UITableViewCell smk_registerTable:table nibIdentifier:MyCellIdentifier];
     

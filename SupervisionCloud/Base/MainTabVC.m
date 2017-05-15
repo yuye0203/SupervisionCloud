@@ -8,7 +8,7 @@
 
 #import "MainTabVC.h"
 #import "LoginVC.h"
-#import "UserInfoManger.h"
+#import "UserInfoManager.h"
 
 @interface MainTabVC ()
 
@@ -27,7 +27,7 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:YES];
-    if (![UserInfoManger isLogin]) {
+    if (![UserInfoManager isLogin]) {
         [self performSegueWithIdentifier:@"ShowLogin" sender:nil];
     }
     

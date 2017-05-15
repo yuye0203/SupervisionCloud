@@ -10,7 +10,7 @@
 #import "SVCloudAPI.h"
 #import "FindQuestionVM.h"
 #import "UserInfoBody.h"
-#import "UserInfoManger.h"
+#import "UserInfoManager.h"
 #import "ScreenVC.h"
 
 
@@ -54,14 +54,14 @@
 //    page		int	当前页数	FALSE	默认第一页
 //    verify		string	加密字符串	TRUE	参考加密说明
     [self.sviewModel handleWithTable:self.table head:^{
-        UserInfoBody *model = [UserInfoManger getInfo];
+        UserInfoBody *model = [UserInfoManager getInfo];
 
         NSMutableDictionary *newsParmaes = [[NSMutableDictionary alloc] init];
         [newsParmaes addEntriesFromDictionary:@{@"page":@1,
                                                 @"num":@15,
                                                 @"cmd":@"questionList",
                                                 @"user_id":model.idField,
-                                                @"auth_token":@"dc7942492b55d8e30531a8a8cf2b550b"}];
+                                                @"auth_token":AUTH_TOKEN}];
         
         [self.sviewModel getListData: [self parametersWithDic:newsParmaes]
                     CompletionHandle:^(BOOL success, NSError *error,id result){
@@ -77,13 +77,13 @@
 
     } foot:^{
         NSMutableDictionary *newsParmaes = [[NSMutableDictionary alloc] init];
-        UserInfoBody *model = [UserInfoManger getInfo];
+        UserInfoBody *model = [UserInfoManager getInfo];
 
         [newsParmaes addEntriesFromDictionary:@{@"page":[NSNumber numberWithUnsignedInteger:_pageNum],
                                                 @"num":@15,
                                                 @"cmd":@"questionList",
                                                 @"user_id":model.idField,
-                                                @"auth_token":@"dc7942492b55d8e30531a8a8cf2b550b"}];
+                                                @"auth_token":AUTH_TOKEN}];
 
         
         [self.sviewModel getListData: [self parametersWithDic:newsParmaes]

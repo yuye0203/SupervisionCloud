@@ -8,8 +8,9 @@
 
 #import "FindResourVC.h"
 #import "FindResourVM.h"
-#import "UserInfoManger.h"
+#import "UserInfoManager.h"
 #import "ScreenVC.h"
+#import "SVCloudAPI.h"
 
 @interface FindResourVC ()
 @property (nonatomic, strong) FindResourVM *sviewModel;
@@ -41,7 +42,7 @@
 - (void)setupTableView
 {
     sWeakSelf
-    UserInfoBody *model = [UserInfoManger getInfo];
+    UserInfoBody *model = [UserInfoManager getInfo];
 
     [self.sviewModel handleWithTable:self.table head:^{
         
@@ -51,7 +52,7 @@
                                                 @"num":@15,
                                                 @"cmd":@"knowledgeList",
                                                 @"user_id":model.idField,
-                                                @"auth_token":@"dc7942492b55d8e30531a8a8cf2b550b"}];
+                                                @"auth_token":AUTH_TOKEN}];
 
         [self.sviewModel getListData: [self parametersWithDic:newsParmaes]
                         CompletionHandle:^(BOOL success, NSError *error,id result){
@@ -72,7 +73,7 @@
                                                 @"num":@15,
                                                 @"cmd":@"knowledgeList",
                                                 @"user_id":model.idField,
-                                                @"auth_token":@"dc7942492b55d8e30531a8a8cf2b550b"}];
+                                                @"auth_token":AUTH_TOKEN}];
         [self.sviewModel getListData: [self parametersWithDic:newsParmaes]
                         CompletionHandle:^(BOOL success, NSError *error,id result){
                             weakSelf.hudView.hidden = YES;

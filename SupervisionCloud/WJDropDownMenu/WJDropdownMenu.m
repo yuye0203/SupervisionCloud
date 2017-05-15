@@ -17,7 +17,6 @@
 #import "WJDropdownMenu.h"
 #import <UIKit/UIKit.h>
 
-
 @interface WJDropdownMenu ()
 
 @property (nonatomic,strong) UIView         *backView;
@@ -231,16 +230,27 @@
         UIColor *unSelectedColor = self.unSelectedColor ? self.unSelectedColor : [UIColor grayColor];
         UIColor *selectedColor = self.selectedColor ? self.selectedColor : [UIColor blackColor];
         
-        
-        [btn setTitleColor:unSelectedColor forState:UIControlStateNormal];
-        [btn setTitleColor:selectedColor forState:UIControlStateSelected];
+        if (!self.titleColor) {
+            [btn setTitleColor:unSelectedColor forState:UIControlStateNormal];
+            [btn setTitleColor:selectedColor forState:UIControlStateSelected];
+
+        }else{
+            [btn setTitleColor:self.titleColor forState:UIControlStateNormal];
+            [btn setTitleColor:self.titleColor forState:UIControlStateSelected];
+
+
+        }
         
         [btn setTitle:data[i] forState:UIControlStateNormal];
         
         [btn addTarget:self action:@selector(showFirstTableView:) forControlEvents:UIControlEventTouchUpInside];
         
-        CGPoint bgLayerPoint = CGPointMake(self.frame.size.width
-                                           /num-10, self.menuBaseHeight/2);
+        NSDictionary *attrs = @{NSFontAttributeName :btn.titleLabel.font};
+        CGSize size=[data[i]  sizeWithAttributes:attrs];
+        
+        CGPoint bgLayerPoint = CGPointMake(btn.center.x+size.width/2+8, self.menuBaseHeight/2);
+        
+        
         CALayer *bgLayer = [self createBgLayerWithColor:[UIColor clearColor] andPosition:bgLayerPoint];
         CGPoint indicatorPoint = CGPointMake(10, 10);
         CAShapeLayer *indicator = [self createIndicatorWithColor:[UIColor lightGrayColor] andPosition:indicatorPoint];

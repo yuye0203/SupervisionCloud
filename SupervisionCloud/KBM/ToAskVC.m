@@ -9,6 +9,8 @@
 #import "ToAskVC.h"
 #import "ToAskViewModel.h"
 #import "TPKeyboardAvoidingTableView.h"
+#import "BaseVC.h"
+#import "SVProgressHUD.h"
 
 @interface ToAskVC ()
 @property (nonatomic, weak) IBOutlet TPKeyboardAvoidingTableView *table;
@@ -45,7 +47,18 @@
  */
 - (void)setupTableView
 {
+    sWeakSelf
+    self.viewModel.showActionSheetViewController = self;
+    self.viewModel.addImageBlock = ^{
+        [weakSelf.view endEditing:YES];
+    };
     [self.viewModel handleWithTable:self.table];
+    [SVProgressHUD showWithStatus:@"加载中..."];
+    [self.viewModel getQuestionType:^(BOOL success, NSError *error,id result){
+        if (success) {
+            [SVProgressHUD dismiss];
+        }
+    }];
 }
 -(void)setupCollectionView{
     [self.viewModel handWithCollectionView:self.collection];
@@ -55,6 +68,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 
 

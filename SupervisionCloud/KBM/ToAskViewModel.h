@@ -9,16 +9,20 @@
 #import <Foundation/Foundation.h>
 #import "SUIMVVMKit.h"
 #import "KnowledgeModel.h"
-typedef void(^DoneBlock)(NSDictionary *request);
+#import "BaseViewModel.h"
 
-@interface ToAskViewModel : NSObject<UITableViewDelegate, UITableViewDataSource>
+typedef void(^DoneBlock)(NSDictionary *request);
+typedef void(^AddImage)();
+
+@interface ToAskViewModel : BaseViewModel<UITableViewDelegate, UITableViewDataSource>
 
 
 - (void)handleWithTable:(UITableView *)table;
--(void)handWithCollectionView:(UICollectionView *)collection;
-
+- (void)handWithCollectionView:(UICollectionView *)collection;
+- (void)getQuestionType:(void(^)(BOOL success, NSError *error,id result))completionHandle;
 
 @property (nonatomic, copy) DoneBlock  goToMore;
+@property (nonatomic, copy) AddImage  addImageBlock;
 
 
 //选择的图片数据

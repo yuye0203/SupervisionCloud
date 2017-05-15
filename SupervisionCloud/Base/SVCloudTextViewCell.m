@@ -15,6 +15,7 @@
         _textView = [[BRPlaceholderTextView alloc]init];
         //文字样式
         [_textView setFont:[UIFont systemFontOfSize:14.f]];
+        _textView.placeholder = @"请输入问题描述";
     }
     return _textView;
 }

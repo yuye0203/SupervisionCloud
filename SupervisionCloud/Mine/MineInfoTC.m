@@ -8,7 +8,7 @@
 
 #import "MineInfoTC.h"
 #import "MineTableViewModel.h"
-#import "UserInfoManger.h"
+#import "UserInfoManager.h"
 #import "UserInfoBody.h"
 #import "UIImageView+WebCache.h"
 
@@ -51,7 +51,7 @@
 }
 -(void)setUserInfo{
     
-    UserInfoBody *model = [UserInfoManger getInfo];
+    UserInfoBody *model = [UserInfoManager getInfo];
     
     _nickNameL.text = model.nickname;
     _roleL.text = model.role;

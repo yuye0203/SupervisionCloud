@@ -247,6 +247,8 @@
     {
         _PlaceholderLabel.text=placeholder;
         _placeholder=placeholder;
+        _PlaceholderLabel.hidden=NO;
+
         
 //        float  height=  [BRPlaceholderTextView boundingRectWithSize:CGSizeMake(_placeholdeWidth, MAXFLOAT) withLabel:_placeholder withFont:_PlaceholderLabel.font];
 //        if (height>CGRectGetHeight(_PlaceholderLabel.frame) && height< CGRectGetHeight(self.frame)) {

@@ -14,7 +14,7 @@
 #import "RootClass.h"
 #import "MangerHomeView.h"
 #import "ToAskVC.h"
-#import "UserInfoManger.h"
+#import "UserInfoManager.h"
 #import "UserInfoBody.h"
 #import "FindeQuestionVC.h"
 #import "FindResourVC.h"
@@ -62,14 +62,14 @@
     sWeakSelf
 
     [self.viewModel handleWithTable:self.table head:^{
-        if ([UserInfoManger isLogin]) {
-            UserInfoBody *model = [UserInfoManger getInfo];
+        if ([UserInfoManager isLogin]) {
+            UserInfoBody *model = [UserInfoManager getInfo];
             
             NSMutableDictionary *newsParmaes = [[NSMutableDictionary alloc] init];
             [newsParmaes addEntriesFromDictionary:@{
                                                     @"cmd":@"knowledgeIndex",
                                                     @"user_id":[NSNumber numberWithInteger: [model.idField integerValue]],
-                                                    @"auth_token":@"dc7942492b55d8e30531a8a8cf2b550b"}];
+                                                    @"auth_token":AUTH_TOKEN}];
             
             [weakSelf.viewModel getListData: [self parametersWithDic:newsParmaes]
                                  CompletionHandle:^(BOOL success, NSError *error,id result){

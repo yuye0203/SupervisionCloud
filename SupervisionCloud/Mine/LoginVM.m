@@ -10,7 +10,7 @@
 #import "UserInfoBody.h"
 #import "MJExtension.h"
 #import "UserRoot.h"
-#import "UserInfoManger.h"
+#import "UserInfoManager.h"
 
 @implementation LoginVM
 - (void)loginAction:(NSDictionary *)paramaters CompletionHandle:(void(^)(BOOL success, NSError *error,id result))completionHandle{
@@ -26,7 +26,7 @@
         if (root.resultCode==1) {
             /*登录成功 保存信息*/
             //TODO:保存信息
-            [UserInfoManger saveInfo:root.body];
+            [UserInfoManager saveInfo:root.body];
 
             completionHandle(YES, nil, nil);
 

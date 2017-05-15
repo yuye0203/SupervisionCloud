@@ -8,6 +8,7 @@
 
 #import "BaseViewModel.h"
 #import "SVCloudAPI.h"
+#import "NSString+MD5HexDigest.h"
 
 @implementation BaseViewModel
 
@@ -41,4 +42,36 @@
         }
     }] resume];
 }
+
+-(NSDictionary *)parametersWithDic:(NSMutableDictionary *)mdic{
+    
+    NSDictionary *cmdDic = @{@"cmd":[mdic objectForKey:@"cmd"]};
+    [mdic removeObjectForKey:@"cmd"];
+    NSArray *keysArray = [mdic allKeys];
+    
+    NSArray *resultArray = [keysArray sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        
+        return [obj1 compare:obj2 options:NSCaseInsensitiveSearch];
+    }];
+    
+    
+    NSMutableString *vieryStr = [NSMutableString stringWithCapacity:20];
+    
+    for (NSString *key in resultArray){
+        [vieryStr appendString:[NSString stringWithFormat:@"%@",mdic[key]]];
+    }
+    [vieryStr appendString:@"jianliyun"];
+    
+    [mdic addEntriesFromDictionary:@{@"verify":[vieryStr md5HexDigest]}];
+    
+    NSDictionary *temp = [NSDictionary dictionaryWithDictionary:mdic];
+    [mdic removeAllObjects];
+    
+    [mdic addEntriesFromDictionary:cmdDic];
+    [mdic addEntriesFromDictionary:@{@"params":temp}];
+    
+    return mdic;
+    
+}
+
 @end

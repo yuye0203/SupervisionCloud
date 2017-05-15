@@ -99,6 +99,7 @@ typedef enum:NSInteger{
 /** 设置代理 */
 @property (nonatomic,assign) id<WJMenuDelegate>delegate;
 
+@property (nonatomic,strong)UIColor *titleColor;
 
 
 #pragma mark -- 一次性创建所有菜单数据
