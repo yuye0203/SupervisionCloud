@@ -14,7 +14,6 @@
 		AD1CAD091EB86538007C6A88 /* MineTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1CAD081EB86538007C6A88 /* MineTableViewModel.m */; };
 		AD1CAD101EB8ADA0007C6A88 /* KBMVCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1CAD0F1EB8ADA0007C6A88 /* KBMVCViewModel.m */; };
 		AD1CAD141EB8B050007C6A88 /* KBMVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1CAD121EB8B050007C6A88 /* KBMVCell.m */; };
-		AD1CAD151EB8B050007C6A88 /* KBMVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1CAD131EB8B050007C6A88 /* KBMVCell.xib */; };
 		AD1CAD181EB8B355007C6A88 /* KnowledgeBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1CAD171EB8B355007C6A88 /* KnowledgeBaseModel.m */; };
 		AD1CAD1C1EB8B6B9007C6A88 /* SVCloudNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1CAD1B1EB8B6B9007C6A88 /* SVCloudNetwork.m */; };
 		AD1CAD1F1EB8B704007C6A88 /* SVCloudData.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1CAD1E1EB8B704007C6A88 /* SVCloudData.m */; };
@@ -67,6 +66,7 @@
 		AD5BE4C11E8C948C00A695E0 /* KBMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE4C01E8C948C00A695E0 /* KBMVC.m */; };
 		AD5BE4C21E8C948C00A695E0 /* KBMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE4C01E8C948C00A695E0 /* KBMVC.m */; };
 		AD5BE4C31E8C948C00A695E0 /* KBMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE4C01E8C948C00A695E0 /* KBMVC.m */; };
+		AD7007441ECB242F007B9E52 /* KBM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7007431ECB242F007B9E52 /* KBM.storyboard */; };
 		AD8A56381E8B529100FACC9F /* ProjectListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8A56371E8B529100FACC9F /* ProjectListVC.m */; };
 		AD8A56391E8B529100FACC9F /* ProjectListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8A56371E8B529100FACC9F /* ProjectListVC.m */; };
 		AD8A563A1E8B529100FACC9F /* ProjectListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8A56371E8B529100FACC9F /* ProjectListVC.m */; };
@@ -76,7 +76,7 @@
 		ADCCABCF1EBA18DB00EF8A48 /* UIView+Center.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABC91EBA18DB00EF8A48 /* UIView+Center.m */; };
 		ADCCABD01EBA18DB00EF8A48 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABCB1EBA18DB00EF8A48 /* UIView+Frame.m */; };
 		ADCCABD11EBA18DB00EF8A48 /* UIView+LCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABCD1EBA18DB00EF8A48 /* UIView+LCExtension.m */; };
-		ADCCABD41EBABF8A00EF8A48 /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABD31EBABF8A00EF8A48 /* QuestionModel.m */; };
+		ADCCABD41EBABF8A00EF8A48 /* KnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABD31EBABF8A00EF8A48 /* KnowledgeModel.m */; };
 		ADCCABD71EBD671800EF8A48 /* CompanyListView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABD61EBD671800EF8A48 /* CompanyListView.m */; };
 		ADCCABDA1EBD675B00EF8A48 /* KBMView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABD91EBD675B00EF8A48 /* KBMView.m */; };
 		ADCCABDE1EBD690700EF8A48 /* ToAskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABDC1EBD690700EF8A48 /* ToAskVC.m */; };
@@ -89,7 +89,6 @@
 		ADCCABF61EBD6C5300EF8A48 /* SVCloudTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABF41EBD6C5300EF8A48 /* SVCloudTextViewCell.m */; };
 		ADCCABF71EBD6C5300EF8A48 /* SVCloudTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCCABF51EBD6C5300EF8A48 /* SVCloudTextViewCell.xib */; };
 		ADCCABFA1EBD704700EF8A48 /* ToAskViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABF91EBD704700EF8A48 /* ToAskViewModel.m */; };
-		ADCCABFD1EBD7A9B00EF8A48 /* KBM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCCABFC1EBD7A9B00EF8A48 /* KBM.storyboard */; };
 		ADCCAC001EBD9A3000EF8A48 /* MainTabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCABFF1EBD9A3000EF8A48 /* MainTabVC.m */; };
 		ADCCAC031EBE91CC00EF8A48 /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC021EBE91CC00EF8A48 /* BaseTableVC.m */; };
 		ADCCAC061EBE91F100EF8A48 /* BaseTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC051EBE91F100EF8A48 /* BaseTableViewModel.m */; };
@@ -101,7 +100,6 @@
 		ADCCAC191EBF4C8900EF8A48 /* FindeQuestionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC181EBF4C8900EF8A48 /* FindeQuestionVC.m */; };
 		ADCCAC1D1EBF4E2B00EF8A48 /* FindQuestionVM.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC1C1EBF4E2B00EF8A48 /* FindQuestionVM.m */; };
 		ADCCAC211EBF4F8C00EF8A48 /* KBMVResoureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC1F1EBF4F8C00EF8A48 /* KBMVResoureCell.m */; };
-		ADCCAC221EBF4F8C00EF8A48 /* KBMVResoureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCCAC201EBF4F8C00EF8A48 /* KBMVResoureCell.xib */; };
 		ADCCAC251EBF573A00EF8A48 /* FindResourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC241EBF573A00EF8A48 /* FindResourVC.m */; };
 		ADCCAC281EBF578400EF8A48 /* FindResourVM.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC271EBF578400EF8A48 /* FindResourVM.m */; };
 		ADCCAC2B1EC0947B00EF8A48 /* LoginVM.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAC2A1EC0947B00EF8A48 /* LoginVM.m */; };
@@ -156,8 +154,12 @@
 		ADCCACDF1EC4985C00EF8A48 /* JJPhotoManeger.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCACDA1EC4985C00EF8A48 /* JJPhotoManeger.m */; };
 		ADCCACE01EC4985C00EF8A48 /* none.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCCACDB1EC4985C00EF8A48 /* none.png */; };
 		ADCCACE31EC4A8F400EF8A48 /* QuestionType.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCACE21EC4A8F400EF8A48 /* QuestionType.m */; };
+		ADCCADA61ECA087E00EF8A48 /* KnowledgeDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCADA51ECA087E00EF8A48 /* KnowledgeDetailVC.m */; };
+		ADCCADA91ECA090C00EF8A48 /* KnowledgeDetailVModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCCADA81ECA090C00EF8A48 /* KnowledgeDetailVModel.m */; };
+		ADCCADAD1ECA1BAE00EF8A48 /* KBMVResoureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCCADAB1ECA1BAE00EF8A48 /* KBMVResoureCell.xib */; };
+		ADCCADAF1ECA805B00EF8A48 /* KBMVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCCADAE1ECA805B00EF8A48 /* KBMVCell.xib */; };
 		ADDAF84F1EB9F83A00A5BE62 /* ListBody.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF84A1EB9F83A00A5BE62 /* ListBody.m */; };
-		ADDAF8501EB9F83A00A5BE62 /* KnowledgeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF84C1EB9F83A00A5BE62 /* KnowledgeModel.m */; };
+		ADDAF8501EB9F83A00A5BE62 /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF84C1EB9F83A00A5BE62 /* QuestionModel.m */; };
 		ADDAF8511EB9F83A00A5BE62 /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF84E1EB9F83A00A5BE62 /* RootClass.m */; };
 /* End PBXBuildFile section */
 
@@ -194,7 +196,6 @@
 		AD1CAD0F1EB8ADA0007C6A88 /* KBMVCViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBMVCViewModel.m; path = KBM/KBMVCViewModel.m; sourceTree = "<group>"; };
 		AD1CAD111EB8B050007C6A88 /* KBMVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBMVCell.h; path = KBM/KBMVCell.h; sourceTree = "<group>"; };
 		AD1CAD121EB8B050007C6A88 /* KBMVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBMVCell.m; path = KBM/KBMVCell.m; sourceTree = "<group>"; };
-		AD1CAD131EB8B050007C6A88 /* KBMVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBMVCell.xib; path = KBM/KBMVCell.xib; sourceTree = "<group>"; };
 		AD1CAD161EB8B355007C6A88 /* KnowledgeBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnowledgeBaseModel.h; path = KBM/KnowledgeBaseModel.h; sourceTree = "<group>"; };
 		AD1CAD171EB8B355007C6A88 /* KnowledgeBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnowledgeBaseModel.m; path = KBM/KnowledgeBaseModel.m; sourceTree = "<group>"; };
 		AD1CAD1A1EB8B6B9007C6A88 /* SVCloudNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVCloudNetwork.h; path = NetWork/SVCloudNetwork.h; sourceTree = "<group>"; };
@@ -262,6 +263,7 @@
 		AD3BEDB01E8B3E6C0001D789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD5BE4BF1E8C948C00A695E0 /* KBMVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBMVC.h; path = KBM/KBMVC.h; sourceTree = "<group>"; };
 		AD5BE4C01E8C948C00A695E0 /* KBMVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBMVC.m; path = KBM/KBMVC.m; sourceTree = "<group>"; };
+		AD7007431ECB242F007B9E52 /* KBM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KBM.storyboard; sourceTree = "<group>"; };
 		AD8A56361E8B529100FACC9F /* ProjectListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectListVC.h; path = Project/ProjectListVC.h; sourceTree = "<group>"; };
 		AD8A56371E8B529100FACC9F /* ProjectListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectListVC.m; path = Project/ProjectListVC.m; sourceTree = "<group>"; };
 		ADCCABBD1EB9FB2800EF8A48 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseVC.h; path = Base/BaseVC.h; sourceTree = "<group>"; };
@@ -276,8 +278,8 @@
 		ADCCABCB1EBA18DB00EF8A48 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		ADCCABCC1EBA18DB00EF8A48 /* UIView+LCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LCExtension.h"; sourceTree = "<group>"; };
 		ADCCABCD1EBA18DB00EF8A48 /* UIView+LCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCExtension.m"; sourceTree = "<group>"; };
-		ADCCABD21EBABF8A00EF8A48 /* QuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionModel.h; sourceTree = "<group>"; };
-		ADCCABD31EBABF8A00EF8A48 /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionModel.m; sourceTree = "<group>"; };
+		ADCCABD21EBABF8A00EF8A48 /* KnowledgeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeModel.h; sourceTree = "<group>"; };
+		ADCCABD31EBABF8A00EF8A48 /* KnowledgeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeModel.m; sourceTree = "<group>"; };
 		ADCCABD51EBD671800EF8A48 /* CompanyListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompanyListView.h; path = KBM/CompanyListView.h; sourceTree = "<group>"; };
 		ADCCABD61EBD671800EF8A48 /* CompanyListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompanyListView.m; path = KBM/CompanyListView.m; sourceTree = "<group>"; };
 		ADCCABD81EBD675B00EF8A48 /* KBMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBMView.h; path = KBM/KBMView.h; sourceTree = "<group>"; };
@@ -300,7 +302,6 @@
 		ADCCABF51EBD6C5300EF8A48 /* SVCloudTextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SVCloudTextViewCell.xib; path = Base/SVCloudTextViewCell.xib; sourceTree = "<group>"; };
 		ADCCABF81EBD704700EF8A48 /* ToAskViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToAskViewModel.h; path = KBM/ToAskViewModel.h; sourceTree = "<group>"; };
 		ADCCABF91EBD704700EF8A48 /* ToAskViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToAskViewModel.m; path = KBM/ToAskViewModel.m; sourceTree = "<group>"; };
-		ADCCABFC1EBD7A9B00EF8A48 /* KBM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = KBM.storyboard; path = KBM/KBM.storyboard; sourceTree = "<group>"; };
 		ADCCABFE1EBD9A3000EF8A48 /* MainTabVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabVC.h; path = Base/MainTabVC.h; sourceTree = "<group>"; };
 		ADCCABFF1EBD9A3000EF8A48 /* MainTabVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTabVC.m; path = Base/MainTabVC.m; sourceTree = "<group>"; };
 		ADCCAC011EBE91CC00EF8A48 /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTableVC.h; path = Base/BaseTableVC.h; sourceTree = "<group>"; };
@@ -322,7 +323,6 @@
 		ADCCAC1C1EBF4E2B00EF8A48 /* FindQuestionVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FindQuestionVM.m; path = KBM/FindQuestionVM.m; sourceTree = "<group>"; };
 		ADCCAC1E1EBF4F8C00EF8A48 /* KBMVResoureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBMVResoureCell.h; path = KBM/KBMVResoureCell.h; sourceTree = "<group>"; };
 		ADCCAC1F1EBF4F8C00EF8A48 /* KBMVResoureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBMVResoureCell.m; path = KBM/KBMVResoureCell.m; sourceTree = "<group>"; };
-		ADCCAC201EBF4F8C00EF8A48 /* KBMVResoureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBMVResoureCell.xib; path = KBM/KBMVResoureCell.xib; sourceTree = "<group>"; };
 		ADCCAC231EBF573900EF8A48 /* FindResourVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FindResourVC.h; path = KBM/FindResourVC.h; sourceTree = "<group>"; };
 		ADCCAC241EBF573A00EF8A48 /* FindResourVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FindResourVC.m; path = KBM/FindResourVC.m; sourceTree = "<group>"; };
 		ADCCAC261EBF578400EF8A48 /* FindResourVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FindResourVM.h; path = KBM/FindResourVM.h; sourceTree = "<group>"; };
@@ -424,10 +424,16 @@
 		ADCCACDB1EC4985C00EF8A48 /* none.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = none.png; sourceTree = "<group>"; };
 		ADCCACE11EC4A8F400EF8A48 /* QuestionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionType.h; sourceTree = "<group>"; };
 		ADCCACE21EC4A8F400EF8A48 /* QuestionType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionType.m; sourceTree = "<group>"; };
+		ADCCADA41ECA087E00EF8A48 /* KnowledgeDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnowledgeDetailVC.h; path = KBM/KnowledgeDetailVC.h; sourceTree = "<group>"; };
+		ADCCADA51ECA087E00EF8A48 /* KnowledgeDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnowledgeDetailVC.m; path = KBM/KnowledgeDetailVC.m; sourceTree = "<group>"; };
+		ADCCADA71ECA090C00EF8A48 /* KnowledgeDetailVModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnowledgeDetailVModel.h; path = KBM/KnowledgeDetailVModel.h; sourceTree = "<group>"; };
+		ADCCADA81ECA090C00EF8A48 /* KnowledgeDetailVModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnowledgeDetailVModel.m; path = KBM/KnowledgeDetailVModel.m; sourceTree = "<group>"; };
+		ADCCADAB1ECA1BAE00EF8A48 /* KBMVResoureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBMVResoureCell.xib; path = KBM/KBMVResoureCell.xib; sourceTree = "<group>"; };
+		ADCCADAE1ECA805B00EF8A48 /* KBMVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KBMVCell.xib; path = KBM/KBMVCell.xib; sourceTree = "<group>"; };
 		ADDAF8491EB9F83A00A5BE62 /* ListBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListBody.h; path = KBM/KBMModel/ListBody.h; sourceTree = "<group>"; };
 		ADDAF84A1EB9F83A00A5BE62 /* ListBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListBody.m; path = KBM/KBMModel/ListBody.m; sourceTree = "<group>"; };
-		ADDAF84B1EB9F83A00A5BE62 /* KnowledgeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnowledgeModel.h; path = KBM/KBMModel/KnowledgeModel.h; sourceTree = "<group>"; };
-		ADDAF84C1EB9F83A00A5BE62 /* KnowledgeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnowledgeModel.m; path = KBM/KBMModel/KnowledgeModel.m; sourceTree = "<group>"; };
+		ADDAF84B1EB9F83A00A5BE62 /* QuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionModel.h; path = KBM/KBMModel/QuestionModel.h; sourceTree = "<group>"; };
+		ADDAF84C1EB9F83A00A5BE62 /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionModel.m; path = KBM/KBMModel/QuestionModel.m; sourceTree = "<group>"; };
 		ADDAF84D1EB9F83A00A5BE62 /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootClass.h; path = KBM/KBMModel/RootClass.h; sourceTree = "<group>"; };
 		ADDAF84E1EB9F83A00A5BE62 /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootClass.m; path = KBM/KBMModel/RootClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -483,7 +489,7 @@
 				ADCCAC951EC495DB00EF8A48 /* HWImagePickerSheet.m */,
 				AD1CAD111EB8B050007C6A88 /* KBMVCell.h */,
 				AD1CAD121EB8B050007C6A88 /* KBMVCell.m */,
-				AD1CAD131EB8B050007C6A88 /* KBMVCell.xib */,
+				ADCCADAE1ECA805B00EF8A48 /* KBMVCell.xib */,
 				ADCCABC01EBA0F5800EF8A48 /* KBMListHeaderView.h */,
 				ADCCABC11EBA0F5800EF8A48 /* KBMListHeaderView.m */,
 				ADCCABD51EBD671800EF8A48 /* CompanyListView.h */,
@@ -492,7 +498,7 @@
 				ADCCABD91EBD675B00EF8A48 /* KBMView.m */,
 				ADCCAC1E1EBF4F8C00EF8A48 /* KBMVResoureCell.h */,
 				ADCCAC1F1EBF4F8C00EF8A48 /* KBMVResoureCell.m */,
-				ADCCAC201EBF4F8C00EF8A48 /* KBMVResoureCell.xib */,
+				ADCCADAB1ECA1BAE00EF8A48 /* KBMVResoureCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -504,10 +510,10 @@
 				ADDAF84A1EB9F83A00A5BE62 /* ListBody.m */,
 				ADCCACE11EC4A8F400EF8A48 /* QuestionType.h */,
 				ADCCACE21EC4A8F400EF8A48 /* QuestionType.m */,
-				ADDAF84B1EB9F83A00A5BE62 /* KnowledgeModel.h */,
-				ADDAF84C1EB9F83A00A5BE62 /* KnowledgeModel.m */,
-				ADCCABD21EBABF8A00EF8A48 /* QuestionModel.h */,
-				ADCCABD31EBABF8A00EF8A48 /* QuestionModel.m */,
+				ADDAF84B1EB9F83A00A5BE62 /* QuestionModel.h */,
+				ADDAF84C1EB9F83A00A5BE62 /* QuestionModel.m */,
+				ADCCABD21EBABF8A00EF8A48 /* KnowledgeModel.h */,
+				ADCCABD31EBABF8A00EF8A48 /* KnowledgeModel.m */,
 				ADDAF84D1EB9F83A00A5BE62 /* RootClass.h */,
 				ADDAF84E1EB9F83A00A5BE62 /* RootClass.m */,
 				AD1CAD161EB8B355007C6A88 /* KnowledgeBaseModel.h */,
@@ -519,6 +525,8 @@
 		AD1CAD0C1EB8AABA007C6A88 /* VModels */ = {
 			isa = PBXGroup;
 			children = (
+				ADCCADA71ECA090C00EF8A48 /* KnowledgeDetailVModel.h */,
+				ADCCADA81ECA090C00EF8A48 /* KnowledgeDetailVModel.m */,
 				AD1CAD0E1EB8ADA0007C6A88 /* KBMVCViewModel.h */,
 				AD1CAD0F1EB8ADA0007C6A88 /* KBMVCViewModel.m */,
 				ADCCABF81EBD704700EF8A48 /* ToAskViewModel.h */,
@@ -781,13 +789,15 @@
 				AD5BE4C01E8C948C00A695E0 /* KBMVC.m */,
 				ADCCABDB1EBD690700EF8A48 /* ToAskVC.h */,
 				ADCCABDC1EBD690700EF8A48 /* ToAskVC.m */,
-				ADCCABFC1EBD7A9B00EF8A48 /* KBM.storyboard */,
 				ADCCAC171EBF4C8900EF8A48 /* FindeQuestionVC.h */,
 				ADCCAC181EBF4C8900EF8A48 /* FindeQuestionVC.m */,
 				ADCCAC231EBF573900EF8A48 /* FindResourVC.h */,
 				ADCCAC241EBF573A00EF8A48 /* FindResourVC.m */,
 				ADCCAC3A1EC1BD9500EF8A48 /* ScreenVC.h */,
 				ADCCAC3B1EC1BD9500EF8A48 /* ScreenVC.m */,
+				ADCCADA41ECA087E00EF8A48 /* KnowledgeDetailVC.h */,
+				ADCCADA51ECA087E00EF8A48 /* KnowledgeDetailVC.m */,
+				AD7007431ECB242F007B9E52 /* KBM.storyboard */,
 			);
 			name = KBM;
 			sourceTree = "<group>";
@@ -1186,21 +1196,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1CAD001EB860FF007C6A88 /* MineHeaderCell.xib in Resources */,
-				ADCCAC221EBF4F8C00EF8A48 /* KBMVResoureCell.xib in Resources */,
+				ADCCADAF1ECA805B00EF8A48 /* KBMVCell.xib in Resources */,
 				AD3BED991E8B3E6C0001D789 /* LaunchScreen.storyboard in Resources */,
 				ADCCAC901EC43D2400EF8A48 /* RemoveCell.xib in Resources */,
 				AD1CFF791EB853DD00B43290 /* MangerHomeView.xib in Resources */,
 				ADCCAC391EC1B9ED00EF8A48 /* BaseCell.xib in Resources */,
+				ADCCADAD1ECA1BAE00EF8A48 /* KBMVResoureCell.xib in Resources */,
+				AD7007441ECB242F007B9E52 /* KBM.storyboard in Resources */,
 				AD3BED961E8B3E6C0001D789 /* Assets.xcassets in Resources */,
 				ADCCABF71EBD6C5300EF8A48 /* SVCloudTextViewCell.xib in Resources */,
 				ADCCABF11EBD6C0500EF8A48 /* SVCloudTextFieldCell.xib in Resources */,
 				ADCCACC11EC4963100EF8A48 /* MImaCell.xib in Resources */,
-				AD1CAD151EB8B050007C6A88 /* KBMVCell.xib in Resources */,
 				ADCCACE01EC4985C00EF8A48 /* none.png in Resources */,
 				AD3BED941E8B3E6C0001D789 /* Main.storyboard in Resources */,
 				ADCCACBF1EC4963100EF8A48 /* MGroupCell.xib in Resources */,
 				ADCCAC461EC1F50900EF8A48 /* SVCloudDateCell.xib in Resources */,
-				ADCCABFD1EBD7A9B00EF8A48 /* KBM.storyboard in Resources */,
 				ADCCAC411EC1F2E800EF8A48 /* SVCloudSelectorCell.xib in Resources */,
 				ADCCAC0E1EBE9A1F00EF8A48 /* TodoListCell.xib in Resources */,
 				ADCCAC621EC2137C00EF8A48 /* SVCloudImageCollectionCell.xib in Resources */,
@@ -1334,7 +1344,7 @@
 				ADCCABF01EBD6C0500EF8A48 /* SVCloudTextFieldCell.m in Sources */,
 				ADCCACC41EC4963100EF8A48 /* MShowGroupAllSet.m in Sources */,
 				AD345F011E8B46FC00F29803 /* NSObject+SMKProperties.m in Sources */,
-				ADCCABD41EBABF8A00EF8A48 /* QuestionModel.m in Sources */,
+				ADCCABD41EBABF8A00EF8A48 /* KnowledgeModel.m in Sources */,
 				AD5BE4C11E8C948C00A695E0 /* KBMVC.m in Sources */,
 				ADCCAC451EC1F50900EF8A48 /* SVCloudDateCell.m in Sources */,
 				AD345EFE1E8B46FC00F29803 /* NSObject+SMKCoding.m in Sources */,
@@ -1345,7 +1355,7 @@
 				ADCCAC061EBE91F100EF8A48 /* BaseTableViewModel.m in Sources */,
 				AD345F0A1E8B46FC00F29803 /* SMKMediator.m in Sources */,
 				AD3BED8E1E8B3E6C0001D789 /* HomeController.m in Sources */,
-				ADDAF8501EB9F83A00A5BE62 /* KnowledgeModel.m in Sources */,
+				ADDAF8501EB9F83A00A5BE62 /* QuestionModel.m in Sources */,
 				AD1CAD101EB8ADA0007C6A88 /* KBMVCViewModel.m in Sources */,
 				ADCCAC7C1EC356E700EF8A48 /* Banner.m in Sources */,
 				ADCCAC191EBF4C8900EF8A48 /* FindeQuestionVC.m in Sources */,
@@ -1377,8 +1387,10 @@
 				ADDAF8511EB9F83A00A5BE62 /* RootClass.m in Sources */,
 				ADCCAC3C1EC1BD9500EF8A48 /* ScreenVC.m in Sources */,
 				AD345F041E8B46FC00F29803 /* NSObject+SMKRequest.m in Sources */,
+				ADCCADA61ECA087E00EF8A48 /* KnowledgeDetailVC.m in Sources */,
 				ADCCACE31EC4A8F400EF8A48 /* QuestionType.m in Sources */,
 				AD1CFF771EB853CE00B43290 /* MangerHomeView.m in Sources */,
+				ADCCADA91ECA090C00EF8A48 /* KnowledgeDetailVModel.m in Sources */,
 				AD345F071E8B46FC00F29803 /* SMKAction.m in Sources */,
 				ADCCAC8F1EC43D2400EF8A48 /* RemoveCell.m in Sources */,
 				ADCCAC401EC1F2E800EF8A48 /* SVCloudSelectorCell.m in Sources */,

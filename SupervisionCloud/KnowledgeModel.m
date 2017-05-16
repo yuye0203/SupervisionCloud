@@ -7,14 +7,14 @@
 
 
 
-#import "QuestionModel.h"
+#import "KnowledgeModel.h"
 
 NSString *const kListImage = @"image";
 NSString *const kListType = @"type";
 
-@interface QuestionModel ()
+@interface KnowledgeModel ()
 @end
-@implementation QuestionModel
+@implementation KnowledgeModel
 
 
 
@@ -111,7 +111,7 @@ NSString *const kListType = @"type";
  */
 - (instancetype)copyWithZone:(NSZone *)zone
 {
-	QuestionModel *copy = [QuestionModel new];
+	KnowledgeModel *copy = [KnowledgeModel new];
 
 	copy.createTime = [self.createTime copy];
 	copy.idField = self.idField;

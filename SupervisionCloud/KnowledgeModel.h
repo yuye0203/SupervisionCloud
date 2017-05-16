@@ -8,9 +8,9 @@
 //	Model file Generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
 
 #import <UIKit/UIKit.h>
-#import "KnowledgeModel.h"
-#
-@interface QuestionModel : KnowledgeModel
+#import "QuestionModel.h"
+
+@interface KnowledgeModel : QuestionModel
 
 //@property (nonatomic, strong) NSString * createTime;
 //@property (nonatomic, strong) NSString * idField;

@@ -5,7 +5,7 @@
 //	Copyright © 2017. All rights reserved.
 //	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
 
-#import "KnowledgeModel.h"
+#import "QuestionModel.h"
 
 NSString *const kListAnswerNum = @"answer_num";
 NSString *const kListAuthor = @"author";
@@ -15,9 +15,9 @@ NSString *const kListImgUrl = @"img_url";
 NSString *const kListSubtitle = @"subtitle";
 NSString *const kListTitle = @"title";
 
-@interface KnowledgeModel ()
+@interface QuestionModel ()
 @end
-@implementation KnowledgeModel
+@implementation QuestionModel
 
 
 
@@ -138,7 +138,7 @@ NSString *const kListTitle = @"title";
  */
 - (instancetype)copyWithZone:(NSZone *)zone
 {
-	KnowledgeModel *copy = [KnowledgeModel new];
+	QuestionModel *copy = [QuestionModel new];
 
 	copy.answerNum = self.answerNum;
 	copy.author = [self.author copy];

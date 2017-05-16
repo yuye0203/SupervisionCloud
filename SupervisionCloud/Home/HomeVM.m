@@ -37,7 +37,7 @@
     NSMutableDictionary *paramaters = [@{@"cmd":@"banner",
                                          @"project_id":[NSNumber numberWithInteger:[project.idField integerValue]],
                                          @"user_id":[NSNumber numberWithInteger:[user.idField integerValue]],
-                                         @"auth_token":AUTH_TOKEN} mutableCopy];
+                                         @"auth_token":user.authToken} mutableCopy];
     
     
     NSData *data =    [NSJSONSerialization dataWithJSONObject:[self parametersWithDic:paramaters]
@@ -78,7 +78,7 @@
     UserInfoBody *user = [UserInfoManager getInfo];
 
     NSMutableDictionary *paramaters = [@{@"cmd":@"userProject",
-                                         @"auth_token":AUTH_TOKEN,
+                                         @"auth_token":user.authToken,
                                          @"user_id":[NSNumber numberWithInteger:[user.idField integerValue]]
                                          } mutableCopy];
     
@@ -127,7 +127,7 @@
     Project*project = [ManagerProject getProject];
 
     NSMutableDictionary *paramaters = [@{@"cmd":@"functionList",
-                                         @"auth_token":AUTH_TOKEN,
+                                         @"auth_token":user.authToken,
                                          @"user_id":[NSNumber numberWithInteger:[user.idField integerValue]],
                                          @"project_id":[NSNumber numberWithInteger:[project.idField integerValue]]} mutableCopy];
     

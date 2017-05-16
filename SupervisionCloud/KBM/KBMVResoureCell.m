@@ -7,7 +7,7 @@
 //
 
 #import "KBMVResoureCell.h"
-#import "QuestionModel.h"
+#import "KnowledgeModel.h"
 #import "MJExtension.h"
 
 @interface KBMVResoureCell ()
@@ -30,11 +30,11 @@
 
 - (void)smk_configure:(UITableViewCell *)cell model:(id)model indexPath:(NSIndexPath *)indexPath {
    
-    QuestionModel *itemModle;
-    if ([model isKindOfClass:[QuestionModel class]])
-        itemModle = (QuestionModel *)model;
+    KnowledgeModel *itemModle;
+    if ([model isKindOfClass:[KnowledgeModel class]])
+        itemModle = (KnowledgeModel *)model;
     else
-        itemModle = [QuestionModel mj_objectWithKeyValues:model];
+        itemModle = [KnowledgeModel mj_objectWithKeyValues:model];
     
     self.titleLabel.text = itemModle.title ;
     self.dataLable.text = itemModle.createTime;

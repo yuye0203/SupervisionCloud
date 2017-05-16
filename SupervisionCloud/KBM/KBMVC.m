@@ -18,7 +18,8 @@
 #import "UserInfoBody.h"
 #import "FindeQuestionVC.h"
 #import "FindResourVC.h"
-
+#import "QuestionModel.h"
+#import "KnowledgeDetailVC.h"
 @interface KBMVC ()
 @property (nonatomic, weak) IBOutlet UITableView *table;
 @property (nonatomic, strong) KBMVCViewModel *viewModel;
@@ -69,7 +70,7 @@
             [newsParmaes addEntriesFromDictionary:@{
                                                     @"cmd":@"knowledgeIndex",
                                                     @"user_id":[NSNumber numberWithInteger: [model.idField integerValue]],
-                                                    @"auth_token":AUTH_TOKEN}];
+                                                    @"auth_token":model.authToken}];
             
             [weakSelf.viewModel getListData: [self parametersWithDic:newsParmaes]
                                  CompletionHandle:^(BOOL success, NSError *error,id result){
@@ -104,7 +105,20 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"segue");
     
+    QuestionModel *model = (QuestionModel *)sender;
+    
+    UIViewController* vc = segue.destinationViewController;
+    
+    if ([vc isKindOfClass:[KnowledgeDetailVC class]]) {
+        KnowledgeDetailVC *detailVC = (KnowledgeDetailVC *)vc;
+        
+        [detailVC setIdField:model.idField];
+    }
+
+
+
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
@@ -122,9 +136,17 @@
 
 -(void)gotoDetail:(NSObject *)item{
     //TODO 判断类型？
-    KnowledgeModel *obj = (KnowledgeModel *)item;
+    QuestionModel *obj = (QuestionModel *)item;
     
     NSLog(@"item = %@",obj.idField);
+//    
+    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    KnowledgeDetailVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"KnowledgeDetailVC"];
+    vc.idField = obj.idField;
+    [self presentViewController:vc animated:YES completion:nil];
+
+
 }
 
 //TODO:查阅资料

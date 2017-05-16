@@ -107,7 +107,8 @@ static NSString *const MyHeadIdentifier = @"headerView" ;
 {
     id item = [self itemAtIndexPath:indexPath];
     if (indexPath.section==0) {
-        KBMVCell *cell = [tableView dequeueReusableCellWithIdentifier:MyCellIdentifier1 forIndexPath:indexPath] ;
+
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyCellIdentifier1 forIndexPath:indexPath] ;
         [cell smk_configure:cell model:item indexPath:indexPath];
         
         return cell ;
@@ -130,7 +131,7 @@ static NSString *const MyHeadIdentifier = @"headerView" ;
     switch (indexPath.section) {
         case 0:{
              h = [tableView fd_heightForCellWithIdentifier:MyCellIdentifier1
-                                          cacheByIndexPath:indexPath configuration:^(KBMVCell *cell) {
+                                          cacheByIndexPath:indexPath configuration:^(UITableViewCell *cell) {
                 [cell smk_configure:cell model:item indexPath:indexPath];    }];
         }
             break;
@@ -149,7 +150,7 @@ static NSString *const MyHeadIdentifier = @"headerView" ;
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
   
-    KnowledgeModel *itemModle;
+    QuestionModel *itemModle;
     id model = self.dataArrayList[indexPath.section][indexPath.row];
 
     if (indexPath.section==1) {
@@ -157,11 +158,13 @@ static NSString *const MyHeadIdentifier = @"headerView" ;
             itemModle = (QuestionModel *)model;
         else
             itemModle = [QuestionModel mj_objectWithKeyValues:model];
+
     }else{
         if ([model isKindOfClass:[KnowledgeModel class]])
             itemModle = (KnowledgeModel *)model;
         else
             itemModle = [KnowledgeModel mj_objectWithKeyValues:model];
+
 
     }
     if (self.goToDetail) {

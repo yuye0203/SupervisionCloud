@@ -7,7 +7,7 @@
 //
 
 #import "KBMVCell.h"
-#import "KnowledgeModel.h"
+#import "QuestionModel.h"
 #import "MJExtension.h"
 #import "UIImageView+WebCache.h"
 
@@ -43,11 +43,11 @@
 
 
 - (void)smk_configure:(UITableViewCell *)cell model:(id)model indexPath:(NSIndexPath *)indexPath {
-    KnowledgeModel *itemModle;
-    if ([model isKindOfClass:[KnowledgeModel class]])
-        itemModle = (KnowledgeModel *)model;
+    QuestionModel *itemModle;
+    if ([model isKindOfClass:[QuestionModel class]])
+        itemModle = (QuestionModel *)model;
     else
-        itemModle = [KnowledgeModel mj_objectWithKeyValues:model];
+        itemModle = [QuestionModel mj_objectWithKeyValues:model];
     
     self.titleLabel.text = itemModle.author ;
     self.summaryLabel.text = itemModle.title;

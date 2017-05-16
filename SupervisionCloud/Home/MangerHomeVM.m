@@ -15,7 +15,7 @@
 #import "SVCloudAPI.h"
 #import "ManagerProject.h"
 #import "StaffItem.h"
-#import "KnowledgeModel.h"
+#import "QuestionModel.h"
 
 static NSString *const MyCellIdentifier1 = @"KBMVCell" ;
 static NSString *const MyCellIdentifier = @"RemoveCell" ;
@@ -60,7 +60,7 @@ static NSString *const MyCellIdentifier = @"RemoveCell" ;
     
     
     NSMutableDictionary *paramaters = [@{@"cmd":@"removeList",
-                                         @"auth_token":AUTH_TOKEN,
+                                         @"auth_token":user.authToken,
                                          @"user_id":[NSNumber numberWithInteger:[user.idField integerValue]],
                                          @"project_id":[NSNumber numberWithInteger:[project.idField integerValue]]} mutableCopy];
     
@@ -80,7 +80,7 @@ static NSString *const MyCellIdentifier = @"RemoveCell" ;
                   BaseModel *root = [BaseModel creatWithDic:jsonDict];
                   
                   if (root.resultCode ==1) {
-                      NSArray * array = [KnowledgeModel mj_objectArrayWithKeyValuesArray:root.body];
+                      NSArray * array = [QuestionModel mj_objectArrayWithKeyValuesArray:root.body];
                       self.removeList = [array mutableCopy];
                       
                       completionHandle(YES, nil, array);
@@ -112,7 +112,7 @@ static NSString *const MyCellIdentifier = @"RemoveCell" ;
    
     UserInfoBody *user = [UserInfoManager getInfo];
     NSMutableDictionary *paramaters = [@{@"cmd":@"questionList",
-                                         @"auth_token":AUTH_TOKEN,
+                                         @"auth_token":user.authToken,
                                          @"user_id":[NSNumber numberWithInteger:[user.idField integerValue]]} mutableCopy];
     
     
@@ -131,7 +131,7 @@ static NSString *const MyCellIdentifier = @"RemoveCell" ;
                   BaseModel *root = [BaseModel creatWithDic:jsonDict];
                   
                   if (root.resultCode ==1) {
-                      NSArray * array = [KnowledgeModel mj_objectArrayWithKeyValuesArray:root.body[@"list"]];
+                      NSArray * array = [QuestionModel mj_objectArrayWithKeyValuesArray:root.body[@"list"]];
                       self.questionList = [array mutableCopy];
                       completionHandle(YES, nil, array);
                       

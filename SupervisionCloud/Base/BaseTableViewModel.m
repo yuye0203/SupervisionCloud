@@ -31,7 +31,7 @@ static NSString *const MyCellIdentifier = @"BaseCell" ;
     table.dataSource = self;
 //    self.dataArrayList = [[NSMutableArray alloc] init];
   
-    [UITableViewCell smk_registerTable:table nibIdentifier:MyCellIdentifier];
+//    [UITableViewCell smk_registerTable:table nibIdentifier:MyCellIdentifier];
     
     if (head) {
         table.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{

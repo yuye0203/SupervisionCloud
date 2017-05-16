@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KnowledgeModel : NSObject
+@interface QuestionModel : NSObject
 
 @property (nonatomic, assign) NSInteger answerNum;
 @property (nonatomic, strong) NSString * author;
