@@ -52,7 +52,7 @@
                                                 @"num":@15,
                                                 @"cmd":@"knowledgeList",
                                                 @"user_id":model.idField,
-                                                @"auth_token":AUTH_TOKEN}];
+                                                @"auth_token":model.authToken}];
 
         [self.sviewModel getListData: [self parametersWithDic:newsParmaes]
                         CompletionHandle:^(BOOL success, NSError *error,id result){
@@ -73,7 +73,7 @@
                                                 @"num":@15,
                                                 @"cmd":@"knowledgeList",
                                                 @"user_id":model.idField,
-                                                @"auth_token":AUTH_TOKEN}];
+                                                @"auth_token":model.authToken}];
         [self.sviewModel getListData: [self parametersWithDic:newsParmaes]
                         CompletionHandle:^(BOOL success, NSError *error,id result){
                             weakSelf.hudView.hidden = YES;
