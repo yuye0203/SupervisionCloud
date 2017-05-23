@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Banner.h"
+#import "FunctionItem.h"
+
+typedef void(^GotoFunctionDetailBlock)(FunctionItem* item);
 
 @interface MangerHomeView : UIView
 
@@ -18,7 +21,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *dynamicML;
 
 @property (nonatomic,strong)NSArray *projectArr;
-
+@property (nonatomic, copy) GotoFunctionDetailBlock  goToDetail;
 
 -(void)createAllMenuData:(NSArray *)list;
 -(void)setBannerInfo:(Banner *)item;

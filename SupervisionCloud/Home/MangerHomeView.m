@@ -20,6 +20,7 @@
 @property (weak, nonatomic)IBOutlet UIView *activtiyView;
 @property(weak,nonatomic) IBOutlet UITableView *table;
 @property (nonatomic, strong) MangerHomeVM *viewModel;
+@property (nonatomic, strong) NSArray * functionArr;
 
 @property (nonatomic,strong)WJDropdownMenu *menu;
 
@@ -32,6 +33,14 @@
     }
     return _projectArr;
 }
+
+-(NSArray *)functionArr{
+    if (_functionArr==nil) {
+        _functionArr= [NSArray array];
+    }
+    return _functionArr;
+}
+
 
 - (void)layoutSubviews{
     [super layoutSubviews];
@@ -63,6 +72,7 @@
     self.menu.selectedColor = [UIColor blueColor];   //  选中的字体颜色
     self.menu.unSelectedColor = [UIColor blackColor];//  未选中的字体颜色
     self.menu.titleColor = [UIColor whiteColor];
+    self.menu.showSelectTitle = YES;
     
 }
 - (MangerHomeVM *)viewModel {
@@ -116,6 +126,8 @@
 }
 
 - (void)setActivtiyViews:(NSArray *)list{
+    
+    self.functionArr = list;
     CGSize size_screen = [[UIScreen mainScreen] bounds].size;
 
     float width = size_screen.width/5;
@@ -132,12 +144,18 @@
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setFrame:activityView.frame];
         [btn setTag:i];
-//        [btn addTarget:self action:@selector(clickActivity:) forControlEvents:UIControlEventTouchUpInside];
+        [btn addTarget:self action:@selector(clickActivity:) forControlEvents:UIControlEventTouchUpInside];
         [_activtiyView addSubview:btn];
     }
 }
 
+-(void)clickActivity:(id)sender{
+    
+    NSInteger index = [(UIButton *)sender tag];
+    FunctionItem *entity = self.functionArr[index];
+    self.goToDetail(entity);
 
+}
 - (void)hideMenu{
     //  点击收缩menu
     [self.menu drawBackMenu];

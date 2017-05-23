@@ -237,10 +237,7 @@
         }else{
             [btn setTitleColor:self.titleColor forState:UIControlStateNormal];
             [btn setTitleColor:self.titleColor forState:UIControlStateSelected];
-
-
         }
-        
         [btn setTitle:data[i] forState:UIControlStateNormal];
         
         [btn addTarget:self action:@selector(showFirstTableView:) forControlEvents:UIControlEventTouchUpInside];
@@ -248,7 +245,7 @@
         NSDictionary *attrs = @{NSFontAttributeName :btn.titleLabel.font};
         CGSize size=[data[i]  sizeWithAttributes:attrs];
         
-        CGPoint bgLayerPoint = CGPointMake(btn.center.x+size.width/2+8, self.menuBaseHeight/2);
+        CGPoint bgLayerPoint = CGPointMake(btnW/2+size.width/2+8, self.menuBaseHeight/2);
         
         
         CALayer *bgLayer = [self createBgLayerWithColor:[UIColor clearColor] andPosition:bgLayerPoint];
@@ -530,6 +527,7 @@
         if (!self.allData && !self.isNet) {
             //cell1.selectionStyle = UITableViewCellSelectionStyleNone;
             cell1.accessoryType = UITableViewCellAccessoryNone;
+            cell1.selected = YES;
         }else{
             cell1.selectionStyle = UITableViewCellSelectionStyleGray;
             cell1.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -547,6 +545,8 @@
         if (!self.data) {
             //cell2.selectionStyle = UITableViewCellSelectionStyleNone;
             cell2.accessoryType = UITableViewCellAccessoryNone;
+            cell2.selected = YES;
+
         }else{
             cell2.selectionStyle = UITableViewCellSelectionStyleGray;
             cell2.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -592,7 +592,15 @@
         }];
         [weakSelf hideCarverView];
         if (weakSelf.dataSourceSecond && !weakSelf.dataSourceThird) {
-            [btn setTitle:weakSelf.dataSourceSecond[indexPath.row] forState:UIControlStateNormal];
+            if (self.showSelectTitle) {
+                [btn setTitle:weakSelf.dataSourceSecond[indexPath.row] forState:UIControlStateNormal];
+                
+                NSDictionary *attrs = @{NSFontAttributeName :btn.titleLabel.font};
+                CGSize size=[weakSelf.dataSourceSecond[indexPath.row]  sizeWithAttributes:attrs];
+
+                [layer setPosition:CGPointMake(CGRectGetWidth(btn.frame)/2+size.width/2+8, self.menuBaseHeight/2)];
+            }
+
             if (_delegate && [_delegate respondsToSelector:@selector(menuCellDidSelected:firstIndex:andSecondIndex:)]) {
                 
                 [_delegate menuCellDidSelected:weakSelf.lastSelectedIndex-tempTag firstIndex:weakSelf.lastSelectedCellIndex andSecondIndex:indexPath.row];
@@ -615,7 +623,16 @@
             
         }
         if (!weakSelf.dataSourceSecond && !weakSelf.dataSourceThird) {
-            [btn setTitle:weakSelf.dataSourceFirst[indexPath.row] forState:UIControlStateNormal];
+            
+            if (self.showSelectTitle) {
+                [btn setTitle:weakSelf.dataSourceFirst[indexPath.row] forState:UIControlStateNormal];
+                
+                NSDictionary *attrs = @{NSFontAttributeName :btn.titleLabel.font};
+                CGSize size=[weakSelf.dataSourceFirst[indexPath.row]  sizeWithAttributes:attrs];
+                
+                [layer setPosition:CGPointMake(CGRectGetWidth(btn.frame)/2+size.width/2+8, self.menuBaseHeight/2)];
+            }
+
             if (_delegate && [_delegate respondsToSelector:@selector(menuCellDidSelected:firstIndex:andSecondIndex:)]) {
                 [_delegate menuCellDidSelected:weakSelf.lastSelectedIndex-tempTag firstIndex:indexPath.row andSecondIndex:-1];
             }
@@ -634,7 +651,16 @@
             
         }
         if (weakSelf.dataSourceSecond && weakSelf.dataSourceThird) {
-            [btn setTitle:weakSelf.dataSourceThird[indexPath.row] forState:UIControlStateNormal];
+            
+            if (self.showSelectTitle) {
+                [btn setTitle:weakSelf.dataSourceThird[indexPath.row] forState:UIControlStateNormal];
+                
+                NSDictionary *attrs = @{NSFontAttributeName :btn.titleLabel.font};
+                CGSize size=[weakSelf.dataSourceThird[indexPath.row]  sizeWithAttributes:attrs];
+                
+                [layer setPosition:CGPointMake(CGRectGetWidth(btn.frame)/2+size.width/2+8, self.menuBaseHeight/2)];
+            }
+
             if (_delegate && [_delegate respondsToSelector:@selector(menuCellDidSelected:firstIndex:andSecondIndex:)]) {
                 
                 [_delegate menuCellDidSelected:weakSelf.lastSelectedIndex-tempTag firstIndex:weakSelf.lastSelectedCellIndex andSecondIndex:weakSelf.lastSecondCellIndex];

@@ -9,6 +9,7 @@
 #import "BaseViewModel.h"
 
 @interface HomeVM : BaseViewModel
+
 - (void)getBannerInfo:(void(^)(BOOL success, NSError *error,id result))completionHandle;
 
 - (void)getUserProject:(void(^)(BOOL success, NSError *error,id result))completionHandle;

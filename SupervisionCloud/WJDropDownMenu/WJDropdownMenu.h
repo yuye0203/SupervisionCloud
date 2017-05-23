@@ -66,6 +66,8 @@ typedef enum:NSInteger{
 /** 遮盖的动画时间 */
 @property (nonatomic,assign)CGFloat caverAnimationTime;
 
+@property (nonatomic,assign)BOOL showSelectTitle;
+
 /** 缩进的动画时间 */
 @property (nonatomic,assign)CGFloat hideAnimationTime;
 

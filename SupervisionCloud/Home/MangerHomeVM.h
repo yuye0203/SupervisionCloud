@@ -8,6 +8,7 @@
 
 #import "BaseTableViewModel.h"
 
+
 @interface MangerHomeVM : BaseTableViewModel
 
 - (void)getRemoveList:(void(^)(BOOL success, NSError *error,id result))completionHandle;
