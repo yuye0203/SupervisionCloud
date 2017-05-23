@@ -19,12 +19,14 @@
 #import "BaseModel.h"
 #import "QuestionType.h"
 #import "MJExtension.h"
+#import "LCActionAlertView.h"
 
 static NSString *const TextCell = @"SVCloudTextFieldCell" ;
 static NSString *const TextViewCell = @"SVCloudTextViewCell" ;
 static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
 
 @interface ToAskViewModel ()<UICollectionViewDelegate,UICollectionViewDataSource,HWImagePickerSheetDelegate,JJPhotoDelegate>{
+    NSInteger selectIndex;
 
 }
 
@@ -32,10 +34,14 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
 @property (nonatomic, strong) HWImagePickerSheet *imgPickerActionSheet;
 
 @property (nonatomic, strong) NSMutableArray *dataArrayList;
+@property (nonatomic, strong) NSMutableArray *resultDic;
+
 
 @property (nonatomic, strong) UICollectionView *pickerCollectionView;
 
 @property (nonatomic, strong) UITableView *table;
+
+
 
 @end
 
@@ -48,6 +54,15 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
         _dataArrayList = [NSMutableArray array];
     }
     return _dataArrayList;
+}
+
+- (NSMutableArray *)resultDic {
+    if (_resultDic == nil) {
+        _resultDic = [@[@{@"name":@"类型",@"result":@"",@"pe":@"请选择类型"},
+  @{@"name":@"问题",@"result":@"",@"pe":@"请输入您的问题"},
+  @{@"name":@"描述",@"result":@"",@"pe":@"请选择类型"}] mutableCopy];
+    }
+    return _resultDic;
 }
 
 - (void)handleWithTable:(UITableView *)table {
@@ -90,7 +105,7 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
                   
                   if (root.resultCode ==1) {
                       NSArray * array = [QuestionType mj_objectArrayWithKeyValuesArray:root.body];
-                      
+                      self.dataArrayList = [array mutableCopy];
                       completionHandle(YES, nil, array);
                       
                   }else
@@ -120,8 +135,10 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
 //    file		array	附件（数组）	FALSE
 //    desc		string	详情	TRUE
 //    verify		string	加密字符串	TRUE	参考加密说明
-    NSIndexPath *index1 = [NSIndexPath indexPathWithIndex:1];
-    NSIndexPath *index2 = [NSIndexPath indexPathWithIndex:2];
+    
+    NSIndexPath *index1 = [NSIndexPath indexPathForRow:1 inSection:0];
+    NSIndexPath *index2 = [NSIndexPath indexPathForRow:2 inSection:0];
+
 
     SVCloudTextFieldCell *textCell  = [self.table cellForRowAtIndexPath:index1];
     SVCloudTextViewCell *textViewCell  = [self.table cellForRowAtIndexPath:index2];
@@ -135,10 +152,10 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
     NSMutableDictionary *paramaters = [@{@"cmd":@"addQuestion",
                                          @"auth_token":user.authToken,
                                          @"user_id":[NSNumber numberWithInteger:[user.idField integerValue]],
-                                         @"title":@"",
+                                         @"title":title,
                                          @"type":@"",
-                                         @"desc":@"",
-                                         @"type":@""} mutableCopy];
+                                         @"desc":subTitle,
+                                         } mutableCopy];
     
     
     NSData *data =    [NSJSONSerialization dataWithJSONObject:[self parametersWithDic:paramaters]
@@ -183,27 +200,35 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    NSDictionary *dic = self.resultDic[indexPath.row];
     switch (indexPath.row) {
         case 0:
         {
             SVCloudSelectorCell *cell = [tableView dequeueReusableCellWithIdentifier:SelectorCell forIndexPath:indexPath] ;
-            cell.titleLabel.text = @"类型";
-            cell.summaryLabel.placeholder = @"请选择类型";
+            cell.titleLabel.text = dic[@"name"];
+            cell.summaryLabel.placeholder = dic[@"pe"];
+            cell.summaryLabel.text = dic[@"result"];
+
         
             return cell;
         }
         case 1:{
             SVCloudTextFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:TextCell forIndexPath:indexPath] ;
-            cell.typeName.text = @"问题";
-            cell.textField.placeholder = @"请输入您的问题";
+            cell.typeName.text = dic[@"name"];
+            cell.textField.placeholder = dic[@"pe"];
+            cell.textField.text = dic[@"result"];
+
             return cell;
 
         }
             case 2:
         {
             SVCloudTextViewCell *textViewCell = [tableView dequeueReusableCellWithIdentifier:TextViewCell forIndexPath:indexPath] ;
-            textViewCell.typeName.text = @"描述";
-            textViewCell.textView.placeholder = @"请输入问题描述";
+            
+            textViewCell.typeName.text = dic[@"name"];
+            textViewCell.textView.placeholder = dic[@"pe"];
+            textViewCell.textView.text = dic[@"result"];
+
             return textViewCell;
         }
  
@@ -230,6 +255,26 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if(indexPath.row==0){
+        NSMutableArray *names = [NSMutableArray array];
+
+        for (QuestionType *type in self.dataArrayList) {
+            [names addObject:type.name];
+        }
+        [LCActionAlertView showActionViewNames:names completed:^(NSInteger index,NSString * name) {
+            //类型选择
+            selectIndex = index;
+            NSMutableDictionary *dic = [_resultDic[indexPath.row] mutableCopy];
+            [dic setObject:name forKey:@"result"];
+            
+            [_resultDic replaceObjectAtIndex:0 withObject:dic];
+            [tableView reloadData];
+            NSLog(@"%ld",index);
+        } canceled:^{
+        }];
+
+    }
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

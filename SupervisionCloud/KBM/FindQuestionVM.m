@@ -44,7 +44,8 @@ static NSString *const MyCellIdentifier = @"KBMVCell" ;
     
     [self postWithUrl:timeSp body:data showLoading:NO success:^(NSDictionary *response) {
         [self.table.mj_header endRefreshing];
-        
+        [self.table.mj_footer endRefreshing];
+
         RootClass *root = [RootClass mj_objectWithKeyValues:response];
         if (root.resultCode ==1) {
             if (root.body.list.count>0) {

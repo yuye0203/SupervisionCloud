@@ -11,13 +11,13 @@
 #import "TPKeyboardAvoidingTableView.h"
 #import "BaseVC.h"
 #import "SVProgressHUD.h"
-
+#import "LCActionAlertView.h"
 @interface ToAskVC ()
 @property (nonatomic, weak) IBOutlet TPKeyboardAvoidingTableView *table;
 @property (nonatomic, weak) IBOutlet UICollectionView *collection;
 
 @property (nonatomic, strong) ToAskViewModel *viewModel;
-
+-(IBAction)saveQuestion;
 @end
 
 @implementation ToAskVC
@@ -52,6 +52,11 @@
     self.viewModel.addImageBlock = ^{
         [weakSelf.view endEditing:YES];
     };
+    self.viewModel.showTypeBlock = ^(NSArray *types){
+        [weakSelf.view endEditing:YES];
+        [weakSelf showTypeView:types];
+
+    };
     [self.viewModel handleWithTable:self.table];
     [SVProgressHUD showWithStatus:@"加载中..."];
     [self.viewModel getQuestionType:^(BOOL success, NSError *error,id result){
@@ -62,6 +67,22 @@
 }
 -(void)setupCollectionView{
     [self.viewModel handWithCollectionView:self.collection];
+
+}
+
+-(void)showTypeView:(NSArray *)types{
+    
+    [LCActionAlertView showActionViewNames:@[@"我",@"和"] completed:^(NSInteger index,NSString * name) {
+        NSLog(@"%ld",index);
+    } canceled:^{
+        NSLog(@"canceled");
+    }];
+
+}
+-(IBAction)saveQuestion{
+    [self.viewModel saveQuestion:^(BOOL success, NSError *error,id result){
+    }];
+    
 
 }
 - (void)didReceiveMemoryWarning {

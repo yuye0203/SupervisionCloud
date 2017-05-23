@@ -67,6 +67,11 @@
 		AD5BE4C21E8C948C00A695E0 /* KBMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE4C01E8C948C00A695E0 /* KBMVC.m */; };
 		AD5BE4C31E8C948C00A695E0 /* KBMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE4C01E8C948C00A695E0 /* KBMVC.m */; };
 		AD7007441ECB242F007B9E52 /* KBM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7007431ECB242F007B9E52 /* KBM.storyboard */; };
+		AD70074C1ECB2A00007B9E52 /* LCActionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7007471ECB2A00007B9E52 /* LCActionAlertView.m */; };
+		AD70074D1ECB2A00007B9E52 /* LCActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7007491ECB2A00007B9E52 /* LCActionCell.m */; };
+		AD70074E1ECB2A00007B9E52 /* UIView+extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AD70074B1ECB2A00007B9E52 /* UIView+extra.m */; };
+		AD7007531ECB3BEB007B9E52 /* PersonnelManagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7007521ECB3BEB007B9E52 /* PersonnelManagement.storyboard */; };
+		AD7007561ECB3FED007B9E52 /* PersonnelManagementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7007551ECB3FED007B9E52 /* PersonnelManagementVC.m */; };
 		AD8A56381E8B529100FACC9F /* ProjectListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8A56371E8B529100FACC9F /* ProjectListVC.m */; };
 		AD8A56391E8B529100FACC9F /* ProjectListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8A56371E8B529100FACC9F /* ProjectListVC.m */; };
 		AD8A563A1E8B529100FACC9F /* ProjectListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8A56371E8B529100FACC9F /* ProjectListVC.m */; };
@@ -161,6 +166,26 @@
 		ADDAF84F1EB9F83A00A5BE62 /* ListBody.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF84A1EB9F83A00A5BE62 /* ListBody.m */; };
 		ADDAF8501EB9F83A00A5BE62 /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF84C1EB9F83A00A5BE62 /* QuestionModel.m */; };
 		ADDAF8511EB9F83A00A5BE62 /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDAF84E1EB9F83A00A5BE62 /* RootClass.m */; };
+		ADEA6A231ECDC97100A10404 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A211ECDC97100A10404 /* PersonCell.m */; };
+		ADEA6A241ECDC97100A10404 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADEA6A221ECDC97100A10404 /* PersonCell.xib */; };
+		ADEA6A281ECDCBB000A10404 /* PersonDynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A261ECDCBB000A10404 /* PersonDynamicCell.m */; };
+		ADEA6A291ECDCBB000A10404 /* PersonDynamicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADEA6A271ECDCBB000A10404 /* PersonDynamicCell.xib */; };
+		ADEA6A2D1ECDCEA200A10404 /* PersonDynamicFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A2B1ECDCEA200A10404 /* PersonDynamicFirstCell.m */; };
+		ADEA6A2E1ECDCEA200A10404 /* PersonDynamicFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADEA6A2C1ECDCEA200A10404 /* PersonDynamicFirstCell.xib */; };
+		ADEA6A311ECDD09B00A10404 /* PersonListVM.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A301ECDD09B00A10404 /* PersonListVM.m */; };
+		ADEA6A341ECDD0CF00A10404 /* PersonDynamicVM.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A331ECDD0CF00A10404 /* PersonDynamicVM.m */; };
+		ADEA6A371ECDE32600A10404 /* PersonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A361ECDE32600A10404 /* PersonItem.m */; };
+		ADEA6A3A1ECDEA5500A10404 /* PersonDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A391ECDEA5500A10404 /* PersonDetailVC.m */; };
+		ADEA6A3D1ECDF25100A10404 /* PersonDetailVM.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A3C1ECDF25100A10404 /* PersonDetailVM.m */; };
+		ADEA6A401ECE8A0300A10404 /* ApplyPersonListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A3F1ECE8A0300A10404 /* ApplyPersonListVC.m */; };
+		ADEA6A421ED3BD3500A10404 /* ScheduleManagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEA6A411ED3BD3500A10404 /* ScheduleManagement.storyboard */; };
+		ADEA6A471ED3C25200A10404 /* ScheduleHomeListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A461ED3C25200A10404 /* ScheduleHomeListVC.m */; };
+		ADEA6A4A1ED3C2AA00A10404 /* ScheduleMonthlyListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A491ED3C2AA00A10404 /* ScheduleMonthlyListVC.m */; };
+		ADEA6A4D1ED3C2E200A10404 /* ScheduleOverallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A4C1ED3C2E200A10404 /* ScheduleOverallVC.m */; };
+		ADEA6A501ED3C30C00A10404 /* AddScheduleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEA6A4F1ED3C30C00A10404 /* AddScheduleVC.m */; };
+		ADEA6A521ED3D9CC00A10404 /* MeasurementManagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEA6A511ED3D9CC00A10404 /* MeasurementManagement.storyboard */; };
+		ADEA6A561ED3EA4C00A10404 /* SecurityLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEA6A551ED3EA4C00A10404 /* SecurityLog.storyboard */; };
+		ADEA6A5B1ED47AC500A10404 /* ProcessInspection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEA6A5A1ED47AC500A10404 /* ProcessInspection.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +289,15 @@
 		AD5BE4BF1E8C948C00A695E0 /* KBMVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBMVC.h; path = KBM/KBMVC.h; sourceTree = "<group>"; };
 		AD5BE4C01E8C948C00A695E0 /* KBMVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBMVC.m; path = KBM/KBMVC.m; sourceTree = "<group>"; };
 		AD7007431ECB242F007B9E52 /* KBM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KBM.storyboard; sourceTree = "<group>"; };
+		AD7007461ECB2A00007B9E52 /* LCActionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCActionAlertView.h; sourceTree = "<group>"; };
+		AD7007471ECB2A00007B9E52 /* LCActionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCActionAlertView.m; sourceTree = "<group>"; };
+		AD7007481ECB2A00007B9E52 /* LCActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCActionCell.h; sourceTree = "<group>"; };
+		AD7007491ECB2A00007B9E52 /* LCActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCActionCell.m; sourceTree = "<group>"; };
+		AD70074A1ECB2A00007B9E52 /* UIView+extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extra.h"; sourceTree = "<group>"; };
+		AD70074B1ECB2A00007B9E52 /* UIView+extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extra.m"; sourceTree = "<group>"; };
+		AD7007521ECB3BEB007B9E52 /* PersonnelManagement.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PersonnelManagement.storyboard; sourceTree = "<group>"; };
+		AD7007541ECB3FED007B9E52 /* PersonnelManagementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonnelManagementVC.h; path = Project/Personnelmanagement/PersonnelManagementVC.h; sourceTree = "<group>"; };
+		AD7007551ECB3FED007B9E52 /* PersonnelManagementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonnelManagementVC.m; path = Project/Personnelmanagement/PersonnelManagementVC.m; sourceTree = "<group>"; };
 		AD8A56361E8B529100FACC9F /* ProjectListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectListVC.h; path = Project/ProjectListVC.h; sourceTree = "<group>"; };
 		AD8A56371E8B529100FACC9F /* ProjectListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectListVC.m; path = Project/ProjectListVC.m; sourceTree = "<group>"; };
 		ADCCABBD1EB9FB2800EF8A48 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseVC.h; path = Base/BaseVC.h; sourceTree = "<group>"; };
@@ -436,6 +470,39 @@
 		ADDAF84C1EB9F83A00A5BE62 /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionModel.m; path = KBM/KBMModel/QuestionModel.m; sourceTree = "<group>"; };
 		ADDAF84D1EB9F83A00A5BE62 /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootClass.h; path = KBM/KBMModel/RootClass.h; sourceTree = "<group>"; };
 		ADDAF84E1EB9F83A00A5BE62 /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootClass.m; path = KBM/KBMModel/RootClass.m; sourceTree = "<group>"; };
+		ADEA6A201ECDC97100A10404 /* PersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonCell.h; path = Project/Personnelmanagement/PersonCell.h; sourceTree = "<group>"; };
+		ADEA6A211ECDC97100A10404 /* PersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonCell.m; path = Project/Personnelmanagement/PersonCell.m; sourceTree = "<group>"; };
+		ADEA6A221ECDC97100A10404 /* PersonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PersonCell.xib; path = Project/Personnelmanagement/PersonCell.xib; sourceTree = "<group>"; };
+		ADEA6A251ECDCBB000A10404 /* PersonDynamicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonDynamicCell.h; path = Project/Personnelmanagement/PersonDynamicCell.h; sourceTree = "<group>"; };
+		ADEA6A261ECDCBB000A10404 /* PersonDynamicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonDynamicCell.m; path = Project/Personnelmanagement/PersonDynamicCell.m; sourceTree = "<group>"; };
+		ADEA6A271ECDCBB000A10404 /* PersonDynamicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PersonDynamicCell.xib; path = Project/Personnelmanagement/PersonDynamicCell.xib; sourceTree = "<group>"; };
+		ADEA6A2A1ECDCEA200A10404 /* PersonDynamicFirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonDynamicFirstCell.h; path = Project/Personnelmanagement/PersonDynamicFirstCell.h; sourceTree = "<group>"; };
+		ADEA6A2B1ECDCEA200A10404 /* PersonDynamicFirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonDynamicFirstCell.m; path = Project/Personnelmanagement/PersonDynamicFirstCell.m; sourceTree = "<group>"; };
+		ADEA6A2C1ECDCEA200A10404 /* PersonDynamicFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PersonDynamicFirstCell.xib; path = Project/Personnelmanagement/PersonDynamicFirstCell.xib; sourceTree = "<group>"; };
+		ADEA6A2F1ECDD09B00A10404 /* PersonListVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonListVM.h; path = Project/Personnelmanagement/PersonListVM.h; sourceTree = "<group>"; };
+		ADEA6A301ECDD09B00A10404 /* PersonListVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonListVM.m; path = Project/Personnelmanagement/PersonListVM.m; sourceTree = "<group>"; };
+		ADEA6A321ECDD0CF00A10404 /* PersonDynamicVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonDynamicVM.h; path = Project/Personnelmanagement/PersonDynamicVM.h; sourceTree = "<group>"; };
+		ADEA6A331ECDD0CF00A10404 /* PersonDynamicVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonDynamicVM.m; path = Project/Personnelmanagement/PersonDynamicVM.m; sourceTree = "<group>"; };
+		ADEA6A351ECDE32600A10404 /* PersonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonItem.h; sourceTree = "<group>"; };
+		ADEA6A361ECDE32600A10404 /* PersonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonItem.m; sourceTree = "<group>"; };
+		ADEA6A381ECDEA5500A10404 /* PersonDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonDetailVC.h; path = Project/Personnelmanagement/PersonDetailVC.h; sourceTree = "<group>"; };
+		ADEA6A391ECDEA5500A10404 /* PersonDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonDetailVC.m; path = Project/Personnelmanagement/PersonDetailVC.m; sourceTree = "<group>"; };
+		ADEA6A3B1ECDF25100A10404 /* PersonDetailVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonDetailVM.h; path = Project/Personnelmanagement/PersonDetailVM.h; sourceTree = "<group>"; };
+		ADEA6A3C1ECDF25100A10404 /* PersonDetailVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonDetailVM.m; path = Project/Personnelmanagement/PersonDetailVM.m; sourceTree = "<group>"; };
+		ADEA6A3E1ECE8A0300A10404 /* ApplyPersonListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplyPersonListVC.h; path = Project/Personnelmanagement/ApplyPersonListVC.h; sourceTree = "<group>"; };
+		ADEA6A3F1ECE8A0300A10404 /* ApplyPersonListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplyPersonListVC.m; path = Project/Personnelmanagement/ApplyPersonListVC.m; sourceTree = "<group>"; };
+		ADEA6A411ED3BD3500A10404 /* ScheduleManagement.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ScheduleManagement.storyboard; path = Project/ScheduleManagement.storyboard; sourceTree = "<group>"; };
+		ADEA6A451ED3C25200A10404 /* ScheduleHomeListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleHomeListVC.h; path = Project/Schedule/ScheduleHomeListVC.h; sourceTree = "<group>"; };
+		ADEA6A461ED3C25200A10404 /* ScheduleHomeListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleHomeListVC.m; path = Project/Schedule/ScheduleHomeListVC.m; sourceTree = "<group>"; };
+		ADEA6A481ED3C2AA00A10404 /* ScheduleMonthlyListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleMonthlyListVC.h; path = Project/Schedule/ScheduleMonthlyListVC.h; sourceTree = "<group>"; };
+		ADEA6A491ED3C2AA00A10404 /* ScheduleMonthlyListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleMonthlyListVC.m; path = Project/Schedule/ScheduleMonthlyListVC.m; sourceTree = "<group>"; };
+		ADEA6A4B1ED3C2E200A10404 /* ScheduleOverallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleOverallVC.h; path = Project/Schedule/ScheduleOverallVC.h; sourceTree = "<group>"; };
+		ADEA6A4C1ED3C2E200A10404 /* ScheduleOverallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleOverallVC.m; path = Project/Schedule/ScheduleOverallVC.m; sourceTree = "<group>"; };
+		ADEA6A4E1ED3C30C00A10404 /* AddScheduleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddScheduleVC.h; path = Project/Schedule/AddScheduleVC.h; sourceTree = "<group>"; };
+		ADEA6A4F1ED3C30C00A10404 /* AddScheduleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddScheduleVC.m; path = Project/Schedule/AddScheduleVC.m; sourceTree = "<group>"; };
+		ADEA6A511ED3D9CC00A10404 /* MeasurementManagement.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MeasurementManagement.storyboard; path = Project/Measurement/MeasurementManagement.storyboard; sourceTree = "<group>"; };
+		ADEA6A551ED3EA4C00A10404 /* SecurityLog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SecurityLog.storyboard; path = Project/SecurityLog/SecurityLog.storyboard; sourceTree = "<group>"; };
+		ADEA6A5A1ED47AC500A10404 /* ProcessInspection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ProcessInspection.storyboard; path = Project/Processinspection/ProcessInspection.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,6 +622,7 @@
 		AD1CAD231EB8C465007C6A88 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				AD7007451ECB2A00007B9E52 /* LCActionAlertView */,
 				ADCCACD21EC4985C00EF8A48 /* JJPhotoViewer */,
 				ADCCACC51EC4976B00EF8A48 /* SDProgressView */,
 				ADCCAC971EC4963100EF8A48 /* CollectionViewInfo */,
@@ -716,6 +784,11 @@
 				AD345F231E8B487000F29803 /* Views */,
 				AD345F221E8B486500F29803 /* Models */,
 				AD345F211E8B484B00F29803 /* Controllers */,
+				AD7007521ECB3BEB007B9E52 /* PersonnelManagement.storyboard */,
+				ADEA6A411ED3BD3500A10404 /* ScheduleManagement.storyboard */,
+				ADEA6A511ED3D9CC00A10404 /* MeasurementManagement.storyboard */,
+				ADEA6A551ED3EA4C00A10404 /* SecurityLog.storyboard */,
+				ADEA6A5A1ED47AC500A10404 /* ProcessInspection.storyboard */,
 			);
 			name = Project;
 			sourceTree = "<group>";
@@ -737,6 +810,8 @@
 		AD345F211E8B484B00F29803 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ADEA6A441ED3C20C00A10404 /* Schedule */,
+				ADEA6A431ED3C1EA00A10404 /* Personel */,
 				AD8A56361E8B529100FACC9F /* ProjectListVC.h */,
 				AD8A56371E8B529100FACC9F /* ProjectListVC.m */,
 			);
@@ -746,6 +821,8 @@
 		AD345F221E8B486500F29803 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ADEA6A351ECDE32600A10404 /* PersonItem.h */,
+				ADEA6A361ECDE32600A10404 /* PersonItem.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -753,6 +830,15 @@
 		AD345F231E8B487000F29803 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ADEA6A201ECDC97100A10404 /* PersonCell.h */,
+				ADEA6A211ECDC97100A10404 /* PersonCell.m */,
+				ADEA6A221ECDC97100A10404 /* PersonCell.xib */,
+				ADEA6A251ECDCBB000A10404 /* PersonDynamicCell.h */,
+				ADEA6A261ECDCBB000A10404 /* PersonDynamicCell.m */,
+				ADEA6A271ECDCBB000A10404 /* PersonDynamicCell.xib */,
+				ADEA6A2A1ECDCEA200A10404 /* PersonDynamicFirstCell.h */,
+				ADEA6A2B1ECDCEA200A10404 /* PersonDynamicFirstCell.m */,
+				ADEA6A2C1ECDCEA200A10404 /* PersonDynamicFirstCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -760,6 +846,12 @@
 		AD345F241E8B487900F29803 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				ADEA6A2F1ECDD09B00A10404 /* PersonListVM.h */,
+				ADEA6A301ECDD09B00A10404 /* PersonListVM.m */,
+				ADEA6A321ECDD0CF00A10404 /* PersonDynamicVM.h */,
+				ADEA6A331ECDD0CF00A10404 /* PersonDynamicVM.m */,
+				ADEA6A3B1ECDF25100A10404 /* PersonDetailVM.h */,
+				ADEA6A3C1ECDF25100A10404 /* PersonDetailVM.m */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -865,6 +957,19 @@
 				AD3BEDB01E8B3E6C0001D789 /* Info.plist */,
 			);
 			path = SupervisionCloudUITests;
+			sourceTree = "<group>";
+		};
+		AD7007451ECB2A00007B9E52 /* LCActionAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				AD7007461ECB2A00007B9E52 /* LCActionAlertView.h */,
+				AD7007471ECB2A00007B9E52 /* LCActionAlertView.m */,
+				AD7007481ECB2A00007B9E52 /* LCActionCell.h */,
+				AD7007491ECB2A00007B9E52 /* LCActionCell.m */,
+				AD70074A1ECB2A00007B9E52 /* UIView+extra.h */,
+				AD70074B1ECB2A00007B9E52 /* UIView+extra.m */,
+			);
+			path = LCActionAlertView;
 			sourceTree = "<group>";
 		};
 		ADCCABC51EBA18DB00EF8A48 /* UIViewCategory */ = {
@@ -1076,6 +1181,34 @@
 			path = JJPhotoViewer;
 			sourceTree = "<group>";
 		};
+		ADEA6A431ED3C1EA00A10404 /* Personel */ = {
+			isa = PBXGroup;
+			children = (
+				AD7007541ECB3FED007B9E52 /* PersonnelManagementVC.h */,
+				AD7007551ECB3FED007B9E52 /* PersonnelManagementVC.m */,
+				ADEA6A381ECDEA5500A10404 /* PersonDetailVC.h */,
+				ADEA6A391ECDEA5500A10404 /* PersonDetailVC.m */,
+				ADEA6A3E1ECE8A0300A10404 /* ApplyPersonListVC.h */,
+				ADEA6A3F1ECE8A0300A10404 /* ApplyPersonListVC.m */,
+			);
+			name = Personel;
+			sourceTree = "<group>";
+		};
+		ADEA6A441ED3C20C00A10404 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA6A451ED3C25200A10404 /* ScheduleHomeListVC.h */,
+				ADEA6A461ED3C25200A10404 /* ScheduleHomeListVC.m */,
+				ADEA6A481ED3C2AA00A10404 /* ScheduleMonthlyListVC.h */,
+				ADEA6A491ED3C2AA00A10404 /* ScheduleMonthlyListVC.m */,
+				ADEA6A4B1ED3C2E200A10404 /* ScheduleOverallVC.h */,
+				ADEA6A4C1ED3C2E200A10404 /* ScheduleOverallVC.m */,
+				ADEA6A4E1ED3C30C00A10404 /* AddScheduleVC.h */,
+				ADEA6A4F1ED3C30C00A10404 /* AddScheduleVC.m */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
 		BFA69494DCC10D55C677046B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1196,14 +1329,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1CAD001EB860FF007C6A88 /* MineHeaderCell.xib in Resources */,
+				AD7007531ECB3BEB007B9E52 /* PersonnelManagement.storyboard in Resources */,
 				ADCCADAF1ECA805B00EF8A48 /* KBMVCell.xib in Resources */,
 				AD3BED991E8B3E6C0001D789 /* LaunchScreen.storyboard in Resources */,
+				ADEA6A291ECDCBB000A10404 /* PersonDynamicCell.xib in Resources */,
 				ADCCAC901EC43D2400EF8A48 /* RemoveCell.xib in Resources */,
+				ADEA6A5B1ED47AC500A10404 /* ProcessInspection.storyboard in Resources */,
 				AD1CFF791EB853DD00B43290 /* MangerHomeView.xib in Resources */,
 				ADCCAC391EC1B9ED00EF8A48 /* BaseCell.xib in Resources */,
 				ADCCADAD1ECA1BAE00EF8A48 /* KBMVResoureCell.xib in Resources */,
 				AD7007441ECB242F007B9E52 /* KBM.storyboard in Resources */,
+				ADEA6A421ED3BD3500A10404 /* ScheduleManagement.storyboard in Resources */,
 				AD3BED961E8B3E6C0001D789 /* Assets.xcassets in Resources */,
+				ADEA6A241ECDC97100A10404 /* PersonCell.xib in Resources */,
 				ADCCABF71EBD6C5300EF8A48 /* SVCloudTextViewCell.xib in Resources */,
 				ADCCABF11EBD6C0500EF8A48 /* SVCloudTextFieldCell.xib in Resources */,
 				ADCCACC11EC4963100EF8A48 /* MImaCell.xib in Resources */,
@@ -1213,8 +1351,11 @@
 				ADCCAC461EC1F50900EF8A48 /* SVCloudDateCell.xib in Resources */,
 				ADCCAC411EC1F2E800EF8A48 /* SVCloudSelectorCell.xib in Resources */,
 				ADCCAC0E1EBE9A1F00EF8A48 /* TodoListCell.xib in Resources */,
+				ADEA6A521ED3D9CC00A10404 /* MeasurementManagement.storyboard in Resources */,
+				ADEA6A561ED3EA4C00A10404 /* SecurityLog.storyboard in Resources */,
 				ADCCAC621EC2137C00EF8A48 /* SVCloudImageCollectionCell.xib in Resources */,
 				ADCCAC581EC211F200EF8A48 /* SVCloudImageCell.xib in Resources */,
+				ADEA6A2E1ECDCEA200A10404 /* PersonDynamicFirstCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1289,6 +1430,7 @@
 			files = (
 				ADCCAC111EBF3B9A00EF8A48 /* HomeActivityView.m in Sources */,
 				ADCCACB61EC4963100EF8A48 /* MFlowLayOut.m in Sources */,
+				ADEA6A3D1ECDF25100A10404 /* PersonDetailVM.m in Sources */,
 				ADCCAC151EBF422100EF8A48 /* WJDropdownMenu.m in Sources */,
 				ADCCABCF1EBA18DB00EF8A48 /* UIView+Center.m in Sources */,
 				ADCCAC311EC0A01600EF8A48 /* UserRoot.m in Sources */,
@@ -1302,6 +1444,7 @@
 				ADCCACDD1EC4985C00EF8A48 /* JJOneScrollView.m in Sources */,
 				ADCCAC7D1EC356E700EF8A48 /* Contract.m in Sources */,
 				AD1CACFF1EB860FF007C6A88 /* MineHeaderCell.m in Sources */,
+				ADEA6A341ECDD0CF00A10404 /* PersonDynamicVM.m in Sources */,
 				ADCCABBF1EB9FB2800EF8A48 /* BaseVC.m in Sources */,
 				ADCCABD71EBD671800EF8A48 /* CompanyListView.m in Sources */,
 				AD3BED911E8B3E6C0001D789 /* ToDoVC.m in Sources */,
@@ -1322,6 +1465,7 @@
 				ADCCACDF1EC4985C00EF8A48 /* JJPhotoManeger.m in Sources */,
 				AD1CAD091EB86538007C6A88 /* MineTableViewModel.m in Sources */,
 				ADCCABFA1EBD704700EF8A48 /* ToAskViewModel.m in Sources */,
+				ADEA6A281ECDCBB000A10404 /* PersonDynamicCell.m in Sources */,
 				ADCCAC031EBE91CC00EF8A48 /* BaseTableVC.m in Sources */,
 				ADCCACBE1EC4963100EF8A48 /* MGroupCell.m in Sources */,
 				AD1CFF691EB81B9F00B43290 /* LoginVC.m in Sources */,
@@ -1344,6 +1488,7 @@
 				ADCCABF01EBD6C0500EF8A48 /* SVCloudTextFieldCell.m in Sources */,
 				ADCCACC41EC4963100EF8A48 /* MShowGroupAllSet.m in Sources */,
 				AD345F011E8B46FC00F29803 /* NSObject+SMKProperties.m in Sources */,
+				AD70074D1ECB2A00007B9E52 /* LCActionCell.m in Sources */,
 				ADCCABD41EBABF8A00EF8A48 /* KnowledgeModel.m in Sources */,
 				AD5BE4C11E8C948C00A695E0 /* KBMVC.m in Sources */,
 				ADCCAC451EC1F50900EF8A48 /* SVCloudDateCell.m in Sources */,
@@ -1354,6 +1499,8 @@
 				ADCCAC881EC4357600EF8A48 /* UIViewAdditions.m in Sources */,
 				ADCCAC061EBE91F100EF8A48 /* BaseTableViewModel.m in Sources */,
 				AD345F0A1E8B46FC00F29803 /* SMKMediator.m in Sources */,
+				ADEA6A311ECDD09B00A10404 /* PersonListVM.m in Sources */,
+				ADEA6A401ECE8A0300A10404 /* ApplyPersonListVC.m in Sources */,
 				AD3BED8E1E8B3E6C0001D789 /* HomeController.m in Sources */,
 				ADDAF8501EB9F83A00A5BE62 /* QuestionModel.m in Sources */,
 				AD1CAD101EB8ADA0007C6A88 /* KBMVCViewModel.m in Sources */,
@@ -1361,9 +1508,14 @@
 				ADCCAC191EBF4C8900EF8A48 /* FindeQuestionVC.m in Sources */,
 				ADCCACC21EC4963100EF8A48 /* MImaLibTool.m in Sources */,
 				ADCCAC571EC211F200EF8A48 /* SVCloudImageCell.m in Sources */,
+				AD7007561ECB3FED007B9E52 /* PersonnelManagementVC.m in Sources */,
+				ADEA6A501ED3C30C00A10404 /* AddScheduleVC.m in Sources */,
 				ADCCACC31EC4963100EF8A48 /* MShowAllGroup.m in Sources */,
 				ADCCACB71EC4963100EF8A48 /* MHeaderImaCell.m in Sources */,
+				ADEA6A231ECDC97100A10404 /* PersonCell.m in Sources */,
 				ADCCABF61EBD6C5300EF8A48 /* SVCloudTextViewCell.m in Sources */,
+				ADEA6A4A1ED3C2AA00A10404 /* ScheduleMonthlyListVC.m in Sources */,
+				ADEA6A471ED3C25200A10404 /* ScheduleHomeListVC.m in Sources */,
 				ADCCABDA1EBD675B00EF8A48 /* KBMView.m in Sources */,
 				ADCCAC871EC4357600EF8A48 /* UIView+ZXQuartz.m in Sources */,
 				ADCCABEC1EBD6AEF00EF8A48 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
@@ -1373,6 +1525,8 @@
 				ADCCABEB1EBD6AEF00EF8A48 /* TPKeyboardAvoidingTableView.m in Sources */,
 				ADCCAC7E1EC356E700EF8A48 /* Dynamic.m in Sources */,
 				ADCCABDE1EBD690700EF8A48 /* ToAskVC.m in Sources */,
+				ADEA6A3A1ECDEA5500A10404 /* PersonDetailVC.m in Sources */,
+				AD70074C1ECB2A00007B9E52 /* LCActionAlertView.m in Sources */,
 				ADCCACDE1EC4985C00EF8A48 /* JJPhoto.m in Sources */,
 				AD345F131E8B46FC00F29803 /* UITableViewCell+SMKConfigure.m in Sources */,
 				AD1CAD1C1EB8B6B9007C6A88 /* SVCloudNetwork.m in Sources */,
@@ -1380,14 +1534,18 @@
 				AD3BED881E8B3E6C0001D789 /* main.m in Sources */,
 				AD1CFF651EB81AF800B43290 /* BaseRequest.m in Sources */,
 				ADCCABEA1EBD6AEF00EF8A48 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				ADEA6A371ECDE32600A10404 /* PersonItem.m in Sources */,
 				AD1CFF5F1EB81AAF00B43290 /* BaseViewModel.m in Sources */,
+				ADEA6A4D1ED3C2E200A10404 /* ScheduleOverallVC.m in Sources */,
 				AD345F101E8B46FC00F29803 /* UICollectionViewCell+SMKConfigure.m in Sources */,
 				AD345F0D1E8B46FC00F29803 /* SMKStore.m in Sources */,
 				ADCCAC251EBF573A00EF8A48 /* FindResourVC.m in Sources */,
 				ADDAF8511EB9F83A00A5BE62 /* RootClass.m in Sources */,
+				ADEA6A2D1ECDCEA200A10404 /* PersonDynamicFirstCell.m in Sources */,
 				ADCCAC3C1EC1BD9500EF8A48 /* ScreenVC.m in Sources */,
 				AD345F041E8B46FC00F29803 /* NSObject+SMKRequest.m in Sources */,
 				ADCCADA61ECA087E00EF8A48 /* KnowledgeDetailVC.m in Sources */,
+				AD70074E1ECB2A00007B9E52 /* UIView+extra.m in Sources */,
 				ADCCACE31EC4A8F400EF8A48 /* QuestionType.m in Sources */,
 				AD1CFF771EB853CE00B43290 /* MangerHomeView.m in Sources */,
 				ADCCADA91ECA090C00EF8A48 /* KnowledgeDetailVModel.m in Sources */,

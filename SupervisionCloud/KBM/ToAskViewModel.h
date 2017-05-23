@@ -13,6 +13,7 @@
 
 typedef void(^DoneBlock)(NSDictionary *request);
 typedef void(^AddImage)();
+typedef void(^ShowType)(NSArray *types);
 
 @interface ToAskViewModel : BaseViewModel<UITableViewDelegate, UITableViewDataSource>
 
@@ -20,9 +21,12 @@ typedef void(^AddImage)();
 - (void)handleWithTable:(UITableView *)table;
 - (void)handWithCollectionView:(UICollectionView *)collection;
 - (void)getQuestionType:(void(^)(BOOL success, NSError *error,id result))completionHandle;
+- (void)saveQuestion:(void(^)(BOOL success, NSError *error,id result))completionHandle;
+
 
 @property (nonatomic, copy) DoneBlock  goToMore;
 @property (nonatomic, copy) AddImage  addImageBlock;
+@property (nonatomic, copy) ShowType  showTypeBlock;
 
 
 //选择的图片数据

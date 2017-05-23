@@ -12,6 +12,7 @@
 #import "HomeVM.h"
 #import "UserInfoManager.h"
 #import "ManagerProject.h"
+#import "PersonnelManagementVC.h"
 
 @interface HomeController (){
     MangerHomeView *mhome;
@@ -39,7 +40,9 @@
         mhome = (MangerHomeView *)[nib objectAtIndex:0];
         self.view = mhome;
         [mhome creatDropMenu];
-        
+        mhome.goToDetail = ^(FunctionItem *item){
+            [self goToDetail:item];
+        };
         [self.homeVM getUserProject:^(BOOL success, NSError *error,id result){
             NSLog(@"getUserProject");
             if (success) {
@@ -49,6 +52,8 @@
                 [self getFunctionList];
                 [mhome setupTableView];
             }
+            
+    
         }];
     }
     //管理层
@@ -96,14 +101,16 @@
     }];
     
 }
--(void)getReomvList{
-//    [self.homeVM getReomvList:^(BOOL success, NSError *error,id result){
-//        NSLog(@"getReomvList");
-//        if (success) {
-//            
-////            [mhome setActivtiyViews:result];
-//        }
-//    }];
+
+-(void)goToDetail:(FunctionItem *)item{
+    
+    //TODO:判断功能类型
+    UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"PersonnelManagement" bundle:nil];
+    
+    PersonnelManagementVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"PersonnelManagementVC"];
+    [self presentViewController:vc
+                       animated:YES
+                     completion:nil];
 
 }
 

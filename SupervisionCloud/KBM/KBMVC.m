@@ -140,7 +140,7 @@
     
     NSLog(@"item = %@",obj.idField);
 //    
-    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"KBM" bundle:nil];
     
     KnowledgeDetailVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"KnowledgeDetailVC"];
     vc.idField = obj.idField;
@@ -152,14 +152,14 @@
 //TODO:查阅资料
 -(IBAction)gotoData:(id)sender{
     
-    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"KBM" bundle:nil];
     FindResourVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"FindResourVC"];
     [self presentViewController:vc animated:YES completion:nil];
 
 }
 //TODO:查找问题
 -(IBAction)gotoQuestion:(id)sender{
-    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"KBM" bundle:nil];
     
     FindeQuestionVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"FindeQuestionVC"];
     
@@ -168,7 +168,7 @@
 }
 //TODO:我要提问
 -(IBAction)gotoAsk:(id)sender{
-    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"KBM" bundle:nil];
     
     ToAskVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"ToAskVC"];
     

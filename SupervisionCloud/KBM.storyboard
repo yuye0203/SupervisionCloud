@@ -243,6 +243,9 @@
                                 <state key="normal" title="提交">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveQuestion" destination="1h7-aX-Mv1" eventType="touchUpInside" id="7rr-CS-9hU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,7 +273,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9Q-XC-nwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4X1-X7-a1b" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1962" y="1502"/>
+            <point key="canvasLocation" x="-2464" y="1546"/>
         </scene>
         <!--Find ResourVC-->
         <scene sceneID="GeQ-Su-6xV">
@@ -399,9 +402,14 @@
                                                 <state key="normal" title="筛选">
                                                     <color key="titleColor" red="0.30980392159999998" green="0.76470588240000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="4dh-Bl-WCc" kind="popoverPresentation" popoverAnchorView="hTK-Sq-MG5" id="yIJ-2q-0EA">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
+                                                </connections>
                                             </button>
                                             <connections>
-                                                <segue destination="4dh-Bl-WCc" kind="popoverPresentation" popoverAnchorBarButtonItem="1WG-dZ-jJF" id="fTe-1D-MzI">
+                                                <segue destination="4dh-Bl-WCc" kind="popoverPresentation" popoverAnchorBarButtonItem="1WG-dZ-jJF" id="PUh-4B-rli">
                                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                                 </segue>
                                             </connections>
@@ -456,7 +464,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CT4-8X-JTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6eH-vj-zMh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1328" y="1500.4497751124438"/>
+            <point key="canvasLocation" x="-1360" y="1547"/>
         </scene>
         <!--ScreenVC-->
         <scene sceneID="Jy7-qb-Bwj">
@@ -588,7 +596,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0N-K6-bFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="NDa-tg-8L1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1297" y="2352"/>
+            <point key="canvasLocation" x="-356" y="677"/>
         </scene>
     </scenes>
     <resources>
@@ -600,7 +608,7 @@
         <image name="retu" width="23" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fTe-1D-MzI"/>
         <segue reference="Rke-Fd-H4f"/>
+        <segue reference="PUh-4B-rli"/>
     </inferredMetricsTieBreakers>
 </document>

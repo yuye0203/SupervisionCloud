@@ -89,4 +89,11 @@ NSString *const kQuestionTypeName = @"name";
 
 	return copy;
 }
+
++(NSDictionary *)replacedKeyFromPropertyName{
+    return @{
+             @"idField":kQuestionTypeIdField,
+            };
+    
+}
 @end
