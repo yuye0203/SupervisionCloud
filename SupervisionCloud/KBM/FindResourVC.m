@@ -26,6 +26,12 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (_needReset) {
+        [self setupTableView];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -53,6 +59,12 @@
                                                 @"cmd":@"knowledgeList",
                                                 @"user_id":model.idField,
                                                 @"auth_token":model.authToken}];
+        
+        if (self.params) {
+            [newsParmaes addEntriesFromDictionary:self.params];
+        }
+        
+
 
         [self.sviewModel getListData: [self parametersWithDic:newsParmaes]
                         CompletionHandle:^(BOOL success, NSError *error,id result){
@@ -74,6 +86,12 @@
                                                 @"cmd":@"knowledgeList",
                                                 @"user_id":model.idField,
                                                 @"auth_token":model.authToken}];
+        
+        if (self.params) {
+            [newsParmaes addEntriesFromDictionary:self.params];
+        }
+        
+
         [self.sviewModel getListData: [self parametersWithDic:newsParmaes]
                         CompletionHandle:^(BOOL success, NSError *error,id result){
                             weakSelf.hudView.hidden = YES;

@@ -10,7 +10,9 @@
 
 @interface ScreenVM : BaseViewModel
 
-- (void)loadTypeWithType:(NSInteger)type CompletionHandle:(void(^)(BOOL success, NSError *error,id result))completionHandle;
-- (void)loadStautsCompletionHandle:(void(^)(BOOL success, NSError *error,id result))completionHandle;
+- (void)loadQuestionTypeWithType:(NSInteger)type CompletionHandle:(void(^)(BOOL success, NSError *error,id result))completionHandle;
+
+- (void)loadKnowledgeTypeWithType:(NSInteger)type CompletionHandle:(void(^)(BOOL success, NSError *error,id result))completionHandle;
+
 
 @end

@@ -139,7 +139,8 @@
     QuestionModel *obj = (QuestionModel *)item;
     
     NSLog(@"item = %@",obj.idField);
-//    
+//
+    
     UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"KBM" bundle:nil];
     
     KnowledgeDetailVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"KnowledgeDetailVC"];

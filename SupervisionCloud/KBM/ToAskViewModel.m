@@ -42,7 +42,6 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
 @property (nonatomic, strong) UITableView *table;
 
 
-
 @end
 
 
@@ -153,7 +152,7 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
                                          @"auth_token":user.authToken,
                                          @"user_id":[NSNumber numberWithInteger:[user.idField integerValue]],
                                          @"title":title,
-                                         @"type":@"",
+                                         @"type":[NSNumber numberWithInteger:_type],
                                          @"desc":subTitle,
                                          } mutableCopy];
     

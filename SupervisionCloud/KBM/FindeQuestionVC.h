@@ -10,4 +10,8 @@
 
 @interface FindeQuestionVC : BaseTableVC
 @property (nonatomic, assign) NSUInteger pageNum;
+@property (nonatomic, assign) BOOL needReset;
+
+@property(nonatomic,strong) NSMutableDictionary *params;
+
 @end

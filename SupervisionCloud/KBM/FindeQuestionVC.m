@@ -24,10 +24,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (_needReset) {
+        [self setupTableView];
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -62,6 +68,9 @@
                                                 @"cmd":@"questionList",
                                                 @"user_id":model.idField,
                                                 @"auth_token":model.authToken}];
+        if (self.params) {
+            [newsParmaes addEntriesFromDictionary:self.params];
+        }
         
         [self.sviewModel getListData: [self parametersWithDic:newsParmaes]
                     CompletionHandle:^(BOOL success, NSError *error,id result){
@@ -78,6 +87,10 @@
     } foot:^{
         NSMutableDictionary *newsParmaes = [[NSMutableDictionary alloc] init];
         UserInfoBody *model = [UserInfoManager getInfo];
+        if (self.params) {
+            [newsParmaes addEntriesFromDictionary:self.params];
+        }
+
 
         [newsParmaes addEntriesFromDictionary:@{@"page":[NSNumber numberWithUnsignedInteger:_pageNum],
                                                 @"num":@15,

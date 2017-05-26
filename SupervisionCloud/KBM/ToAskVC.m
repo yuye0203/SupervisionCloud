@@ -62,6 +62,7 @@
     [self.viewModel getQuestionType:^(BOOL success, NSError *error,id result){
         if (success) {
             [SVProgressHUD dismiss];
+            
         }
     }];
 }
@@ -74,6 +75,7 @@
     
     [LCActionAlertView showActionViewNames:@[@"我",@"和"] completed:^(NSInteger index,NSString * name) {
         NSLog(@"%ld",index);
+        self.viewModel.type = index;
     } canceled:^{
         NSLog(@"canceled");
     }];
@@ -81,6 +83,11 @@
 }
 -(IBAction)saveQuestion{
     [self.viewModel saveQuestion:^(BOOL success, NSError *error,id result){
+        
+        if (success) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+
+        }
     }];
     
 

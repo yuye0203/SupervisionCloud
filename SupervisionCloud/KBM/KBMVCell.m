@@ -22,11 +22,7 @@
 @end
 
 @implementation KBMVCell
-
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    
+-(void)drawRect:(CGRect)rect{
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.imageView.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:self.imageView.bounds.size];
     
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc]init];
@@ -35,9 +31,8 @@
     //设置图形样子
     maskLayer.path = maskPath.CGPath;
     self.imageView.layer.mask = maskLayer;
-
-    // Initialization code
     
+    // Initialization code
 
 }
 

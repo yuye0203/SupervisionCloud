@@ -13,7 +13,6 @@
 #import "QuestionModel.h"
 
 typedef void(^GotoMoreBlock)(NSInteger section);
-typedef void(^GotoDetailBlock)(KnowledgeModel* item);
 
 @interface KBMVCViewModel : BaseTableViewModel<UITableViewDelegate, UITableViewDataSource>
 

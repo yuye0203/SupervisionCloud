@@ -50,4 +50,8 @@ typedef void(^ShowType)(NSArray *types);
 //图片总数量限制
 @property(nonatomic,assign) NSInteger maxCount;
 
+
+@property (nonatomic, assign) NSInteger type;
+
+
 @end

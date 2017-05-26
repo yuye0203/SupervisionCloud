@@ -10,4 +10,9 @@
 
 @interface FindResourVC : BaseTableVC
 
+@property (nonatomic, assign) BOOL needReset;
+
+@property(nonatomic,strong) NSMutableDictionary *params;
+
+
 @end

@@ -9,6 +9,7 @@
 #import "KnowledgeDetailVModel.h"
 #import "UserInfoManager.h"
 #import "BaseModel.h"
+#import "KnowledgeModel.h"
 
 @implementation KnowledgeDetailVModel
 
@@ -45,12 +46,11 @@
         BaseModel *root = [BaseModel mj_objectWithKeyValues:response];
         
         if(root.resultCode==1){
-//            if (root.body.list.count==0) {
-//                completionHandle(NO, nil, nil);
-//            }else{
-//                completionHandle(YES, nil, root.body.list);
-//            }
-//            
+            KnowledgeModel *item = [KnowledgeModel mj_objectWithKeyValues:root.body];
+            completionHandle(YES, nil, item);
+           
+            
+//
         }else
             completionHandle(NO, nil, @"11111");
         

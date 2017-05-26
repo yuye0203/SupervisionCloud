@@ -23,6 +23,10 @@ static NSString *const MyCellIdentifier = @"KBMVResoureCell" ;
 @implementation FindResourVM
 
 - (void)handleWithTable:(UITableView *)table head:(void (^)())head foot:(void (^)())foot {
+    
+    self.table.mj_header = nil;
+    self.table.mj_footer = nil;
+
     [super handleWithTable:table head:head foot:foot];
     [UITableViewCell smk_registerTable:table nibIdentifier:MyCellIdentifier];
     

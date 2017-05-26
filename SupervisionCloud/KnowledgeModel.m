@@ -14,6 +14,10 @@ NSString *const kListType = @"type";
 
 @interface KnowledgeModel ()
 @end
+
+
+
+
 @implementation KnowledgeModel
 
 
@@ -29,10 +33,8 @@ NSString *const kListType = @"type";
 	if(![dictionary[kListImage] isKindOfClass:[NSNull class]]){
 		self.imgUrl = dictionary[kListImage];
 	}	
-//	if(![dictionary[kListTitle] isKindOfClass:[NSNull class]]){
-//		self.title = dictionary[kListTitle];
-//	}	
-	if(![dictionary[kListType] isKindOfClass:[NSNull class]]){
+
+    if(![dictionary[kListType] isKindOfClass:[NSNull class]]){
 		self.type = dictionary[kListType];
 	}	
 	return self;
@@ -73,18 +75,10 @@ NSString *const kListType = @"type";
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
     [super encodeWithCoder:aCoder];
-//	if(self.createTime != nil){
-//		[aCoder encodeObject:self.createTime forKey:kListCreateTime];
-//	}
-//	if(self.idField != nil){
-//		[aCoder encodeObject:self.idField forKey:kListIdField];
-//	}
-	if(self.imgUrl != nil){
+
+    if(self.imgUrl != nil){
 		[aCoder encodeObject:self.imgUrl forKey:kListImage];
 	}
-//	if(self.title != nil){
-//		[aCoder encodeObject:self.title forKey:kListTitle];
-//	}
 	if(self.type != nil){
 		[aCoder encodeObject:self.type forKey:kListType];
 	}
@@ -97,10 +91,7 @@ NSString *const kListType = @"type";
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
 	self = [super init];
-//	self.createTime = [aDecoder decodeObjectForKey:kListCreateTime];
-//	self.idField = [aDecoder decodeObjectForKey:kListIdField];
 	self.imgUrl = [aDecoder decodeObjectForKey:kListImage];
-//	self.title = [aDecoder decodeObjectForKey:kListTitle];
 	self.type = [aDecoder decodeObjectForKey:kListType];
 	return self;
 
@@ -121,4 +112,13 @@ NSString *const kListType = @"type";
 
 	return copy;
 }
+
+
++(NSDictionary *)replacedKeyFromPropertyName{
+    return @{@"answerNum":@"answer_num",
+             @"createTime":@"create_time",
+             @"idField":@"id"};
+    
+}
+
 @end

@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TPKeyboardAvoidingTableView.h"
 
 
 @interface ScreenVC : UIViewController
