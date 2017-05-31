@@ -26,7 +26,7 @@
    
     PersonItem *item = (PersonItem*)model;
     
-    self.userNameL.text = item.nickName;//用户名
+    self.userNameL.text = item.nickname;//用户名
     self.telNum.text = item.mobile;//电话
     self.positionL.text = item.role;//职务
     self.statusL.text = item.status;//日期

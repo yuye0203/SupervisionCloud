@@ -11,6 +11,8 @@
 
 NSString *const kListImage = @"image";
 NSString *const kListType = @"type";
+NSString *const kKnowledgeModelPraiseNum = @"praise_num";
+NSString *const kKnowledgeModelDesc = @"desc";
 
 @interface KnowledgeModel ()
 @end
@@ -36,7 +38,15 @@ NSString *const kListType = @"type";
 
     if(![dictionary[kListType] isKindOfClass:[NSNull class]]){
 		self.type = dictionary[kListType];
-	}	
+	}
+    if(![dictionary[kKnowledgeModelPraiseNum] isKindOfClass:[NSNull class]]){
+        self.praiseNum = [dictionary[kKnowledgeModelPraiseNum] integerValue];
+    }
+    if(![dictionary[kKnowledgeModelDesc] isKindOfClass:[NSNull class]]){
+        self.desc = dictionary[kKnowledgeModelDesc];
+    }	
+
+
 	return self;
 }
 
@@ -50,9 +60,9 @@ NSString *const kListType = @"type";
 //	if(self.createTime != nil){
 //		dictionary[kListCreateTime] = self.createTime;
 //	}
-//	if(self.idField != nil){
-//		dictionary[kListIdField] = self.idField;
-//	}
+    if(self.desc != nil){
+        dictionary[kKnowledgeModelDesc] = self.desc;
+    }
 	if(self.imgUrl != nil){
 		dictionary[kListImage] = self.imgUrl;
 	}
@@ -62,6 +72,8 @@ NSString *const kListType = @"type";
 	if(self.type != nil){
 		dictionary[kListType] = self.type;
 	}
+    dictionary[kKnowledgeModelPraiseNum] = @(self.praiseNum);
+
 	return dictionary;
 
 }
@@ -75,6 +87,9 @@ NSString *const kListType = @"type";
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
     [super encodeWithCoder:aCoder];
+    if(self.desc != nil){
+        [aCoder encodeObject:self.desc forKey:kKnowledgeModelDesc];
+    }
 
     if(self.imgUrl != nil){
 		[aCoder encodeObject:self.imgUrl forKey:kListImage];
@@ -82,6 +97,8 @@ NSString *const kListType = @"type";
 	if(self.type != nil){
 		[aCoder encodeObject:self.type forKey:kListType];
 	}
+    
+    [aCoder encodeObject:@(self.praiseNum) forKey:kKnowledgeModelPraiseNum];
 
 }
 
@@ -93,6 +110,10 @@ NSString *const kListType = @"type";
 	self = [super init];
 	self.imgUrl = [aDecoder decodeObjectForKey:kListImage];
 	self.type = [aDecoder decodeObjectForKey:kListType];
+    self.praiseNum = [[aDecoder decodeObjectForKey:kKnowledgeModelPraiseNum] integerValue];
+    self.desc = [aDecoder decodeObjectForKey:kKnowledgeModelDesc];
+
+
 	return self;
 
 }
@@ -109,6 +130,8 @@ NSString *const kListType = @"type";
 	copy.imgUrl = [self.imgUrl copy];
 	copy.title = [self.title copy];
 	copy.type = [self.type copy];
+    copy.praiseNum = self.praiseNum;
+    copy.desc = [self.desc copy];
 
 	return copy;
 }
@@ -117,7 +140,8 @@ NSString *const kListType = @"type";
 +(NSDictionary *)replacedKeyFromPropertyName{
     return @{@"answerNum":@"answer_num",
              @"createTime":@"create_time",
-             @"idField":@"id"};
+             @"idField":@"id",
+             @"praiseNum":kKnowledgeModelPraiseNum};
     
 }
 

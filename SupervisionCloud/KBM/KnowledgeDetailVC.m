@@ -9,14 +9,18 @@
 #import "KnowledgeDetailVC.h"
 #import "KnowledgeDetailVModel.h"
 #import "KnowledgeModel.h"
+#import "UIImageView+WebCache.h"
 
 @interface KnowledgeDetailVC ()
 @property (nonatomic, strong) KnowledgeDetailVModel *viewModel;
 @property(nonatomic,weak)IBOutlet UILabel  *titleL;
 @property(nonatomic,weak)IBOutlet UILabel  *nameL;
-@property(nonatomic,weak)IBOutlet UILabel  *numberL;
+@property(nonatomic,weak)IBOutlet UIButton  *zanBtn;
 @property(nonatomic,weak)IBOutlet UILabel  *timeL;
 @property(nonatomic,weak)IBOutlet UIImageView  *iconImage;
+@property(nonatomic,weak)IBOutlet UIImageView  *bigImage;
+@property(nonatomic,weak)IBOutlet UILabel  *desL;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bigHeight;
 
 @end
 
@@ -47,9 +51,17 @@
                         KnowledgeModel *item = (KnowledgeModel *)result;
                         weakSelf.titleL.text = item.title;
                         weakSelf.nameL.text = item.author;
-                        weakSelf.numberL.text = item.answerNum;
-                        weakSelf.titleL.text = item.title;
-                        weakSelf.titleL.text = item.title;
+                        [weakSelf.zanBtn setTitle:[NSString stringWithFormat:@"%ld" ,item.praiseNum] forState:UIControlStateNormal];
+                        [weakSelf.iconImage sd_setImageWithURL:[NSURL URLWithString:item.imgUrl] placeholderImage:[UIImage imageNamed:@"img_default"]];
+                        if(item.imgUrl.length>0){
+                            [weakSelf.bigImage sd_setImageWithURL:[NSURL URLWithString:item.imgUrl] placeholderImage:[UIImage imageNamed:@"img_default"]];
+                            self.bigHeight.constant = 150.f;
+
+                            
+                        }else
+                            self.bigHeight.constant = 0.f;
+
+                        weakSelf.desL.text = item.desc;
 
                     }
                 }] ;
@@ -64,5 +76,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+-(IBAction)zanAction:(id)sender{
+//TODO:点赞
+}
 @end

@@ -58,8 +58,15 @@
             Banner *banner = [Banner mj_objectWithKeyValues:root.body];
             completionHandle(YES, nil, banner);
             
-        }else
+        } else
             completionHandle(NO, nil, root.resultMessage);
+
+        if(root.resultCode ==3){
+            if (self.goToLogin) {
+                self.goToLogin();
+            }
+
+        }
         
         
     } failure:^(NSError *error) {
@@ -98,14 +105,23 @@
                                                                    error:nil];
 
         BaseModel *root = [BaseModel creatWithDic:jsonDict];
-        
-        if (root.resultCode ==1) {
-            NSArray * array = [Project mj_objectArrayWithKeyValuesArray:root.body];
-            completionHandle(YES, nil, array);
-            
-        }else
-            completionHandle(NO, nil, root.resultMessage);
-        
+    
+                  if (root.resultCode ==1) {
+                      NSArray * array = [Project mj_objectArrayWithKeyValuesArray:root.body];
+                      completionHandle(YES, nil, array);
+                      
+                      
+                  } else
+                      completionHandle(NO, nil, root.resultMessage);
+                  
+                  if(root.resultCode ==3){
+                      if (self.goToLogin) {
+                          self.goToLogin();
+                      }
+                      
+                  }
+
+
         
     } failure:^(NSError *error) {
         

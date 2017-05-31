@@ -74,4 +74,8 @@
     
 }
 
+-(void)gotoLogin{
+    
+}
+
 @end

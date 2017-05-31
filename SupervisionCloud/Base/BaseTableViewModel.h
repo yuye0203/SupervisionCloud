@@ -11,8 +11,9 @@
 #import "BaseViewModel.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "MJRefresh.h"
-typedef void(^GetMoreData)();
 
+typedef void(^GetMoreData)();
+typedef void(^GotoDetailBlock)(id item);
 
 @interface BaseTableViewModel : BaseViewModel<UITableViewDelegate, UITableViewDataSource>
 
@@ -26,5 +27,7 @@ typedef void(^GetMoreData)();
 @property (nonatomic, weak)  UITableView *table;
 @property (nonatomic, strong) NSMutableArray *dataArrayList;
 @property (nonatomic, copy) GetMoreData  getMoreData;
+@property (nonatomic, copy) GotoDetailBlock  goToListDetail;
+
 
 @end

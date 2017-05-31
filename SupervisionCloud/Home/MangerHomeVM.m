@@ -41,7 +41,11 @@ static NSString *const MyCellIdentifier = @"RemoveCell" ;
 }
 
 - (void)handleWithTable:(UITableView *)table head:(void (^)())head foot:(void (^)())foot {
-    
+    self.table.mj_header = nil;
+    self.table.mj_footer = nil;
+    CGSize size_screen = [[UIScreen mainScreen] bounds].size;
+
+    _tableHeadH = size_screen.width*134.F/125.F;
     [super handleWithTable:table head:head foot:foot];
     [UITableViewCell smk_registerTable:table nibIdentifier:MyCellIdentifier];
     [UITableViewCell smk_registerTable:table nibIdentifier:MyCellIdentifier1];
@@ -153,6 +157,7 @@ static NSString *const MyCellIdentifier = @"RemoveCell" ;
 }
 
 #pragma mark - UITableViewDataSource
+
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     switch (section) {
         case 0:
@@ -216,6 +221,9 @@ static NSString *const MyCellIdentifier = @"RemoveCell" ;
 
 
 #pragma mark - UITableViewDelegate
+//-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section{
+//    return self.tableHeadH;
+//}
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     id item ;

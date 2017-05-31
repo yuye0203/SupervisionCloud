@@ -56,8 +56,11 @@
     NSMutableDictionary *newsParmaes = [[NSMutableDictionary alloc] init];
     [newsParmaes addEntriesFromDictionary:@{@"login_name":@"xiangmujingli",
                                             @"password":@"111111",
-                                            @"cmd":@"login"}];
+                                            @"cmd":@"login",
+                                            @"lng":@"1222",
+                                            @"lat":@"33333"}];
     
+   
     [self.viewModel loginAction:[self parametersWithDic:newsParmaes]
                   CompletionHandle:^(BOOL success, NSError *error,id result){
                       [SVProgressHUD dismiss];

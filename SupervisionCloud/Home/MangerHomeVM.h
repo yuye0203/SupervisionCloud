@@ -14,4 +14,6 @@
 - (void)getRemoveList:(void(^)(BOOL success, NSError *error,id result))completionHandle;
 - (void)getQuestionList:(void(^)(BOOL success, NSError *error,id result))completionHandle;
 
+@property (nonatomic, assign) CGFloat tableHeadH;
+
 @end

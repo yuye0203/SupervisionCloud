@@ -109,4 +109,9 @@ NSString *const kFunctionItemNotice = @"notice";
 
 	return copy;
 }
+
++(NSDictionary *)replacedKeyFromPropertyName{
+    
+    return @{@"idField":kFunctionItemIdField};
+}
 @end

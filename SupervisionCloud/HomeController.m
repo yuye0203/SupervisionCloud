@@ -13,6 +13,11 @@
 #import "UserInfoManager.h"
 #import "ManagerProject.h"
 #import "PersonnelManagementVC.h"
+#import "SecurityLogHomeVC.h"
+#import "ScheduleHomeListVC.h"
+#import "MeasurementListVC.h"
+#import "ProcessInspectionListVC.h"
+#import "SystemDocumentsListVC.h"
 
 @interface HomeController (){
     MangerHomeView *mhome;
@@ -32,7 +37,7 @@
     [super viewDidLoad];
     //TODO:判断身份
     //项目经理
-    
+    sWeakSelf
     UserInfoBody *user = [UserInfoManager getInfo];
     
     if(user.type ==1){
@@ -41,15 +46,18 @@
         self.view = mhome;
         [mhome creatDropMenu];
         mhome.goToDetail = ^(FunctionItem *item){
-            [self goToDetail:item];
+            [weakSelf goToDetail:item];
+        };
+        self.homeVM.goToLogin =^ {
+            [weakSelf gotoLoginC];
         };
         [self.homeVM getUserProject:^(BOOL success, NSError *error,id result){
             NSLog(@"getUserProject");
             if (success) {
                 [mhome createAllMenuData:result];
                 [ManagerProject saveProject:result[0]];
-                [self getBannerInfo];
-                [self getFunctionList];
+                [weakSelf getBannerInfo];
+                [weakSelf getFunctionList];
                 [mhome setupTableView];
             }
             
@@ -63,7 +71,7 @@
         self.view = mhome;
     }
     //施工单位
-    if (NO) {
+    if (/* DISABLES CODE */ (NO)) {
         self.tabBarController.tabBar.hidden = YES;
     }
     //业主
@@ -74,6 +82,9 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -105,13 +116,219 @@
 -(void)goToDetail:(FunctionItem *)item{
     
     //TODO:判断功能类型
-    UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"PersonnelManagement" bundle:nil];
+//
+    switch (item.idField) {
+        case 1:{
+            // 人员管理
+             UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"PersonnelManagement" bundle:nil];
+             
+             PersonnelManagementVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"PersonnelManagementVC"];
+             [self presentViewController:vc
+             animated:YES
+             completion:nil];
+            
+        }
+            break;
+        case 2:{
+            /*进度管理  */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"ScheduleManagement" bundle:nil];
+            
+            ScheduleHomeListVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"ScheduleHomeListVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+
+        }
+        case 3:{
+            /*计量管理  */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"MeasurementManagement" bundle:nil];
+            
+            MeasurementListVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"MeasurementListVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+        }
+            break;
+        case 4:{
+            /*安全日志  */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
+            
+            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+            
+            
+        }
+            break;
+        case 5:{
+            /*工序报验 */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"ProcessInspection" bundle:nil];
+            
+            ProcessInspectionListVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"ProcessInspectionListVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+            
+            
+        }
+            break;
+        case 6:{
+            // 人员管理
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"PersonnelManagement" bundle:nil];
+            
+            PersonnelManagementVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"PersonnelManagementVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+        }
+            break;
+        case 7:{
+            /*进度管理  */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
+            
+            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+        }
+        case 8:{
+            /*进度管理  */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
+            
+            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+        }
+            break;
+        case 9:{
+            /*安全日志  */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
+            
+            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+            
+            
+        }
+            break;
+        case 10:{
+            /*安全日志  */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
+            
+            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+            
+            
+        }
+            break;
+        case 11:{
+            // 人员管理
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"PersonnelManagement" bundle:nil];
+            
+            PersonnelManagementVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"PersonnelManagementVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+        }
+            break;
+        case 12:{
+            /*进度管理  */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
+            
+            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+        }
+        case 13:{
+            /*体系文件  */
+            
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SystemDocuments" bundle:nil];
+            
+            SystemDocumentsListVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SystemDocumentsListVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+        }
+            break;
+        case 14:{
+            /*安全日志  */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
+            
+            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+            
+            
+        }
+            break;
+        case 15:{
+            /*安全日志  */
+            
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
+            
+            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
+            [self presentViewController:vc
+                               animated:YES
+                             completion:nil];
+            
+        }
+            break;
+
+        default:
+            break;
+    }
     
-    PersonnelManagementVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"PersonnelManagementVC"];
+    UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
+    
+    SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
     [self presentViewController:vc
                        animated:YES
                      completion:nil];
 
+
 }
 
+
+-(void)gotoLoginC{
+    
+    UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"LoginVC"];
+    [self presentViewController:vc
+                       animated:YES
+                     completion:nil];
+    
+
+    
+}
 @end

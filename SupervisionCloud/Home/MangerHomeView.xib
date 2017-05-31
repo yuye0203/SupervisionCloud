@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +19,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <view key="tableHeaderView" contentMode="scaleToFill" id="vUn-iS-7jB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="690"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKD-JI-rv7">
@@ -297,6 +296,8 @@
                 <outlet property="planL" destination="Sc7-hh-Z5X" id="8Z8-St-saf"/>
                 <outlet property="startTimeL" destination="J2j-4r-bOU" id="4D4-mG-UBX"/>
                 <outlet property="table" destination="Pdj-ke-UAh" id="Zzv-VM-Xff"/>
+                <outlet property="tableHeadView" destination="vUn-iS-7jB" id="bTP-Tu-ylP"/>
+                <outlet property="viewHeight" destination="zMR-Ca-485" id="I3s-tZ-4WE"/>
                 <outlet property="viewWidth" destination="bZD-QP-5pc" id="ZNf-PK-QdX"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="54.5"/>
@@ -305,7 +306,7 @@
     <resources>
         <image name="calen" width="14" height="14"/>
         <image name="project_bg" width="375" height="382"/>
-        <image name="today_dt" width="16" height="16"/>
+        <image name="today_dt" width="14" height="14"/>
         <image name="touday_dy_bg" width="375" height="382"/>
     </resources>
 </document>

@@ -243,9 +243,12 @@
                                     <navigationItem title="搜索" id="JY3-xg-lRV">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="Nvu-YE-Sox">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ppe-Wr-mGm">
-                                                <rect key="frame" x="16" y="7" width="77" height="23"/>
+                                                <rect key="frame" x="16" y="10" width="77" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button" image="retu"/>
+                                                <connections>
+                                                    <segue destination="C9I-1o-XWe" kind="unwind" unwindAction="sui_popToLastVC:" id="mPJ-Cv-iwf"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -261,6 +264,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mb3-fq-bHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="C9I-1o-XWe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="551" y="945"/>
         </scene>

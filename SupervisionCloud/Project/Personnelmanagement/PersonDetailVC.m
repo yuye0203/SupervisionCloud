@@ -78,12 +78,23 @@
         if (success) {
             PersonItem *item = (PersonItem*)result;
             
-            weakSelf.userNameL.text = item.nickName;//用户名
+            weakSelf.userNameL.text = item.nickname;//用户名
             weakSelf.telNum.text = item.mobile;//电话
             weakSelf.positionL.text = item.role;//职务
             weakSelf.statusL.text = item.status;//日期
             
             
+            weakSelf.celluserNameL.text = item.nickname;//用户名
+            
+            weakSelf.celltelNum.text = item.mobile;//电话
+            
+            weakSelf.noL.text = item.jobNumber;//工号
+            weakSelf.sexL.text = item.sex;//性别
+            weakSelf.groupL.text = item.projectName;//项目组
+            weakSelf.intentionL.text = item.intention;//职务
+            weakSelf.dateL.text = item.removeTime;//日期
+            weakSelf.dynamic.text = item.dynamic;//动态
+
             [weakSelf.iconImageView sd_setImageWithURL:[NSURL URLWithString:item.headPortrait] placeholderImage:[UIImage imageNamed:@"img_default"]];
 
         }

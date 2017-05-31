@@ -17,7 +17,11 @@
 @interface MangerHomeView()<WJMenuDelegate>
 
 @property(weak,nonatomic) IBOutlet NSLayoutConstraint *viewWidth;
+@property(weak,nonatomic) IBOutlet NSLayoutConstraint *viewHeight;
+
 @property (weak, nonatomic)IBOutlet UIView *activtiyView;
+@property (weak, nonatomic)IBOutlet UIView *tableHeadView;
+
 @property(weak,nonatomic) IBOutlet UITableView *table;
 @property (nonatomic, strong) MangerHomeVM *viewModel;
 @property (nonatomic, strong) NSArray * functionArr;
@@ -147,6 +151,16 @@
         [btn addTarget:self action:@selector(clickActivity:) forControlEvents:UIControlEventTouchUpInside];
         [_activtiyView addSubview:btn];
     }
+    self.viewHeight.constant = width*list.count/5;
+    
+    CGRect newFrame = self.tableHeadView.frame;
+    self.viewModel.tableHeadH = size_screen.width*134.F/125.F+width*list.count/5+4.f;
+
+    newFrame.size.height = size_screen.width*134.F/125.F+width*list.count/5+4.f;
+    self.tableHeadView.frame = newFrame;
+   
+    [self.table setTableHeaderView: self.tableHeadView];
+
 }
 
 -(void)clickActivity:(id)sender{
