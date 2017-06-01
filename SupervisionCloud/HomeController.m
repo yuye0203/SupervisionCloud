@@ -244,9 +244,9 @@
             break;
         case 11:{
             // 人员管理
-            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"PersonnelManagement" bundle:nil];
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"Meeting" bundle:nil];
             
-            PersonnelManagementVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"PersonnelManagementVC"];
+            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
             [self presentViewController:vc
                                animated:YES
                              completion:nil];
@@ -264,6 +264,7 @@
                              completion:nil];
             
         }
+            break;
         case 13:{
             /*体系文件  */
             
@@ -308,12 +309,6 @@
             break;
     }
     
-    UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
-    
-    SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
-    [self presentViewController:vc
-                       animated:YES
-                     completion:nil];
 
 
 }
@@ -323,7 +318,7 @@
     
     UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
-    SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"LoginVC"];
+    LoginVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"LoginVC"];
     [self presentViewController:vc
                        animated:YES
                      completion:nil];

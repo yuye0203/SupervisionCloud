@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -259,7 +258,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Lwb-bh-kz5" secondAttribute="trailing" id="Klg-sP-2Jr"/>
                             <constraint firstItem="Lwb-bh-kz5" firstAttribute="leading" secondItem="phM-S3-JBz" secondAttribute="leading" id="UoW-Qw-j3d"/>
-                            <constraint firstItem="Lwb-bh-kz5" firstAttribute="top" secondItem="skJ-nU-MJW" secondAttribute="bottom" id="wm8-5A-zjB"/>
+                            <constraint firstItem="Lwb-bh-kz5" firstAttribute="top" secondItem="skJ-nU-MJW" secondAttribute="bottom" id="hPD-vK-egw"/>
                         </constraints>
                     </view>
                 </viewController>

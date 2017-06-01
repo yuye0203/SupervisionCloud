@@ -200,6 +200,15 @@
 		ADEA6A521ED3D9CC00A10404 /* MeasurementManagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEA6A511ED3D9CC00A10404 /* MeasurementManagement.storyboard */; };
 		ADEA6A561ED3EA4C00A10404 /* SecurityLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEA6A551ED3EA4C00A10404 /* SecurityLog.storyboard */; };
 		ADEA6A5B1ED47AC500A10404 /* ProcessInspection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEA6A5A1ED47AC500A10404 /* ProcessInspection.storyboard */; };
+		ADFDCF181EDEE2F4004D93A2 /* ReportLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFDCF171EDEE2F4004D93A2 /* ReportLibrary.storyboard */; };
+		ADFDCF1E1EDEE475004D93A2 /* ReportLibraryHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF1D1EDEE475004D93A2 /* ReportLibraryHomeVC.m */; };
+		ADFDCF231EDEE581004D93A2 /* ReportListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF221EDEE581004D93A2 /* ReportListVC.m */; };
+		ADFDCF261EDEE91A004D93A2 /* MeetingListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF251EDEE91A004D93A2 /* MeetingListVC.m */; };
+		ADFDCF291EDEE954004D93A2 /* AddMeetingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF281EDEE954004D93A2 /* AddMeetingVC.m */; };
+		ADFDCF2C1EDEE974004D93A2 /* MeetingDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF2B1EDEE974004D93A2 /* MeetingDetailVC.m */; };
+		ADFDCF2F1EDEE996004D93A2 /* MeetingRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF2E1EDEE996004D93A2 /* MeetingRecordVC.m */; };
+		ADFDCF311EDEE9C4004D93A2 /* Meeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFDCF301EDEE9C4004D93A2 /* Meeting.storyboard */; };
+		ADFDCF341EDEFD48004D93A2 /* SecurityListVM.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF331EDEFD48004D93A2 /* SecurityListVM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -539,9 +548,25 @@
 		ADEA6A4C1ED3C2E200A10404 /* ScheduleOverallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleOverallVC.m; path = Project/Schedule/ScheduleOverallVC.m; sourceTree = "<group>"; };
 		ADEA6A4E1ED3C30C00A10404 /* AddScheduleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddScheduleVC.h; path = Project/Schedule/AddScheduleVC.h; sourceTree = "<group>"; };
 		ADEA6A4F1ED3C30C00A10404 /* AddScheduleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddScheduleVC.m; path = Project/Schedule/AddScheduleVC.m; sourceTree = "<group>"; };
-		ADEA6A511ED3D9CC00A10404 /* MeasurementManagement.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MeasurementManagement.storyboard; path = Project/Measurement/MeasurementManagement.storyboard; sourceTree = "<group>"; };
+		ADEA6A511ED3D9CC00A10404 /* MeasurementManagement.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeasurementManagement.storyboard; sourceTree = "<group>"; };
 		ADEA6A551ED3EA4C00A10404 /* SecurityLog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SecurityLog.storyboard; path = Project/SecurityLog/SecurityLog.storyboard; sourceTree = "<group>"; };
 		ADEA6A5A1ED47AC500A10404 /* ProcessInspection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ProcessInspection.storyboard; path = Project/Processinspection/ProcessInspection.storyboard; sourceTree = "<group>"; };
+		ADFDCF171EDEE2F4004D93A2 /* ReportLibrary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ReportLibrary.storyboard; path = "Project/报告库/ReportLibrary.storyboard"; sourceTree = "<group>"; };
+		ADFDCF1C1EDEE475004D93A2 /* ReportLibraryHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReportLibraryHomeVC.h; path = "Project/报告库/ReportLibraryHomeVC.h"; sourceTree = "<group>"; };
+		ADFDCF1D1EDEE475004D93A2 /* ReportLibraryHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReportLibraryHomeVC.m; path = "Project/报告库/ReportLibraryHomeVC.m"; sourceTree = "<group>"; };
+		ADFDCF211EDEE581004D93A2 /* ReportListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReportListVC.h; path = "Project/报告库/ReportListVC.h"; sourceTree = "<group>"; };
+		ADFDCF221EDEE581004D93A2 /* ReportListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReportListVC.m; path = "Project/报告库/ReportListVC.m"; sourceTree = "<group>"; };
+		ADFDCF241EDEE91A004D93A2 /* MeetingListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeetingListVC.h; path = "Project/项目会议/MeetingListVC.h"; sourceTree = "<group>"; };
+		ADFDCF251EDEE91A004D93A2 /* MeetingListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeetingListVC.m; path = "Project/项目会议/MeetingListVC.m"; sourceTree = "<group>"; };
+		ADFDCF271EDEE954004D93A2 /* AddMeetingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddMeetingVC.h; path = "Project/项目会议/AddMeetingVC.h"; sourceTree = "<group>"; };
+		ADFDCF281EDEE954004D93A2 /* AddMeetingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddMeetingVC.m; path = "Project/项目会议/AddMeetingVC.m"; sourceTree = "<group>"; };
+		ADFDCF2A1EDEE974004D93A2 /* MeetingDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeetingDetailVC.h; path = "Project/项目会议/MeetingDetailVC.h"; sourceTree = "<group>"; };
+		ADFDCF2B1EDEE974004D93A2 /* MeetingDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeetingDetailVC.m; path = "Project/项目会议/MeetingDetailVC.m"; sourceTree = "<group>"; };
+		ADFDCF2D1EDEE996004D93A2 /* MeetingRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeetingRecordVC.h; path = "Project/项目会议/MeetingRecordVC.h"; sourceTree = "<group>"; };
+		ADFDCF2E1EDEE996004D93A2 /* MeetingRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeetingRecordVC.m; path = "Project/项目会议/MeetingRecordVC.m"; sourceTree = "<group>"; };
+		ADFDCF301EDEE9C4004D93A2 /* Meeting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Meeting.storyboard; path = "Project/项目会议/Meeting.storyboard"; sourceTree = "<group>"; };
+		ADFDCF321EDEFD48004D93A2 /* SecurityListVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityListVM.h; path = Project/SecurityLog/SecurityListVM.h; sourceTree = "<group>"; };
+		ADFDCF331EDEFD48004D93A2 /* SecurityListVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityListVM.m; path = Project/SecurityLog/SecurityListVM.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -822,17 +847,7 @@
 		AD345F1F1E8B482E00F29803 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				AD345F241E8B487900F29803 /* ViewModels */,
-				AD345F231E8B487000F29803 /* Views */,
-				AD345F221E8B486500F29803 /* Models */,
 				AD345F211E8B484B00F29803 /* Controllers */,
-				AD7007521ECB3BEB007B9E52 /* PersonnelManagement.storyboard */,
-				ADEA6A411ED3BD3500A10404 /* ScheduleManagement.storyboard */,
-				ADEA6A511ED3D9CC00A10404 /* MeasurementManagement.storyboard */,
-				ADEA6A551ED3EA4C00A10404 /* SecurityLog.storyboard */,
-				ADEA6A5A1ED47AC500A10404 /* ProcessInspection.storyboard */,
-				ADE9B9611ED661D8007ABC89 /* SceneSide.storyboard */,
-				ADE9B9631ED66399007ABC89 /* SystemDocuments.storyboard */,
 			);
 			name = Project;
 			sourceTree = "<group>";
@@ -854,12 +869,21 @@
 		AD345F211E8B484B00F29803 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				ADE9B9651ED6706D007ABC89 /* SystemDocuments */,
-				ADE9B9581ED5CB90007ABC89 /* Measurement */,
-				ADE9B9541ED5C8E3007ABC89 /* ProcessInspection */,
-				ADE9B9531ED5C8D4007ABC89 /* SecurityLog */,
-				ADEA6A441ED3C20C00A10404 /* Schedule */,
-				ADEA6A431ED3C1EA00A10404 /* Personel */,
+				ADFDCF151EDEE199004D93A2 /* ReportLibrary(报告库) */,
+				ADFDCF141EDEE191004D93A2 /* ProjectPresentations（项目简报） */,
+				ADFDCF131EDEE18A004D93A2 /* Training（交底培训） */,
+				ADFDCF121EDEE186004D93A2 /* Meeting（项目会议） */,
+				ADFDCF111EDEDFB2004D93A2 /* Organization&Inspection(组织检查） */,
+				ADFDCF101EDEDF7E004D93A2 /* Inform&Instruction(通知指令) */,
+				ADFDCF0F1EDEDF45004D93A2 /* Examine&Approve(审批管理) */,
+				ADFDCF0E1EDEDF17004D93A2 /* SiteTour(现场巡视) */,
+				ADFDCF0D1EDEDED8004D93A2 /* SceneSide(现场旁站) */,
+				ADE9B9651ED6706D007ABC89 /* SystemDocuments（体系文件） */,
+				ADE9B9581ED5CB90007ABC89 /* Measurement（计量管理） */,
+				ADE9B9541ED5C8E3007ABC89 /* ProcessInspection（工序报验） */,
+				ADE9B9531ED5C8D4007ABC89 /* SecurityLog（安全管理） */,
+				ADEA6A441ED3C20C00A10404 /* Schedule（进度管理） */,
+				ADEA6A431ED3C1EA00A10404 /* Personel（人员管理） */,
 				AD8A56361E8B529100FACC9F /* ProjectListVC.h */,
 				AD8A56371E8B529100FACC9F /* ProjectListVC.m */,
 			);
@@ -1239,44 +1263,50 @@
 			path = JJPhotoViewer;
 			sourceTree = "<group>";
 		};
-		ADE9B9531ED5C8D4007ABC89 /* SecurityLog */ = {
+		ADE9B9531ED5C8D4007ABC89 /* SecurityLog（安全管理） */ = {
 			isa = PBXGroup;
 			children = (
+				ADEA6A551ED3EA4C00A10404 /* SecurityLog.storyboard */,
 				ADE9B9551ED5C919007ABC89 /* SecurityLogHomeVC.h */,
 				ADE9B9561ED5C919007ABC89 /* SecurityLogHomeVC.m */,
+				ADFDCF321EDEFD48004D93A2 /* SecurityListVM.h */,
+				ADFDCF331EDEFD48004D93A2 /* SecurityListVM.m */,
 			);
-			name = SecurityLog;
+			name = "SecurityLog（安全管理）";
 			sourceTree = "<group>";
 		};
-		ADE9B9541ED5C8E3007ABC89 /* ProcessInspection */ = {
+		ADE9B9541ED5C8E3007ABC89 /* ProcessInspection（工序报验） */ = {
 			isa = PBXGroup;
 			children = (
+				ADEA6A5A1ED47AC500A10404 /* ProcessInspection.storyboard */,
 				ADE9B95E1ED5CC31007ABC89 /* ProcessInspectionListVC.h */,
 				ADE9B95F1ED5CC31007ABC89 /* ProcessInspectionListVC.m */,
 			);
-			name = ProcessInspection;
+			name = "ProcessInspection（工序报验）";
 			sourceTree = "<group>";
 		};
-		ADE9B9581ED5CB90007ABC89 /* Measurement */ = {
+		ADE9B9581ED5CB90007ABC89 /* Measurement（计量管理） */ = {
 			isa = PBXGroup;
 			children = (
+				ADEA6A511ED3D9CC00A10404 /* MeasurementManagement.storyboard */,
 				ADE9B95B1ED5CBC8007ABC89 /* MeasurementListVC.h */,
 				ADE9B95C1ED5CBC8007ABC89 /* MeasurementListVC.m */,
 			);
-			name = Measurement;
+			name = "Measurement（计量管理）";
 			path = Project/Measurement;
 			sourceTree = "<group>";
 		};
-		ADE9B9651ED6706D007ABC89 /* SystemDocuments */ = {
+		ADE9B9651ED6706D007ABC89 /* SystemDocuments（体系文件） */ = {
 			isa = PBXGroup;
 			children = (
+				ADE9B9631ED66399007ABC89 /* SystemDocuments.storyboard */,
 				ADE9B9711ED67F7E007ABC89 /* View */,
 				ADE9B96D1ED67F1A007ABC89 /* Model */,
 				ADE9B9691ED671B6007ABC89 /* VM */,
 				ADE9B9661ED6709C007ABC89 /* SystemDocumentsListVC.h */,
 				ADE9B9671ED6709C007ABC89 /* SystemDocumentsListVC.m */,
 			);
-			name = SystemDocuments;
+			name = "SystemDocuments（体系文件）";
 			sourceTree = "<group>";
 		};
 		ADE9B9691ED671B6007ABC89 /* VM */ = {
@@ -1338,9 +1368,13 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		ADEA6A431ED3C1EA00A10404 /* Personel */ = {
+		ADEA6A431ED3C1EA00A10404 /* Personel（人员管理） */ = {
 			isa = PBXGroup;
 			children = (
+				AD345F221E8B486500F29803 /* Models */,
+				AD345F231E8B487000F29803 /* Views */,
+				AD345F241E8B487900F29803 /* ViewModels */,
+				AD7007521ECB3BEB007B9E52 /* PersonnelManagement.storyboard */,
 				ADE9B9791ED68774007ABC89 /* Model */,
 				AD7007541ECB3FED007B9E52 /* PersonnelManagementVC.h */,
 				AD7007551ECB3FED007B9E52 /* PersonnelManagementVC.m */,
@@ -1349,12 +1383,13 @@
 				ADEA6A3E1ECE8A0300A10404 /* ApplyPersonListVC.h */,
 				ADEA6A3F1ECE8A0300A10404 /* ApplyPersonListVC.m */,
 			);
-			name = Personel;
+			name = "Personel（人员管理）";
 			sourceTree = "<group>";
 		};
-		ADEA6A441ED3C20C00A10404 /* Schedule */ = {
+		ADEA6A441ED3C20C00A10404 /* Schedule（进度管理） */ = {
 			isa = PBXGroup;
 			children = (
+				ADEA6A411ED3BD3500A10404 /* ScheduleManagement.storyboard */,
 				ADE9B97F1ED6AB1D007ABC89 /* Models */,
 				ADE9B97E1ED6AB0E007ABC89 /* VM */,
 				ADE9B97D1ED6AB04007ABC89 /* View */,
@@ -1367,7 +1402,117 @@
 				ADEA6A4E1ED3C30C00A10404 /* AddScheduleVC.h */,
 				ADEA6A4F1ED3C30C00A10404 /* AddScheduleVC.m */,
 			);
-			name = Schedule;
+			name = "Schedule（进度管理）";
+			sourceTree = "<group>";
+		};
+		ADFDCF0D1EDEDED8004D93A2 /* SceneSide(现场旁站) */ = {
+			isa = PBXGroup;
+			children = (
+				ADE9B9611ED661D8007ABC89 /* SceneSide.storyboard */,
+			);
+			name = "SceneSide(现场旁站)";
+			sourceTree = "<group>";
+		};
+		ADFDCF0E1EDEDF17004D93A2 /* SiteTour(现场巡视) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "SiteTour(现场巡视)";
+			sourceTree = "<group>";
+		};
+		ADFDCF0F1EDEDF45004D93A2 /* Examine&Approve(审批管理) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Examine&Approve(审批管理)";
+			sourceTree = "<group>";
+		};
+		ADFDCF101EDEDF7E004D93A2 /* Inform&Instruction(通知指令) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Inform&Instruction(通知指令)";
+			sourceTree = "<group>";
+		};
+		ADFDCF111EDEDFB2004D93A2 /* Organization&Inspection(组织检查） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Organization&Inspection(组织检查）";
+			sourceTree = "<group>";
+		};
+		ADFDCF121EDEE186004D93A2 /* Meeting（项目会议） */ = {
+			isa = PBXGroup;
+			children = (
+				ADFDCF241EDEE91A004D93A2 /* MeetingListVC.h */,
+				ADFDCF251EDEE91A004D93A2 /* MeetingListVC.m */,
+				ADFDCF271EDEE954004D93A2 /* AddMeetingVC.h */,
+				ADFDCF281EDEE954004D93A2 /* AddMeetingVC.m */,
+				ADFDCF2A1EDEE974004D93A2 /* MeetingDetailVC.h */,
+				ADFDCF2B1EDEE974004D93A2 /* MeetingDetailVC.m */,
+				ADFDCF2D1EDEE996004D93A2 /* MeetingRecordVC.h */,
+				ADFDCF2E1EDEE996004D93A2 /* MeetingRecordVC.m */,
+				ADFDCF301EDEE9C4004D93A2 /* Meeting.storyboard */,
+			);
+			name = "Meeting（项目会议）";
+			sourceTree = "<group>";
+		};
+		ADFDCF131EDEE18A004D93A2 /* Training（交底培训） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Training（交底培训）";
+			sourceTree = "<group>";
+		};
+		ADFDCF141EDEE191004D93A2 /* ProjectPresentations（项目简报） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "ProjectPresentations（项目简报）";
+			sourceTree = "<group>";
+		};
+		ADFDCF151EDEE199004D93A2 /* ReportLibrary(报告库) */ = {
+			isa = PBXGroup;
+			children = (
+				ADFDCF1B1EDEE434004D93A2 /* Model */,
+				ADFDCF1A1EDEE42C004D93A2 /* View */,
+				ADFDCF191EDEE426004D93A2 /* VM */,
+				ADFDCF161EDEE2DA004D93A2 /* VC */,
+				ADFDCF171EDEE2F4004D93A2 /* ReportLibrary.storyboard */,
+			);
+			name = "ReportLibrary(报告库)";
+			sourceTree = "<group>";
+		};
+		ADFDCF161EDEE2DA004D93A2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				ADFDCF1C1EDEE475004D93A2 /* ReportLibraryHomeVC.h */,
+				ADFDCF1D1EDEE475004D93A2 /* ReportLibraryHomeVC.m */,
+				ADFDCF211EDEE581004D93A2 /* ReportListVC.h */,
+				ADFDCF221EDEE581004D93A2 /* ReportListVC.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		ADFDCF191EDEE426004D93A2 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VM;
+			sourceTree = "<group>";
+		};
+		ADFDCF1A1EDEE42C004D93A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		ADFDCF1B1EDEE434004D93A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		BFA69494DCC10D55C677046B /* Pods */ = {
@@ -1496,6 +1641,7 @@
 				ADEA6A291ECDCBB000A10404 /* PersonDynamicCell.xib in Resources */,
 				ADCCAC901EC43D2400EF8A48 /* RemoveCell.xib in Resources */,
 				ADEA6A5B1ED47AC500A10404 /* ProcessInspection.storyboard in Resources */,
+				ADFDCF311EDEE9C4004D93A2 /* Meeting.storyboard in Resources */,
 				AD1CFF791EB853DD00B43290 /* MangerHomeView.xib in Resources */,
 				ADCCAC391EC1B9ED00EF8A48 /* BaseCell.xib in Resources */,
 				ADCCADAD1ECA1BAE00EF8A48 /* KBMVResoureCell.xib in Resources */,
@@ -1510,6 +1656,7 @@
 				ADCCACC11EC4963100EF8A48 /* MImaCell.xib in Resources */,
 				ADCCACE01EC4985C00EF8A48 /* none.png in Resources */,
 				AD3BED941E8B3E6C0001D789 /* Main.storyboard in Resources */,
+				ADFDCF181EDEE2F4004D93A2 /* ReportLibrary.storyboard in Resources */,
 				ADE9B9621ED661D8007ABC89 /* SceneSide.storyboard in Resources */,
 				ADCCACBF1EC4963100EF8A48 /* MGroupCell.xib in Resources */,
 				ADCCAC461EC1F50900EF8A48 /* SVCloudDateCell.xib in Resources */,
@@ -1628,6 +1775,7 @@
 				ADCCAC211EBF4F8C00EF8A48 /* KBMVResoureCell.m in Sources */,
 				ADCCABE91EBD6AEF00EF8A48 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				ADCCAC8B1EC43C4E00EF8A48 /* MangerHomeVM.m in Sources */,
+				ADFDCF341EDEFD48004D93A2 /* SecurityListVM.m in Sources */,
 				ADCCACCF1EC4976B00EF8A48 /* SDBaseProgressView.m in Sources */,
 				ADCCAC6D1EC3404F00EF8A48 /* NSString+NSDate.m in Sources */,
 				ADCCABD01EBA18DB00EF8A48 /* UIView+Frame.m in Sources */,
@@ -1649,6 +1797,7 @@
 				AD3BED8B1E8B3E6C0001D789 /* AppDelegate.m in Sources */,
 				ADCCACD01EC4976B00EF8A48 /* SDLoopProgressView.m in Sources */,
 				ADCCABC21EBA0F5800EF8A48 /* KBMListHeaderView.m in Sources */,
+				ADFDCF2C1EDEE974004D93A2 /* MeetingDetailVC.m in Sources */,
 				ADCCAC301EC0A01600EF8A48 /* UserInfoBody.m in Sources */,
 				ADCCACC01EC4963100EF8A48 /* MImaCell.m in Sources */,
 				ADCCAC0D1EBE9A1F00EF8A48 /* TodoListCell.m in Sources */,
@@ -1656,9 +1805,11 @@
 				ADCCAC4D1EC20BB400EF8A48 /* BRPlaceholderTextView.m in Sources */,
 				AD345F191E8B46FC00F29803 /* UIView+SMKEvents.m in Sources */,
 				ADCCABF01EBD6C0500EF8A48 /* SVCloudTextFieldCell.m in Sources */,
+				ADFDCF231EDEE581004D93A2 /* ReportListVC.m in Sources */,
 				ADCCACC41EC4963100EF8A48 /* MShowGroupAllSet.m in Sources */,
 				AD345F011E8B46FC00F29803 /* NSObject+SMKProperties.m in Sources */,
 				AD70074D1ECB2A00007B9E52 /* LCActionCell.m in Sources */,
+				ADFDCF291EDEE954004D93A2 /* AddMeetingVC.m in Sources */,
 				ADCCABD41EBABF8A00EF8A48 /* KnowledgeModel.m in Sources */,
 				AD5BE4C11E8C948C00A695E0 /* KBMVC.m in Sources */,
 				ADCCAC451EC1F50900EF8A48 /* SVCloudDateCell.m in Sources */,
@@ -1672,7 +1823,9 @@
 				ADEA6A311ECDD09B00A10404 /* PersonListVM.m in Sources */,
 				ADEA6A401ECE8A0300A10404 /* ApplyPersonListVC.m in Sources */,
 				ADE9B9741ED67FE7007ABC89 /* DocumentListCell.m in Sources */,
+				ADFDCF2F1EDEE996004D93A2 /* MeetingRecordVC.m in Sources */,
 				AD3BED8E1E8B3E6C0001D789 /* HomeController.m in Sources */,
+				ADFDCF261EDEE91A004D93A2 /* MeetingListVC.m in Sources */,
 				ADDAF8501EB9F83A00A5BE62 /* QuestionModel.m in Sources */,
 				AD1CAD101EB8ADA0007C6A88 /* KBMVCViewModel.m in Sources */,
 				ADCCAC7C1EC356E700EF8A48 /* Banner.m in Sources */,
@@ -1683,6 +1836,7 @@
 				ADEA6A501ED3C30C00A10404 /* AddScheduleVC.m in Sources */,
 				ADCCACC31EC4963100EF8A48 /* MShowAllGroup.m in Sources */,
 				ADCCACB71EC4963100EF8A48 /* MHeaderImaCell.m in Sources */,
+				ADFDCF1E1EDEE475004D93A2 /* ReportLibraryHomeVC.m in Sources */,
 				ADEA6A231ECDC97100A10404 /* PersonCell.m in Sources */,
 				ADCCABF61EBD6C5300EF8A48 /* SVCloudTextViewCell.m in Sources */,
 				ADEA6A4A1ED3C2AA00A10404 /* ScheduleMonthlyListVC.m in Sources */,

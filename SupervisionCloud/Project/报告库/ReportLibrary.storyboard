@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Report Library HomeVC-->
+        <scene sceneID="Hqw-c1-INw">
+            <objects>
+                <viewController id="t6x-20-9bx" customClass="ReportLibraryHomeVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oo0-of-vJc"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Nn-3N-e7u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bu3-i5-Awu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-9l-8Pg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="报告库" id="mjl-KQ-JPD">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="yeY-Pv-f9g">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uAL-Nn-ex2">
+                                                <rect key="frame" x="16" y="10" width="77" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="retu"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LXp-Vo-z3G">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zHH-Jn-VET">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UGZ-S7-2dk">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9cY-9l-8Pg" firstAttribute="leading" secondItem="bu3-i5-Awu" secondAttribute="leading" id="02g-cF-P4o"/>
+                            <constraint firstItem="LXp-Vo-z3G" firstAttribute="trailing" secondItem="9cY-9l-8Pg" secondAttribute="trailing" id="42a-Xa-EfJ"/>
+                            <constraint firstItem="LXp-Vo-z3G" firstAttribute="leading" secondItem="9cY-9l-8Pg" secondAttribute="leading" id="6aF-Rs-qTX"/>
+                            <constraint firstAttribute="trailing" secondItem="9cY-9l-8Pg" secondAttribute="trailing" id="J1L-Lo-Win"/>
+                            <constraint firstItem="LXp-Vo-z3G" firstAttribute="top" secondItem="9cY-9l-8Pg" secondAttribute="bottom" id="rK2-FT-gtS"/>
+                            <constraint firstItem="9cY-9l-8Pg" firstAttribute="top" secondItem="oo0-of-vJc" secondAttribute="bottom" id="vDo-5x-JFu"/>
+                            <constraint firstItem="9Nn-3N-e7u" firstAttribute="top" secondItem="LXp-Vo-z3G" secondAttribute="bottom" id="x94-8h-Inf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0G-Ju-mIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="-43"/>
+        </scene>
+        <!--Report ListVC-->
+        <scene sceneID="ajU-fC-C8w">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yuz-U4-Syh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Qv1-RI-sI1" customClass="ReportListVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IY3-Jy-eMJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="pIc-hd-mfJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ghP-Ms-16y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xf1-9B-BYA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="报告库" id="Smf-gl-Kcl">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="19g-w8-Foz">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kov-wa-GaM">
+                                                <rect key="frame" x="16" y="10" width="77" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="retu"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8lO-LO-gLp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xf1-9B-BYA" firstAttribute="leading" secondItem="ghP-Ms-16y" secondAttribute="leading" id="AKS-0t-VRZ"/>
+                            <constraint firstItem="pIc-hd-mfJ" firstAttribute="top" secondItem="8lO-LO-gLp" secondAttribute="bottom" id="Ks1-Ay-Fkp"/>
+                            <constraint firstItem="8lO-LO-gLp" firstAttribute="top" secondItem="xf1-9B-BYA" secondAttribute="bottom" id="Sg3-p2-nwf"/>
+                            <constraint firstAttribute="trailing" secondItem="xf1-9B-BYA" secondAttribute="trailing" id="Tez-Xm-0SA"/>
+                            <constraint firstItem="xf1-9B-BYA" firstAttribute="top" secondItem="IY3-Jy-eMJ" secondAttribute="bottom" id="U6m-Jp-zFV"/>
+                            <constraint firstItem="8lO-LO-gLp" firstAttribute="leading" secondItem="ghP-Ms-16y" secondAttribute="leading" id="Wyq-N7-Ir1"/>
+                            <constraint firstAttribute="trailing" secondItem="8lO-LO-gLp" secondAttribute="trailing" id="ddB-e1-Htx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1089" y="-44"/>
+        </scene>
+        <!--Report Library HomeVC-->
+        <scene sceneID="Qbb-Cr-jcp">
+            <objects>
+                <viewController id="mCJ-yi-0wo" customClass="ReportLibraryHomeVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XtV-Ed-NAL"/>
+                        <viewControllerLayoutGuide type="bottom" id="efp-6m-ALJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Npe-f5-qOz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2x-ox-pN4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="详细" id="ghy-8y-Nnf">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="GQf-qN-Rot">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pj1-hL-q7C">
+                                                <rect key="frame" x="16" y="10" width="77" height="23"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="retu"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C2x-ox-pN4" firstAttribute="top" secondItem="XtV-Ed-NAL" secondAttribute="bottom" id="aFK-zR-3oh"/>
+                            <constraint firstAttribute="trailing" secondItem="C2x-ox-pN4" secondAttribute="trailing" id="kLx-kg-Hmg"/>
+                            <constraint firstItem="C2x-ox-pN4" firstAttribute="leading" secondItem="Npe-f5-qOz" secondAttribute="leading" id="yZa-rA-rM8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pb-70-9N9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1806" y="-44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="retu" width="23" height="23"/>
+    </resources>
+</document>

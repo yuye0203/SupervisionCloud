@@ -282,7 +282,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/Project/Personnelmanagement/PersonListVM.m"
-                  timestampString = "517475017.301993"
+                  timestampString = "517973895.267633"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
@@ -297,7 +297,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/Project/Personnelmanagement/PersonListVM.m"
-                  timestampString = "517475017.304445"
+                  timestampString = "517973895.27248"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
@@ -362,7 +362,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/Project/Personnelmanagement/PersonnelManagementVC.m"
-                  timestampString = "517475017.319188"
+                  timestampString = "517973895.368195"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "100"
@@ -377,7 +377,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/Project/Personnelmanagement/PersonnelManagementVC.m"
-                  timestampString = "517475017.321555"
+                  timestampString = "517973895.408446"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "101"
@@ -416,22 +416,6 @@
             startingLineNumber = "37"
             endingLineNumber = "37"
             landmarkName = "-getMoreData:completionHandle:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SupervisionCloud/HomeController.m"
-            timestampString = "517476176.437731"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "-goToDetail:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -602,7 +586,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/KBM/ScreenVM.m"
-                  timestampString = "517475017.383004"
+                  timestampString = "517973895.533808"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
@@ -617,7 +601,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/KBM/ScreenVM.m"
-                  timestampString = "517475017.385784"
+                  timestampString = "517973895.537147"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "67"
@@ -698,7 +682,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/KBM/FindeQuestionVC.m"
-                  timestampString = "517475017.405918"
+                  timestampString = "517973895.569073"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "62"
@@ -713,7 +697,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/KBM/FindeQuestionVC.m"
-                  timestampString = "517475017.407855"
+                  timestampString = "517973895.573327"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "62"
@@ -762,7 +746,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/KBM/FindQuestionVM.m"
-                  timestampString = "517475017.422194"
+                  timestampString = "517973895.594396"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "47"
@@ -777,7 +761,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/KBM/FindQuestionVM.m"
-                  timestampString = "517475017.424148"
+                  timestampString = "517973895.599327"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "47"
@@ -858,7 +842,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/KBM/KnowledgeDetailVC.m"
-                  timestampString = "517475017.448156"
+                  timestampString = "517973895.6301"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "49"
@@ -873,7 +857,7 @@
                   moduleName = "SupervisionCloud"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/yetingge/Desktop/%E7%9B%91%E7%90%86%E4%BA%91/code/SupervisionCloud/SupervisionCloud/KBM/KnowledgeDetailVC.m"
-                  timestampString = "517475017.452968"
+                  timestampString = "517973895.63441"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
@@ -889,13 +873,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SupervisionCloud/Home/MangerHomeView.m"
-            timestampString = "517474937.609259"
+            filePath = "SupervisionCloud/Project/SecurityLog/SecurityLogHomeVC.m"
+            timestampString = "517934691.795496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "-setActivtiyViews:"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisionCloud/Project/SecurityLog/SecurityListVM.m"
+            timestampString = "517931811.829797"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "-getSecurityData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisionCloud/Project/SecurityLog/SecurityListVM.m"
+            timestampString = "517934547.732641"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "-getSecurityData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisionCloud/HomeController.m"
+            timestampString = "517934626.949085"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "-goToDetail:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
