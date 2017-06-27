@@ -52,7 +52,9 @@ static NSString *const MyCellIdentifier = @"KBMVResoureCell" ;
             if (root.body.list.count==0) {
                 completionHandle(NO, nil, nil);
             }else{
-                completionHandle(YES, nil, root.body.list);
+                NSArray * array = [KnowledgeModel mj_objectArrayWithKeyValuesArray:root.body.list];
+                completionHandle(YES, nil, array);
+
             }
 
         }else
@@ -91,6 +93,14 @@ static NSString *const MyCellIdentifier = @"KBMVResoureCell" ;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    id model = self.dataArrayList[indexPath.row];
+    
+
+    if (self.goToListDetail) {
+        self.goToListDetail(model);
+    }
+
 }
 
 

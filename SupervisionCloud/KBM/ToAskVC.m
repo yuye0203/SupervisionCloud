@@ -73,7 +73,7 @@
 
 -(void)showTypeView:(NSArray *)types{
     
-    [LCActionAlertView showActionViewNames:@[@"我",@"和"] completed:^(NSInteger index,NSString * name) {
+    [LCActionAlertView showActionViewNames:types completed:^(NSInteger index,NSString * name) {
         NSLog(@"%ld",index);
         self.viewModel.type = index;
     } canceled:^{
@@ -82,12 +82,15 @@
 
 }
 -(IBAction)saveQuestion{
+   
     [self.viewModel saveQuestion:^(BOOL success, NSError *error,id result){
         
         if (success) {
+            [SVProgressHUD showSuccessWithStatus:result];
             [self dismissViewControllerAnimated:YES completion:nil];
+        }else
+            [SVProgressHUD showErrorWithStatus:result];
 
-        }
     }];
     
 

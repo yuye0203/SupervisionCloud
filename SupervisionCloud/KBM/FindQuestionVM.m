@@ -51,9 +51,13 @@ static NSString *const MyCellIdentifier = @"KBMVCell" ;
         RootClass *root = [RootClass mj_objectWithKeyValues:response];
         if (root.resultCode ==1) {
             if (root.body.list.count>0) {
-                [self.dataArrayList addObjectsFromArray:root.body.list];
                 
-                completionHandle(YES, nil, root.body.list);
+                NSArray * array = [QuestionModel mj_objectArrayWithKeyValuesArray:root.body.list];
+                
+                [self.dataArrayList addObjectsFromArray:array];
+
+                
+                completionHandle(YES, nil, array);
             }else
                 completionHandle(NO, nil, nil);
             
@@ -96,12 +100,18 @@ static NSString *const MyCellIdentifier = @"KBMVCell" ;
     }];
     
 }
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    id model = self.dataArrayList[indexPath.row];
+    
+    
+    if (self.goToListDetail) {
+        self.goToListDetail(model);
+    }
+    
 }
-
 
 
 @end

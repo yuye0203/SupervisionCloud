@@ -12,6 +12,8 @@
 #import "UserInfoBody.h"
 #import "UserInfoManager.h"
 #import "ScreenVC.h"
+#import "QuestionModel.h"
+#import "QuestionDetailVC.h"
 
 
 @interface FindeQuestionVC ()
@@ -32,6 +34,8 @@
     [super viewWillAppear:animated];
     if (_needReset) {
         [self setupTableView];
+        _needReset = NO;
+
     }
 }
 - (void)didReceiveMemoryWarning {
@@ -114,6 +118,11 @@
 
     }];
     
+    self.sviewModel.goToListDetail = ^(NSObject *item){
+        [weakSelf gotoDetail:item];
+    };
+
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -126,4 +135,18 @@
     
 }
 
+-(void)gotoDetail:(id)item{
+    QuestionModel *obj = (QuestionModel *)item;
+    
+    NSLog(@"item = %@",obj.idField);
+    //
+    
+    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"KBM" bundle:nil];
+    
+    QuestionDetailVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"QuestionDetailVC"];
+    vc.idField = obj.idField;
+    [self presentViewController:vc animated:YES completion:nil];
+    
+
+}
 @end

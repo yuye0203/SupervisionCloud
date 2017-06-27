@@ -153,7 +153,7 @@ static NSString *const MyHeadIdentifier = @"headerView" ;
     QuestionModel *itemModle;
     id model = self.dataArrayList[indexPath.section][indexPath.row];
 
-    if (indexPath.section==1) {
+    if (indexPath.section==0) {
         if ([model isKindOfClass:[QuestionModel class]])
             itemModle = (QuestionModel *)model;
         else

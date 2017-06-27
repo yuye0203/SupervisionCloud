@@ -11,7 +11,7 @@
         <!--Report Library HomeVC-->
         <scene sceneID="Hqw-c1-INw">
             <objects>
-                <viewController id="t6x-20-9bx" customClass="ReportLibraryHomeVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReportLibraryHomeVC" id="t6x-20-9bx" customClass="ReportLibraryHomeVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oo0-of-vJc"/>
                         <viewControllerLayoutGuide type="bottom" id="9Nn-3N-e7u"/>
@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="1089" y="-44"/>
         </scene>
-        <!--Report Library HomeVC-->
+        <!--Report Library DetailVC-->
         <scene sceneID="Qbb-Cr-jcp">
             <objects>
-                <viewController id="mCJ-yi-0wo" customClass="ReportLibraryHomeVC" sceneMemberID="viewController">
+                <viewController id="mCJ-yi-0wo" customClass="ReportLibraryDetailVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XtV-Ed-NAL"/>
                         <viewControllerLayoutGuide type="bottom" id="efp-6m-ALJ"/>

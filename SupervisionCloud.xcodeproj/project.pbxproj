@@ -209,6 +209,17 @@
 		ADFDCF2F1EDEE996004D93A2 /* MeetingRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF2E1EDEE996004D93A2 /* MeetingRecordVC.m */; };
 		ADFDCF311EDEE9C4004D93A2 /* Meeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFDCF301EDEE9C4004D93A2 /* Meeting.storyboard */; };
 		ADFDCF341EDEFD48004D93A2 /* SecurityListVM.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF331EDEFD48004D93A2 /* SecurityListVM.m */; };
+		ADFDCF371EDFB71D004D93A2 /* ReportLibraryDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF361EDFB71D004D93A2 /* ReportLibraryDetailVC.m */; };
+		ADFDCF391EDFB7BA004D93A2 /* ProjectPresentations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFDCF381EDFB7BA004D93A2 /* ProjectPresentations.storyboard */; };
+		ADFDCF3C1EDFE1C3004D93A2 /* ProjectPresentationsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF3B1EDFE1C3004D93A2 /* ProjectPresentationsListVC.m */; };
+		ADFDCF3F1EDFE27B004D93A2 /* QuestionDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF3E1EDFE27B004D93A2 /* QuestionDetailVC.m */; };
+		ADFDCF431EDFE3CA004D93A2 /* QuestionDetailHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF411EDFE3CA004D93A2 /* QuestionDetailHeadCell.m */; };
+		ADFDCF441EDFE3CA004D93A2 /* QuestionDetailHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADFDCF421EDFE3CA004D93A2 /* QuestionDetailHeadCell.xib */; };
+		ADFDCF481EDFE3E9004D93A2 /* QuestionAskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF461EDFE3E9004D93A2 /* QuestionAskCell.m */; };
+		ADFDCF491EDFE3E9004D93A2 /* QuestionAskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADFDCF471EDFE3E9004D93A2 /* QuestionAskCell.xib */; };
+		ADFDCF4C1EDFEAA1004D93A2 /* QuestionDetailVM.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF4B1EDFEAA1004D93A2 /* QuestionDetailVM.m */; };
+		ADFDCF4F1EE0F390004D93A2 /* QuestionDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF4E1EE0F390004D93A2 /* QuestionDetail.m */; };
+		ADFDCF521EE0FBAA004D93A2 /* QuestionAskItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFDCF511EE0FBAA004D93A2 /* QuestionAskItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -567,6 +578,25 @@
 		ADFDCF301EDEE9C4004D93A2 /* Meeting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Meeting.storyboard; path = "Project/项目会议/Meeting.storyboard"; sourceTree = "<group>"; };
 		ADFDCF321EDEFD48004D93A2 /* SecurityListVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityListVM.h; path = Project/SecurityLog/SecurityListVM.h; sourceTree = "<group>"; };
 		ADFDCF331EDEFD48004D93A2 /* SecurityListVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityListVM.m; path = Project/SecurityLog/SecurityListVM.m; sourceTree = "<group>"; };
+		ADFDCF351EDFB71D004D93A2 /* ReportLibraryDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReportLibraryDetailVC.h; path = "Project/报告库/ReportLibraryDetailVC.h"; sourceTree = "<group>"; };
+		ADFDCF361EDFB71D004D93A2 /* ReportLibraryDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReportLibraryDetailVC.m; path = "Project/报告库/ReportLibraryDetailVC.m"; sourceTree = "<group>"; };
+		ADFDCF381EDFB7BA004D93A2 /* ProjectPresentations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ProjectPresentations.storyboard; path = "Project/项目简报/ProjectPresentations.storyboard"; sourceTree = "<group>"; };
+		ADFDCF3A1EDFE1C3004D93A2 /* ProjectPresentationsListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectPresentationsListVC.h; path = "Project/项目简报/ProjectPresentationsListVC.h"; sourceTree = "<group>"; };
+		ADFDCF3B1EDFE1C3004D93A2 /* ProjectPresentationsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectPresentationsListVC.m; path = "Project/项目简报/ProjectPresentationsListVC.m"; sourceTree = "<group>"; };
+		ADFDCF3D1EDFE27B004D93A2 /* QuestionDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionDetailVC.h; path = KBM/QuestionDetailVC.h; sourceTree = "<group>"; };
+		ADFDCF3E1EDFE27B004D93A2 /* QuestionDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionDetailVC.m; path = KBM/QuestionDetailVC.m; sourceTree = "<group>"; };
+		ADFDCF401EDFE3CA004D93A2 /* QuestionDetailHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionDetailHeadCell.h; path = KBM/QuestionDetailHeadCell.h; sourceTree = "<group>"; };
+		ADFDCF411EDFE3CA004D93A2 /* QuestionDetailHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionDetailHeadCell.m; path = KBM/QuestionDetailHeadCell.m; sourceTree = "<group>"; };
+		ADFDCF421EDFE3CA004D93A2 /* QuestionDetailHeadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionDetailHeadCell.xib; path = KBM/QuestionDetailHeadCell.xib; sourceTree = "<group>"; };
+		ADFDCF451EDFE3E9004D93A2 /* QuestionAskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionAskCell.h; path = KBM/QuestionAskCell.h; sourceTree = "<group>"; };
+		ADFDCF461EDFE3E9004D93A2 /* QuestionAskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionAskCell.m; path = KBM/QuestionAskCell.m; sourceTree = "<group>"; };
+		ADFDCF471EDFE3E9004D93A2 /* QuestionAskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QuestionAskCell.xib; path = KBM/QuestionAskCell.xib; sourceTree = "<group>"; };
+		ADFDCF4A1EDFEAA1004D93A2 /* QuestionDetailVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionDetailVM.h; path = KBM/QuestionDetailVM.h; sourceTree = "<group>"; };
+		ADFDCF4B1EDFEAA1004D93A2 /* QuestionDetailVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionDetailVM.m; path = KBM/QuestionDetailVM.m; sourceTree = "<group>"; };
+		ADFDCF4D1EE0F390004D93A2 /* QuestionDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDetail.h; sourceTree = "<group>"; };
+		ADFDCF4E1EE0F390004D93A2 /* QuestionDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDetail.m; sourceTree = "<group>"; };
+		ADFDCF501EE0FBAA004D93A2 /* QuestionAskItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAskItem.h; sourceTree = "<group>"; };
+		ADFDCF511EE0FBAA004D93A2 /* QuestionAskItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAskItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -630,6 +660,12 @@
 				ADCCAC1E1EBF4F8C00EF8A48 /* KBMVResoureCell.h */,
 				ADCCAC1F1EBF4F8C00EF8A48 /* KBMVResoureCell.m */,
 				ADCCADAB1ECA1BAE00EF8A48 /* KBMVResoureCell.xib */,
+				ADFDCF401EDFE3CA004D93A2 /* QuestionDetailHeadCell.h */,
+				ADFDCF411EDFE3CA004D93A2 /* QuestionDetailHeadCell.m */,
+				ADFDCF421EDFE3CA004D93A2 /* QuestionDetailHeadCell.xib */,
+				ADFDCF451EDFE3E9004D93A2 /* QuestionAskCell.h */,
+				ADFDCF461EDFE3E9004D93A2 /* QuestionAskCell.m */,
+				ADFDCF471EDFE3E9004D93A2 /* QuestionAskCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -649,6 +685,10 @@
 				ADDAF84E1EB9F83A00A5BE62 /* RootClass.m */,
 				AD1CAD161EB8B355007C6A88 /* KnowledgeBaseModel.h */,
 				AD1CAD171EB8B355007C6A88 /* KnowledgeBaseModel.m */,
+				ADFDCF4D1EE0F390004D93A2 /* QuestionDetail.h */,
+				ADFDCF4E1EE0F390004D93A2 /* QuestionDetail.m */,
+				ADFDCF501EE0FBAA004D93A2 /* QuestionAskItem.h */,
+				ADFDCF511EE0FBAA004D93A2 /* QuestionAskItem.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -668,6 +708,8 @@
 				ADCCAC271EBF578400EF8A48 /* FindResourVM.m */,
 				ADCCAC471EC203C300EF8A48 /* ScreenVM.h */,
 				ADCCAC481EC203C300EF8A48 /* ScreenVM.m */,
+				ADFDCF4A1EDFEAA1004D93A2 /* QuestionDetailVM.h */,
+				ADFDCF4B1EDFEAA1004D93A2 /* QuestionDetailVM.m */,
 			);
 			name = VModels;
 			sourceTree = "<group>";
@@ -960,6 +1002,8 @@
 				ADCCADA41ECA087E00EF8A48 /* KnowledgeDetailVC.h */,
 				ADCCADA51ECA087E00EF8A48 /* KnowledgeDetailVC.m */,
 				AD7007431ECB242F007B9E52 /* KBM.storyboard */,
+				ADFDCF3D1EDFE27B004D93A2 /* QuestionDetailVC.h */,
+				ADFDCF3E1EDFE27B004D93A2 /* QuestionDetailVC.m */,
 			);
 			name = KBM;
 			sourceTree = "<group>";
@@ -1467,6 +1511,9 @@
 		ADFDCF141EDEE191004D93A2 /* ProjectPresentations（项目简报） */ = {
 			isa = PBXGroup;
 			children = (
+				ADFDCF381EDFB7BA004D93A2 /* ProjectPresentations.storyboard */,
+				ADFDCF3A1EDFE1C3004D93A2 /* ProjectPresentationsListVC.h */,
+				ADFDCF3B1EDFE1C3004D93A2 /* ProjectPresentationsListVC.m */,
 			);
 			name = "ProjectPresentations（项目简报）";
 			sourceTree = "<group>";
@@ -1490,6 +1537,8 @@
 				ADFDCF1D1EDEE475004D93A2 /* ReportLibraryHomeVC.m */,
 				ADFDCF211EDEE581004D93A2 /* ReportListVC.h */,
 				ADFDCF221EDEE581004D93A2 /* ReportListVC.m */,
+				ADFDCF351EDFB71D004D93A2 /* ReportLibraryDetailVC.h */,
+				ADFDCF361EDFB71D004D93A2 /* ReportLibraryDetailVC.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -1643,6 +1692,7 @@
 				ADEA6A5B1ED47AC500A10404 /* ProcessInspection.storyboard in Resources */,
 				ADFDCF311EDEE9C4004D93A2 /* Meeting.storyboard in Resources */,
 				AD1CFF791EB853DD00B43290 /* MangerHomeView.xib in Resources */,
+				ADFDCF441EDFE3CA004D93A2 /* QuestionDetailHeadCell.xib in Resources */,
 				ADCCAC391EC1B9ED00EF8A48 /* BaseCell.xib in Resources */,
 				ADCCADAD1ECA1BAE00EF8A48 /* KBMVResoureCell.xib in Resources */,
 				ADE9B9641ED66399007ABC89 /* SystemDocuments.storyboard in Resources */,
@@ -1650,6 +1700,7 @@
 				ADEA6A421ED3BD3500A10404 /* ScheduleManagement.storyboard in Resources */,
 				AD3BED961E8B3E6C0001D789 /* Assets.xcassets in Resources */,
 				ADEA6A241ECDC97100A10404 /* PersonCell.xib in Resources */,
+				ADFDCF391EDFB7BA004D93A2 /* ProjectPresentations.storyboard in Resources */,
 				ADCCABF71EBD6C5300EF8A48 /* SVCloudTextViewCell.xib in Resources */,
 				AD3A8CD51ED71A6C00AFF944 /* WSDatePickerView.xib in Resources */,
 				ADCCABF11EBD6C0500EF8A48 /* SVCloudTextFieldCell.xib in Resources */,
@@ -1667,6 +1718,7 @@
 				ADCCAC621EC2137C00EF8A48 /* SVCloudImageCollectionCell.xib in Resources */,
 				ADCCAC581EC211F200EF8A48 /* SVCloudImageCell.xib in Resources */,
 				ADEA6A2E1ECDCEA200A10404 /* PersonDynamicFirstCell.xib in Resources */,
+				ADFDCF491EDFE3E9004D93A2 /* QuestionAskCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1741,6 +1793,7 @@
 			files = (
 				ADCCAC111EBF3B9A00EF8A48 /* HomeActivityView.m in Sources */,
 				ADE9B9601ED5CC31007ABC89 /* ProcessInspectionListVC.m in Sources */,
+				ADFDCF3C1EDFE1C3004D93A2 /* ProjectPresentationsListVC.m in Sources */,
 				ADE9B9571ED5C919007ABC89 /* SecurityLogHomeVC.m in Sources */,
 				ADCCACB61EC4963100EF8A48 /* MFlowLayOut.m in Sources */,
 				ADEA6A3D1ECDF25100A10404 /* PersonDetailVM.m in Sources */,
@@ -1756,6 +1809,7 @@
 				ADCCABD11EBA18DB00EF8A48 /* UIView+LCExtension.m in Sources */,
 				ADCCACDD1EC4985C00EF8A48 /* JJOneScrollView.m in Sources */,
 				ADCCAC7D1EC356E700EF8A48 /* Contract.m in Sources */,
+				ADFDCF371EDFB71D004D93A2 /* ReportLibraryDetailVC.m in Sources */,
 				AD1CACFF1EB860FF007C6A88 /* MineHeaderCell.m in Sources */,
 				ADEA6A341ECDD0CF00A10404 /* PersonDynamicVM.m in Sources */,
 				ADCCABBF1EB9FB2800EF8A48 /* BaseVC.m in Sources */,
@@ -1765,6 +1819,7 @@
 				AD345F161E8B46FC00F29803 /* UIView+SMKConfigure.m in Sources */,
 				ADE9B96C1ED67202007ABC89 /* SystemDocumentsListVM.m in Sources */,
 				AD1CAD1F1EB8B704007C6A88 /* SVCloudData.m in Sources */,
+				ADFDCF481EDFE3E9004D93A2 /* QuestionAskCell.m in Sources */,
 				AD3A8CD31ED71A6C00AFF944 /* UIView+Extension.m in Sources */,
 				ADCCAC341EC0A2AD00EF8A48 /* UserInfoManager.m in Sources */,
 				ADCCAC6C1EC3404F00EF8A48 /* NSCategory.m in Sources */,
@@ -1783,9 +1838,11 @@
 				ADE9B97C1ED6A29A007ABC89 /* PersonItem.m in Sources */,
 				AD1CAD091EB86538007C6A88 /* MineTableViewModel.m in Sources */,
 				ADCCABFA1EBD704700EF8A48 /* ToAskViewModel.m in Sources */,
+				ADFDCF3F1EDFE27B004D93A2 /* QuestionDetailVC.m in Sources */,
 				ADEA6A281ECDCBB000A10404 /* PersonDynamicCell.m in Sources */,
 				ADCCAC031EBE91CC00EF8A48 /* BaseTableVC.m in Sources */,
 				ADCCACBE1EC4963100EF8A48 /* MGroupCell.m in Sources */,
+				ADFDCF4C1EDFEAA1004D93A2 /* QuestionDetailVM.m in Sources */,
 				AD1CFF691EB81B9F00B43290 /* LoginVC.m in Sources */,
 				AD1CACF81EB85CB7007C6A88 /* MineInfoTC.m in Sources */,
 				ADCCAC001EBD9A3000EF8A48 /* MainTabVC.m in Sources */,
@@ -1806,6 +1863,7 @@
 				AD345F191E8B46FC00F29803 /* UIView+SMKEvents.m in Sources */,
 				ADCCABF01EBD6C0500EF8A48 /* SVCloudTextFieldCell.m in Sources */,
 				ADFDCF231EDEE581004D93A2 /* ReportListVC.m in Sources */,
+				ADFDCF431EDFE3CA004D93A2 /* QuestionDetailHeadCell.m in Sources */,
 				ADCCACC41EC4963100EF8A48 /* MShowGroupAllSet.m in Sources */,
 				AD345F011E8B46FC00F29803 /* NSObject+SMKProperties.m in Sources */,
 				AD70074D1ECB2A00007B9E52 /* LCActionCell.m in Sources */,
@@ -1815,6 +1873,7 @@
 				ADCCAC451EC1F50900EF8A48 /* SVCloudDateCell.m in Sources */,
 				AD345EFE1E8B46FC00F29803 /* NSObject+SMKCoding.m in Sources */,
 				ADCCAC491EC203C300EF8A48 /* ScreenVM.m in Sources */,
+				ADFDCF521EE0FBAA004D93A2 /* QuestionAskItem.m in Sources */,
 				ADCCACDC1EC4985C00EF8A48 /* JJMainScrollView.m in Sources */,
 				ADCCABCE1EBA18DB00EF8A48 /* UIView+Bounds.m in Sources */,
 				ADCCAC881EC4357600EF8A48 /* UIViewAdditions.m in Sources */,
@@ -1855,6 +1914,7 @@
 				AD3A8CD21ED71A6C00AFF944 /* NSDate+Extension.m in Sources */,
 				AD70074C1ECB2A00007B9E52 /* LCActionAlertView.m in Sources */,
 				ADCCACDE1EC4985C00EF8A48 /* JJPhoto.m in Sources */,
+				ADFDCF4F1EE0F390004D93A2 /* QuestionDetail.m in Sources */,
 				AD345F131E8B46FC00F29803 /* UITableViewCell+SMKConfigure.m in Sources */,
 				ADE9B9821ED6ABA8007ABC89 /* ScheduleHomeListVM.m in Sources */,
 				AD1CAD1C1EB8B6B9007C6A88 /* SVCloudNetwork.m in Sources */,

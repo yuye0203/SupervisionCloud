@@ -11,6 +11,8 @@
 #import "UserInfoManager.h"
 #import "ScreenVC.h"
 #import "SVCloudAPI.h"
+#import "KnowledgeModel.h"
+#import "KnowledgeDetailVC.h"
 
 @interface FindResourVC ()
 @property (nonatomic, strong) FindResourVM *sviewModel;
@@ -30,6 +32,7 @@
     [super viewWillAppear:animated];
     if (_needReset) {
         [self setupTableView];
+        _needReset = NO;
     }
 }
 
@@ -107,6 +110,14 @@
                             }
                         }] ;
     }];
+    
+    
+    self.sviewModel.goToListDetail = ^(NSObject *item){
+        [weakSelf gotoDetail:item];
+    };
+    
+
+
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     UIViewController *destination = segue.destinationViewController;
@@ -117,4 +128,20 @@
     }
     
 }
+
+-(void)gotoDetail:(id)item{
+    KnowledgeModel *obj = (KnowledgeModel *)item;
+    
+    NSLog(@"item = %@",obj.idField);
+    //
+    
+    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"KBM" bundle:nil];
+    
+    KnowledgeDetailVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"KnowledgeDetailVC"];
+    vc.idField = obj.idField;
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    
+}
+
 @end

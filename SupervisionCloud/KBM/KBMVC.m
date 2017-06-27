@@ -20,6 +20,9 @@
 #import "FindResourVC.h"
 #import "QuestionModel.h"
 #import "KnowledgeDetailVC.h"
+#import "QuestionDetailVC.h"
+
+
 @interface KBMVC ()
 @property (nonatomic, weak) IBOutlet UITableView *table;
 @property (nonatomic, strong) KBMVCViewModel *viewModel;
@@ -136,16 +139,33 @@
 
 -(void)gotoDetail:(NSObject *)item{
     //TODO 判断类型？
-    QuestionModel *obj = (QuestionModel *)item;
-    
-    NSLog(@"item = %@",obj.idField);
-//
-    
-    UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"KBM" bundle:nil];
-    
-    KnowledgeDetailVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"KnowledgeDetailVC"];
-    vc.idField = obj.idField;
-    [self presentViewController:vc animated:YES completion:nil];
+    if ([item isKindOfClass: [KnowledgeModel class]]) {
+        
+        KnowledgeModel *obj = (KnowledgeModel *)item;
+        
+        NSLog(@"item = %@",obj.idField);
+        //
+        
+        UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"KBM" bundle:nil];
+        
+        KnowledgeDetailVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"KnowledgeDetailVC"];
+        vc.idField = obj.idField;
+        [self presentViewController:vc animated:YES completion:nil];
+
+    }else{
+        
+        QuestionModel *obj = (QuestionModel *)item;
+        
+        NSLog(@"item = %@",obj.idField);
+        //
+        
+        UIStoryboard *secondStroyBoard=[UIStoryboard storyboardWithName:@"KBM" bundle:nil];
+        
+        QuestionDetailVC *vc=[secondStroyBoard instantiateViewControllerWithIdentifier:@"QuestionDetailVC"];
+        vc.idField = obj.idField;
+        [self presentViewController:vc animated:YES completion:nil];
+
+    }
 
 
 }

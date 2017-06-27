@@ -12,12 +12,16 @@
 #import "HomeVM.h"
 #import "UserInfoManager.h"
 #import "ManagerProject.h"
-#import "PersonnelManagementVC.h"
-#import "SecurityLogHomeVC.h"
-#import "ScheduleHomeListVC.h"
-#import "MeasurementListVC.h"
-#import "ProcessInspectionListVC.h"
-#import "SystemDocumentsListVC.h"
+
+#import "PersonnelManagementVC.h"//人员管理
+#import "SecurityLogHomeVC.h"//安全日志
+#import "ScheduleHomeListVC.h"//进度管理
+#import "MeasurementListVC.h"//计量管理
+#import "ProcessInspectionListVC.h"//工序报验
+#import "SystemDocumentsListVC.h"//体系文件
+#import "MeetingListVC.h"//项目会议
+#import "ReportLibraryHomeVC.h"//报告库
+
 
 @interface HomeController (){
     MangerHomeView *mhome;
@@ -246,7 +250,7 @@
             // 人员管理
             UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"Meeting" bundle:nil];
             
-            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
+            MeetingListVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"MeetingListVC"];
             [self presentViewController:vc
                                animated:YES
                              completion:nil];
@@ -293,11 +297,11 @@
         }
             break;
         case 15:{
-            /*安全日志  */
+            /*报告库  */
             
-            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"SecurityLog" bundle:nil];
+            UIStoryboard *secondStroyBoard = [UIStoryboard storyboardWithName:@"ReportLibrary" bundle:nil];
             
-            SecurityLogHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"SecurityLogHomeVC"];
+            ReportLibraryHomeVC *vc = [secondStroyBoard instantiateViewControllerWithIdentifier:@"ReportLibraryHomeVC"];
             [self presentViewController:vc
                                animated:YES
                              completion:nil];

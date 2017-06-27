@@ -156,8 +156,7 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
                                          @"desc":subTitle,
                                          } mutableCopy];
     
-    
-    NSData *data =    [NSJSONSerialization dataWithJSONObject:[self parametersWithDic:paramaters]
+    NSData *data = [NSJSONSerialization dataWithJSONObject:[self parametersWithDic:paramaters]
                                                       options:NSJSONWritingPrettyPrinted error:nil];
     
     [self postWithUrl:timeSp
@@ -181,7 +180,7 @@ static NSString *const SelectorCell = @"SVCloudSelectorCell" ;
                   
               } failure:^(NSError *error) {
                   
-                  completionHandle(NO, error, nil);
+                  completionHandle(NO, error, error.description);
               }];
     
     
